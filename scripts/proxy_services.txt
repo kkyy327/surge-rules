@@ -1,0 +1,28 @@
+# 重点服务清单（对应 blackmatrix7/ios_rule_script rule/Surge/ 下的目录名）
+# 这些服务的专属列表会额外并入 Proxy，用于补上游 Proxy_All 聚合的缺口
+# （如 YouTube 的 googlevideo.com、OpenAI/Claude 的 API 域名）
+# 构建时自动跳过不存在的目录
+OpenAI
+Claude
+Anthropic
+Gemini
+BardAI
+Copilot
+Twitter
+Instagram
+YouTube
+Telegram
+Facebook
+Discord
+Reddit
+TikTok
+Google
+GoogleSearch
+GoogleDrive
+GitHub
+Netflix
+Disney
+HBO
+Hulu
+Spotify
+Vimeo
