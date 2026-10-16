@@ -134,6 +134,8 @@ def build(name: str, sources: list[str], custom_file: str):
     header.append("")
     # 按名单固定分块（API 单次推送上限约 128KB，单块须小于该值）
     PARTS = {"Proxy": 3, "Direct": 1, "Reject": 1}
+    # Proxy 分块的优美英文名（按字母顺序：晨曦/卷云/层云）
+    CHUNK_NAMES = {"Proxy": ["Nimbus", "Cirrus", "Stratus"]}
     nparts = PARTS.get(name, 1)
     body_lines = [f"{t},{v}" for t, v in merged]
     total_size = sum(len(ln) + 1 for ln in body_lines)
@@ -151,7 +153,13 @@ def build(name: str, sources: list[str], custom_file: str):
     os.makedirs(os.path.join(ROOT, "rules"), exist_ok=True)
     out_files = []
     for i, part in enumerate(chunks, 1):
-        fname = f"{name}.list" if len(chunks) == 1 else f"{name}-{i}.list"
+        cnames = CHUNK_NAMES.get(name)
+        if len(chunks) == 1:
+            fname = f"{name}.list"
+        elif cnames and i <= len(cnames):
+            fname = f"{cnames[i-1]}.list"
+        else:
+            fname = f"{name}-{i}.list"
         out_path = os.path.join(ROOT, "rules", fname)
         part_header = header + ([f"# PART: {i}/{len(chunks)}"] if len(chunks) > 1 else [])
         with open(out_path, "w", encoding="utf-8") as f:
