@@ -132,20 +132,40 @@ def build(name: str, sources: list[str], custom_file: str):
             header.append(f"# {t}: {counts[t]}")
     header.append(f"# TOTAL: {len(merged)}")
     header.append("")
-    out_path = os.path.join(ROOT, "rules", f"{name}.list")
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    with open(out_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(header) + "\n")
-        for t, v in merged:
-            f.write(f"{t},{v}\n")
-    print(f"  -> {out_path}: {len(merged)} 条")
-    return len(merged)
+    # 按名单固定分块（API 单次推送上限约 128KB，单块须小于该值）
+    PARTS = {"Proxy": 2, "Direct": 1, "Reject": 1}
+    nparts = PARTS.get(name, 1)
+    body_lines = [f"{t},{v}" for t, v in merged]
+    total_size = sum(len(ln) + 1 for ln in body_lines)
+    per_chunk = total_size / nparts + 1
+    chunks, cur, cur_size = [], [], 0
+    for ln in body_lines:
+        if cur and cur_size + len(ln) + 1 > per_chunk and len(chunks) < nparts - 1:
+            chunks.append(cur)
+            cur, cur_size = [], 0
+        cur.append(ln)
+        cur_size += len(ln) + 1
+    if cur:
+        chunks.append(cur)
+
+    os.makedirs(os.path.join(ROOT, "rules"), exist_ok=True)
+    out_files = []
+    for i, part in enumerate(chunks, 1):
+        fname = f"{name}.list" if len(chunks) == 1 else f"{name}-{i}.list"
+        out_path = os.path.join(ROOT, "rules", fname)
+        part_header = header + ([f"# PART: {i}/{len(chunks)}"] if len(chunks) > 1 else [])
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(part_header) + "\n")
+            f.write("\n".join(part) + "\n")
+        out_files.append(fname)
+        print(f"  -> {out_path}: {len(part)} 条")
+    return len(merged), out_files
 
 
 def main():
     print("== Proxy ==")
     proxy_sources = [f"{BASE}/Proxy/Proxy_All.list"]
-    n_proxy = build("Proxy", proxy_sources, "proxy_custom.list")
+    n_proxy, proxy_files = build("Proxy", proxy_sources, "proxy_custom.list")
 
     print("== Direct ==")
     direct_sources = [f"{BASE}/ChinaMedia/ChinaMedia.list"]
@@ -161,13 +181,14 @@ def main():
         else:
             print(f"  [跳过] {s}: 无可用 .list")
     print(f"  国内服务命中 {ok}/{len(services)}")
-    n_direct = build("Direct", direct_sources, "direct_custom.list")
+    n_direct, direct_files = build("Direct", direct_sources, "direct_custom.list")
 
     print("== Reject ==")
-    n_reject = build("Reject", [f"{BASE}/AdvertisingLite/AdvertisingLite.list"],
-                     "reject_custom.list")
+    n_reject, reject_files = build("Reject", [f"{BASE}/AdvertisingLite/AdvertisingLite.list"],
+                                   "reject_custom.list")
 
-    print(f"\n完成: Proxy={n_proxy} Direct={n_direct} Reject={n_reject}")
+    print(f"\n完成: Proxy={n_proxy} {proxy_files} / Direct={n_direct} {direct_files} / "
+          f"Reject={n_reject} {reject_files}")
 
 
 if __name__ == "__main__":
