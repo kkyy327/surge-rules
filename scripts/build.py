@@ -165,6 +165,18 @@ def build(name: str, sources: list[str], custom_file: str):
 def main():
     print("== Proxy ==")
     proxy_sources = [f"{BASE}/Proxy/Proxy_All.list"]
+    svc_file = os.path.join(ROOT, "scripts", "proxy_services.txt")
+    with open(svc_file, encoding="utf-8") as f:
+        pservices = [l.strip() for l in f if l.strip() and not l.startswith("#")]
+    pok = 0
+    for s in pservices:
+        url = resolve_service_url(s)
+        if url:
+            proxy_sources.append(url)
+            pok += 1
+        else:
+            print(f"  [跳过] {s}: 无可用 .list")
+    print(f"  重点服务命中 {pok}/{len(pservices)}")
     n_proxy, proxy_files = build("Proxy", proxy_sources, "proxy_custom.list")
 
     print("== Direct ==")
