@@ -8,9 +8,9 @@
 
 | 规则 | 用途 | 链接 |
 | ---- | ---- | ---- |
-| Proxy-1 | 需要代理的网站（1/3） | `https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Proxy-1.list` |
-| Proxy-2 | 需要代理的网站（2/3） | `https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Proxy-2.list` |
-| Proxy-3 | 需要代理的网站（3/3，Google、Telegram、Twitter、Netflix、AI 服务等共约 9850 条） | `https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Proxy-3.list` |
+| Nimbus | 需要代理的网站（1/3，雨云） | `https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Nimbus.list` |
+| Cirrus | 需要代理的网站（2/3，卷云） | `https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Cirrus.list` |
+| Stratus | 需要代理的网站（3/3，层云，Google、Telegram、Twitter、Netflix、AI 服务等共约 9850 条） | `https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Stratus.list` |
 | Direct | 国内直连（微信、支付宝、银行、京东、B站等，约 3800 条） | `https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Direct.list` |
 | Reject | 去广告（精简版，误杀少，约 370 条） | `https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Reject.list` |
 
@@ -22,10 +22,10 @@
 RULE-SET,https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Reject.list,REJECT
 # 国内直连
 RULE-SET,https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Direct.list,DIRECT
-# 需要代理（Proxy 分三个文件，三个都要订阅）
-RULE-SET,https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Proxy-1.list,PROXY
-RULE-SET,https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Proxy-2.list,PROXY
-RULE-SET,https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Proxy-3.list,PROXY
+# 需要代理（分三个文件，三个都要订阅）
+RULE-SET,https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Nimbus.list,PROXY
+RULE-SET,https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Cirrus.list,PROXY
+RULE-SET,https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Stratus.list,PROXY
 # 国内 IP 直连
 GEOIP,CN,DIRECT
 # 兜底
@@ -37,7 +37,7 @@ FINAL,DIRECT
 
 ## Shadowrocket
 
-配置 → 模块/规则 → 添加规则集，分别填上面五个链接，策略对应 REJECT / DIRECT / PROXY。
+配置 → 模块/规则 → 添加规则集，分别填上面五个链接（Nimbus/Cirrus/Stratus 三个都要），策略对应 REJECT / DIRECT / PROXY。
 
 ## 手动补充
 
