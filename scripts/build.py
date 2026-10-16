@@ -133,7 +133,7 @@ def build(name: str, sources: list[str], custom_file: str):
     header.append(f"# TOTAL: {len(merged)}")
     header.append("")
     # 按名单固定分块（API 单次推送上限约 128KB，单块须小于该值）
-    PARTS = {"Proxy": 2, "Direct": 1, "Reject": 1}
+    PARTS = {"Proxy": 3, "Direct": 1, "Reject": 1}
     nparts = PARTS.get(name, 1)
     body_lines = [f"{t},{v}" for t, v in merged]
     total_size = sum(len(ln) + 1 for ln in body_lines)
