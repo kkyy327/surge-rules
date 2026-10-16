@@ -1,0 +1,3 @@
+# 手动补充的代理规则（上游缺失或个人需求），每次自动更新都会保留
+# Google Voice 网页版：上游 GoogleVoice.list 里没有 voice.google.com，手动补上
+DOMAIN,voice.google.com
