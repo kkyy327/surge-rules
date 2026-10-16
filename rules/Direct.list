@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-16 13:30:27
+# UPDATED: 2026-10-17 07:20:10
 # DOMAIN: 31
-# DOMAIN-SUFFIX: 3302
+# DOMAIN-SUFFIX: 3303
 # DOMAIN-KEYWORD: 237
 # IP-CIDR: 159
 # IP-CIDR6: 95
-# TOTAL: 3824
+# TOTAL: 3825
 
 DOMAIN,00713915daab0be43def5c338c02c80b.dlied1.cdntips.net
 DOMAIN,113-219-145-1.ksyungslb.com
@@ -479,6 +479,7 @@ DOMAIN-SUFFIX,alipaydesign.com
 DOMAIN-SUFFIX,alipaydev.com
 DOMAIN-SUFFIX,alipaydns.com
 DOMAIN-SUFFIX,alipayeshop.com
+DOMAIN-SUFFIX,alipayhk.com
 DOMAIN-SUFFIX,alipaylog.com
 DOMAIN-SUFFIX,alipaymo.com
 DOMAIN-SUFFIX,alipayobjects.com
