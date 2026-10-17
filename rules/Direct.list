@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-17 07:20:10
-# DOMAIN: 31
-# DOMAIN-SUFFIX: 3303
+# UPDATED: 2026-10-17 08:08:38
+# DOMAIN: 32
+# DOMAIN-SUFFIX: 3304
 # DOMAIN-KEYWORD: 237
-# IP-CIDR: 159
+# IP-CIDR: 167
 # IP-CIDR6: 95
-# TOTAL: 3825
+# TOTAL: 3839
 
 DOMAIN,00713915daab0be43def5c338c02c80b.dlied1.cdntips.net
 DOMAIN,113-219-145-1.ksyungslb.com
@@ -23,6 +23,7 @@ DOMAIN,apd-pcdnvodstat.teg.tencent-cloud.net
 DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
 DOMAIN,aqqmusic.tc.qq.com
 DOMAIN,dldir1.qq.com
+DOMAIN,dns.weixin.qq.com.cn
 DOMAIN,iacc.qq.com
 DOMAIN,ins-eeww7kom.ias.tencent-cloud.net
 DOMAIN,ios.video.mpush.qq.com
@@ -2924,6 +2925,7 @@ DOMAIN-SUFFIX,wcsapi.net
 DOMAIN-SUFFIX,wdfok.com
 DOMAIN-SUFFIX,webgamehome.com
 DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,wechat.com,extended-matching
 DOMAIN-SUFFIX,wechatlegal.net
 DOMAIN-SUFFIX,wechatos.net
 DOMAIN-SUFFIX,wechatpay.com
@@ -3581,6 +3583,7 @@ DOMAIN-KEYWORD,hnagroup
 DOMAIN-KEYWORD,qiyi
 DOMAIN-KEYWORD,weibo
 IP-CIDR,101.224.0.0/13,no-resolve
+IP-CIDR,101.32.104.104/32,no-resolve
 IP-CIDR,101.32.104.4/32,no-resolve
 IP-CIDR,101.32.104.41/32,no-resolve
 IP-CIDR,101.32.104.56/32,no-resolve
@@ -3651,6 +3654,7 @@ IP-CIDR,120.92.153.217/32,no-resolve
 IP-CIDR,122.5.0.129/32,no-resolve
 IP-CIDR,128.1.62.200/31,no-resolve
 IP-CIDR,129.226.107.244/32,no-resolve
+IP-CIDR,129.226.107.59/32,no-resolve
 IP-CIDR,129.226.3.47/32,no-resolve
 IP-CIDR,134.175.207.130/32,no-resolve
 IP-CIDR,139.95.0.0/16,no-resolve
@@ -3696,6 +3700,12 @@ IP-CIDR,41.222.240.0/22,no-resolve
 IP-CIDR,41.223.119.0/24,no-resolve
 IP-CIDR,42.120.0.0/16,no-resolve
 IP-CIDR,42.156.128.0/17,no-resolve
+IP-CIDR,43.156.222.113/32,no-resolve
+IP-CIDR,43.156.222.152/32,no-resolve
+IP-CIDR,43.156.222.176/32,no-resolve
+IP-CIDR,43.156.222.205/32,no-resolve
+IP-CIDR,43.156.223.202/32,no-resolve
+IP-CIDR,43.156.255.184/32,no-resolve
 IP-CIDR,43.242.168.0/22,no-resolve
 IP-CIDR,45.112.212.0/22,no-resolve
 IP-CIDR,45.113.40.0/22,no-resolve
@@ -3834,3 +3844,7 @@ IP-CIDR6,::ffff:58.58.0.90/128,no-resolve
 IP-CIDR6,::ffff:60.171.183.161/128,no-resolve
 IP-CIDR6,::ffff:60.171.183.186/128,no-resolve
 IP-CIDR6,::ffff:60.171.183.98/128,no-resolve
+IP-ASN,132203
+IP-ASN,132203,no-resolve
+IP-ASN,45090
+IP-ASN,56040
