@@ -1,0 +1,25 @@
+# NAME: AI
+# REPO: https://github.com/kkyy327/surge-rules
+# 合并自 115302zl/Apple-AI.list + 115302zl/siri.list (2026-10-17)
+# 用法: RULE-SET,<url>,AI
+# 注意: 必须放在 Apple 直连规则之前
+DOMAIN-KEYWORD,siri,AI
+DOMAIN,guzzoni.apple.com,AI
+DOMAIN,mask.apple-dns.net,AI
+DOMAIN,mask-t.apple-dns.net,AI
+DOMAIN,mask-api.icloud.com,AI
+DOMAIN,mask-api.fe.apple-dns.net,AI
+DOMAIN,apple-relay.akamaized.net,AI
+DOMAIN-SUFFIX,smoot.apple.com,AI
+DOMAIN-SUFFIX,cp4.cloudflare.com,AI
+DOMAIN-SUFFIX,apple-relay.apple.com,AI
+DOMAIN-SUFFIX,apple-relay.cloudflare.com,AI
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com,AI
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net,AI
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,AI
+DOMAIN-SUFFIX,bag.itunes.apple.com,AI
+DOMAIN-SUFFIX,configuration.apple.com,AI
+DOMAIN-SUFFIX,ipcdn.apple.com,AI
+DOMAIN-SUFFIX,mask.icloud.com,AI
+DOMAIN-SUFFIX,mask-h2.icloud.com,AI
+DOMAIN-SUFFIX,apps.mzstatic.com,AI
