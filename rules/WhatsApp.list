@@ -1,1 +1,7 @@
-IyBOQU1FOiBXaGF0c0FwcAojIFJFUE86IGh0dHBzOi8vZ2l0aHViLmNvbS9ra3l5MzI3L3N1cmdlLXJ1bGVzCiMg55So5rOVOiBSVUxFLVNFVCw8dXJsPizpppnmuK/oioLngrkKIyDms6jmhI86IOW/hemhu+aUvuWcqCBOaW1idXMvQ2lycnVzL1N0cmF0dXMg5LiJ5p2h6YCa55SoIFByb3h5IFJVTEUtU0VUIOS5i+WJjSAoU3VyZ2Ug5oyJ6aG65bqP5Yy56YWNKQpET01BSU4tU1VGRklYLHdoYXRzYXBwLmNvbSzpppnmuK/oioLngrkKRE9NQUlOLVNVRkZJWCx3aGF0c2FwcC5uZXQs6aaZ5riv6IqC54K5CkRPTUFJTi1LRVlXT1JELHdoYXRzYXBwLOmmmea4r+iKgueCuQo=
+# NAME: WhatsApp
+# REPO: https://github.com/kkyy327/surge-rules
+# 用法: RULE-SET,<url>,香港节点
+# 注意: 必须放在 Nimbus/Cirrus/Stratus 三条通用 Proxy RULE-SET 之前 (Surge 按顺序匹配)
+DOMAIN-SUFFIX,whatsapp.com,香港节点
+DOMAIN-SUFFIX,whatsapp.net,香港节点
+DOMAIN-KEYWORD,whatsapp,香港节点
