@@ -1,13 +1,13 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-16 14:57:33
+# UPDATED: 2026-10-18 15:54:56
 # DOMAIN: 32
-# DOMAIN-SUFFIX: 8505
+# DOMAIN-SUFFIX: 8511
 # DOMAIN-KEYWORD: 42
 # IP-CIDR: 1254
 # IP-CIDR6: 13
-# TOTAL: 9846
+# TOTAL: 9860
 
 # PART: 2/3
 DOMAIN-SUFFIX,google.pn
@@ -1501,7 +1501,9 @@ DOMAIN-SUFFIX,meshrep.com
 DOMAIN-SUFFIX,mesotw.com
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,messengerdevelopers.com
+DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,metaaivm.com
 DOMAIN-SUFFIX,metacafe.com
 DOMAIN-SUFFIX,metacubex.one
 DOMAIN-SUFFIX,metafilter.com
@@ -3399,3 +3401,5 @@ DOMAIN-SUFFIX,suoluo.org
 DOMAIN-SUFFIX,supchina.com
 DOMAIN-SUFFIX,superfreevpn.com
 DOMAIN-SUFFIX,supermariorun.com
+DOMAIN-SUFFIX,superpages.com
+DOMAIN-SUFFIX,supervpn.net
