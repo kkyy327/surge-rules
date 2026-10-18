@@ -1,17 +1,15 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-16 14:57:33
+# UPDATED: 2026-10-18 15:54:56
 # DOMAIN: 32
-# DOMAIN-SUFFIX: 8505
+# DOMAIN-SUFFIX: 8511
 # DOMAIN-KEYWORD: 42
 # IP-CIDR: 1254
 # IP-CIDR6: 13
-# TOTAL: 9846
+# TOTAL: 9860
 
 # PART: 3/3
-DOMAIN-SUFFIX,superpages.com
-DOMAIN-SUFFIX,supervpn.net
 DOMAIN-SUFFIX,superzooi.com
 DOMAIN-SUFFIX,supjav.com
 DOMAIN-SUFFIX,suppig.net
@@ -3120,3 +3118,11 @@ IP-CIDR6,2a00:86c0::/32,no-resolve
 IP-CIDR6,2a03:5640::/32,no-resolve
 IP-CIDR6,2a0a:f280::/29,no-resolve
 IP-CIDR6,2a0a:f280::/32
+IP-ASN,14061,no-resolve
+IP-ASN,20473,no-resolve
+IP-ASN,211157,no-resolve
+IP-ASN,32934,no-resolve
+IP-ASN,44907,no-resolve
+IP-ASN,59930,no-resolve
+IP-ASN,62014,no-resolve
+IP-ASN,62041,no-resolve
