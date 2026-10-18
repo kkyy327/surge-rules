@@ -1,17 +1,15 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-18 15:54:56
+# UPDATED: 2026-10-18 22:41:14
 # DOMAIN: 32
-# DOMAIN-SUFFIX: 8511
-# DOMAIN-KEYWORD: 42
+# DOMAIN-SUFFIX: 8513
+# DOMAIN-KEYWORD: 43
 # IP-CIDR: 1254
 # IP-CIDR6: 13
-# TOTAL: 9860
+# TOTAL: 9863
 
 # PART: 2/3
-DOMAIN-SUFFIX,google.pn
-DOMAIN-SUFFIX,google.ps
 DOMAIN-SUFFIX,google.pt
 DOMAIN-SUFFIX,google.ro
 DOMAIN-SUFFIX,google.rs
@@ -908,6 +906,8 @@ DOMAIN-SUFFIX,javbus.co
 DOMAIN-SUFFIX,javbus.com
 DOMAIN-SUFFIX,javchu.com
 DOMAIN-SUFFIX,javdb.com
+DOMAIN-SUFFIX,javdb561.com
+DOMAIN-SUFFIX,javdb570.com
 DOMAIN-SUFFIX,javfinder.ai
 DOMAIN-SUFFIX,javfor.me
 DOMAIN-SUFFIX,javfree.me
@@ -3403,3 +3403,4 @@ DOMAIN-SUFFIX,superfreevpn.com
 DOMAIN-SUFFIX,supermariorun.com
 DOMAIN-SUFFIX,superpages.com
 DOMAIN-SUFFIX,supervpn.net
+DOMAIN-SUFFIX,superzooi.com
