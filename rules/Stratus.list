@@ -1,16 +1,15 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-18 15:54:56
+# UPDATED: 2026-10-18 22:41:14
 # DOMAIN: 32
-# DOMAIN-SUFFIX: 8511
-# DOMAIN-KEYWORD: 42
+# DOMAIN-SUFFIX: 8513
+# DOMAIN-KEYWORD: 43
 # IP-CIDR: 1254
 # IP-CIDR6: 13
-# TOTAL: 9860
+# TOTAL: 9863
 
 # PART: 3/3
-DOMAIN-SUFFIX,superzooi.com
 DOMAIN-SUFFIX,supjav.com
 DOMAIN-SUFFIX,suppig.net
 DOMAIN-SUFFIX,supportfacebook.com
@@ -1831,6 +1830,7 @@ DOMAIN-KEYWORD,github
 DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,instagram
+DOMAIN-KEYWORD,javdb
 DOMAIN-KEYWORD,musical.ly
 DOMAIN-KEYWORD,netflixdnstest
 DOMAIN-KEYWORD,nicegram
