@@ -1,5 +1,3 @@
 # Hongguo (红果短剧) ad-block test list
 # ByteDance ad creative CDN (keyword match for p*-ad-sign.byteimg.com)
 DOMAIN-KEYWORD,-ad-sign.byteimg.com
-# ByteDance ad click/impression reporting
-DOMAIN,dig.bdurl.net
