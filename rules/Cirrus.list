@@ -1,15 +1,25 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-23 12:44:51
+# UPDATED: 2026-10-23 23:23:16
 # DOMAIN: 32
-# DOMAIN-SUFFIX: 8513
-# DOMAIN-KEYWORD: 43
-# IP-CIDR: 1254
+# DOMAIN-SUFFIX: 8487
+# DOMAIN-KEYWORD: 42
+# IP-CIDR: 1248
 # IP-CIDR6: 13
-# TOTAL: 9863
+# TOTAL: 9830
 
 # PART: 2/3
+DOMAIN-SUFFIX,google.ne
+DOMAIN-SUFFIX,google.net
+DOMAIN-SUFFIX,google.nl
+DOMAIN-SUFFIX,google.no
+DOMAIN-SUFFIX,google.nr
+DOMAIN-SUFFIX,google.nu
+DOMAIN-SUFFIX,google.org
+DOMAIN-SUFFIX,google.pl
+DOMAIN-SUFFIX,google.pn
+DOMAIN-SUFFIX,google.ps
 DOMAIN-SUFFIX,google.pt
 DOMAIN-SUFFIX,google.ro
 DOMAIN-SUFFIX,google.rs
@@ -138,7 +148,6 @@ DOMAIN-SUFFIX,greenvpn.net
 DOMAIN-SUFFIX,greenvpn.org
 DOMAIN-SUFFIX,gridaware.app
 DOMAIN-SUFFIX,grindr.com
-DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,grokipedia.com
 DOMAIN-SUFFIX,grotty-monday.com
 DOMAIN-SUFFIX,ground.news
@@ -2357,7 +2366,6 @@ DOMAIN-SUFFIX,percy.in
 DOMAIN-SUFFIX,perfect-privacy.com
 DOMAIN-SUFFIX,perfectgirls.net
 DOMAIN-SUFFIX,perfectvpn.net
-DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,perma.cc
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,persecutionblog.com
@@ -2571,7 +2579,6 @@ DOMAIN-SUFFIX,proyectoclubes.com
 DOMAIN-SUFFIX,prozz.net
 DOMAIN-SUFFIX,psblog.name
 DOMAIN-SUFFIX,pscdn.co
-DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,pshvpn.com
 DOMAIN-SUFFIX,psiphon.ca
 DOMAIN-SUFFIX,psiphon3.com
@@ -3387,20 +3394,3 @@ DOMAIN-SUFFIX,sugobbs.com
 DOMAIN-SUFFIX,sugumiru18.com
 DOMAIN-SUFFIX,suissl.com
 DOMAIN-SUFFIX,sulian.me
-DOMAIN-SUFFIX,summify.com
-DOMAIN-SUFFIX,sumrando.com
-DOMAIN-SUFFIX,sun1911.com
-DOMAIN-SUFFIX,sundayguardianlive.com
-DOMAIN-SUFFIX,sunmedia.ca
-DOMAIN-SUFFIX,suno.ai
-DOMAIN-SUFFIX,suno.com
-DOMAIN-SUFFIX,sunskyforum.com
-DOMAIN-SUFFIX,sunta.com.tw
-DOMAIN-SUFFIX,sunvpn.net
-DOMAIN-SUFFIX,suoluo.org
-DOMAIN-SUFFIX,supchina.com
-DOMAIN-SUFFIX,superfreevpn.com
-DOMAIN-SUFFIX,supermariorun.com
-DOMAIN-SUFFIX,superpages.com
-DOMAIN-SUFFIX,supervpn.net
-DOMAIN-SUFFIX,superzooi.com
