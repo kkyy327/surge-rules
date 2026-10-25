@@ -1,0 +1,219 @@
+# surge-rules 配套 Egern 配置模板（与 surge.conf 同一套规则）
+# 仓库: https://github.com/kkyy327/surge-rules
+# 使用方法:
+# 1. 把下面 proxies 里的注释示例换成你自己的节点（删 # 改真实参数）
+# 2. 把 airport 订阅组里的 urls 换成你的机场订阅链接
+# 3. 整体粘贴导入 Egern
+# 注意: 本文件不含任何个人节点/密钥信息, MITM 证书需在 Egern 里自己生成
+
+ipv6: false
+geoip_db_url: https://git.io/GeoLite2-City.mmdb
+asn_db_url: https://git.io/GeoLite2-ASN.mmdb
+proxy_latency_test_url: http://www.gstatic.com/generate_204
+direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
+
+dns:
+  bootstrap:
+  - system
+  - 223.5.5.5
+  - 119.29.29.29
+
+proxies:
+# ⚠️ 节点示例（取消注释并填真实参数; 名字要和 policy_groups / rules 里引用的对上）
+# - snell:
+#     name: 香港-1
+#     server: 1.2.3.4
+#     port: 2345
+#     psk: YOUR_PSK
+#     version: 4
+# - snell:
+#     name: 美国-1
+#     server: 1.2.3.4
+#     port: 2345
+#     psk: YOUR_PSK
+#     version: 4
+# - snell:
+#     name: 日本-1
+#     server: 1.2.3.4
+#     port: 2345
+#     psk: YOUR_PSK
+#     version: 4
+# - anytls:
+#     name: 新加坡-1
+#     server: 1.2.3.4
+#     port: 443
+#     password: YOUR_PASSWORD
+#     tls:
+#       skip_cert_verify: true
+
+policy_groups:
+- select:
+    name: Proxy
+    policies:
+    - Auto
+    - 香港节点
+    - 美国节点
+    - 日本节点
+    - 新加坡节点
+    - 香港-1
+    - 美国-1
+    - 日本-1
+    - 新加坡-1
+    flatten: false
+    hidden: false
+- url_test:
+    name: Auto
+    policies:
+    - 香港-1
+    - 美国-1
+    - 日本-1
+    - 新加坡-1
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    hidden: true
+- select:
+    name: AI
+    policies:
+    - 美国-1
+    - 日本-1
+    flatten: false
+    hidden: false
+# ── 地区节点组（smart 按 filter 正则自动筛选机场节点, 也可手动往 policies 里加自己的节点） ──
+- smart:
+    name: 香港节点
+    policies:
+    - airport
+    - 香港-1
+    flatten: true
+    filter: (🇭🇰)|(香港)|(HK)
+    hidden: false
+- smart:
+    name: 美国节点
+    policies:
+    - airport
+    - 美国-1
+    flatten: true
+    filter: (🇺🇸)|(美国)|(洛杉矶)|(纽约)|(圣何塞)|(西雅图)|(芝加哥)|(达拉斯)|(LAX)|(SFO)
+    hidden: false
+- smart:
+    name: 新加坡节点
+    policies:
+    - airport
+    - 新加坡-1
+    flatten: true
+    filter: (🇸🇬)|(新加坡)|(狮城)|(SG)
+    hidden: false
+- smart:
+    name: 日本节点
+    policies:
+    - airport
+    - 日本-1
+    flatten: true
+    filter: (🇯🇵)|(日本)|(东京)|(大阪)|(JP)
+    hidden: false
+- smart:
+    name: 韩国节点
+    policies:
+    - airport
+    flatten: true
+    filter: (🇰🇷)|(韩国)|(首尔)|(KR)
+    hidden: false
+- smart:
+    name: 台湾节点
+    policies:
+    - airport
+    flatten: true
+    filter: (🇹🇼)|(台湾)|(台北)|(TW)
+    hidden: false
+# ── 机场节点（订阅导入口 + 总组） ──
+- external:
+    name: airport
+    type: select
+    urls:
+    - https://你的机场订阅链接
+    update_interval: 0
+    hidden: true
+- select:
+    name: 机场节点
+    policies:
+    - airport
+    flatten: true
+    hidden: false
+- select:
+    name: 𝕏
+    policies:
+    - 香港节点
+    - 美国节点
+    - Proxy
+    flatten: false
+    hidden: false
+
+rules:
+- protocol:
+    match: MTProto
+    policy: 香港-1
+- domain:
+    match: voice.google.com
+    policy: 美国-1
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/MiCat-S/Rule/refs/heads/main/rules/surge/IPCheck.list
+    policy: Proxy
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Reject.list
+    policy: REJECT
+    disabled: false
+# ── 专用规则（必须放在通用 Proxy 规则集之前） ──
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/WhatsApp.list
+    policy: 香港节点
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Twitter/Twitter.list
+    policy: 𝕏
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Nimbus.list
+    policy: Proxy
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Cirrus.list
+    policy: Proxy
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Stratus.list
+    policy: Proxy
+    disabled: false
+# ── AI（Apple 智能/Siri, 必须放在 Apple 直连规则之前） ──
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/AI.list
+    policy: AI
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Apple/Apple.list
+    policy: DIRECT
+    disabled: false
+# ── 自有规则（115302zl） ──
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/115302zl@main/115320-rules.list
+    policy: DIRECT
+    disabled: false
+# 国内服务直连(微信/支付宝/银行/京东/B站等, 含微信 ASN 规则)
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Direct.list
+    policy: DIRECT
+    disabled: false
+- geoip:
+    match: CN
+    policy: DIRECT
+    no_resolve: false
+    disabled: false
+- default:
+    policy: Proxy
+
+# MITM（如需使用, 在 Egern 里生成自己的 CA 后填入; 不要用别人的证书）
+# mitm:
+#   ca_p12: YOUR_CA_P12_BASE64
+#   ca_passphrase: YOUR_CA_PASSPHRASE
