@@ -49,6 +49,7 @@ proxies:
 policy_groups:
 - select:
     name: Proxy
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
     policies:
     - Auto
     - 香港节点
@@ -63,6 +64,7 @@ policy_groups:
     hidden: false
 - url_test:
     name: Auto
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     policies:
     - 香港-1
     - 美国-1
@@ -74,6 +76,7 @@ policy_groups:
     hidden: true
 - select:
     name: AI
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png
     policies:
     - 美国-1
     - 日本-1
@@ -82,6 +85,7 @@ policy_groups:
 # ── 地区节点组（smart 按 filter 正则自动筛选机场节点, 也可手动往 policies 里加自己的节点） ──
 - smart:
     name: 香港节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
     policies:
     - airport
     - 香港-1
@@ -90,6 +94,7 @@ policy_groups:
     hidden: false
 - smart:
     name: 美国节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
     policies:
     - airport
     - 美国-1
@@ -98,6 +103,7 @@ policy_groups:
     hidden: false
 - smart:
     name: 新加坡节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
     policies:
     - airport
     - 新加坡-1
@@ -106,6 +112,7 @@ policy_groups:
     hidden: false
 - smart:
     name: 日本节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
     policies:
     - airport
     - 日本-1
@@ -114,6 +121,7 @@ policy_groups:
     hidden: false
 - smart:
     name: 韩国节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
     policies:
     - airport
     flatten: true
@@ -121,6 +129,7 @@ policy_groups:
     hidden: false
 - smart:
     name: 台湾节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
     policies:
     - airport
     flatten: true
@@ -136,12 +145,14 @@ policy_groups:
     hidden: true
 - select:
     name: 机场节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png
     policies:
     - airport
     flatten: true
     hidden: false
 - select:
     name: 𝕏
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png
     policies:
     - 香港节点
     - 美国节点
@@ -149,6 +160,26 @@ policy_groups:
     flatten: false
     hidden: false
 
+- select:
+    name: Instagram
+    policies:
+    - 美国节点
+    - 日本节点
+    - 香港节点
+    - Proxy
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png
+    hidden: false
+- select:
+    name: Telegram
+    policies:
+    - 新加坡节点
+    - 香港节点
+    - 美国节点
+    - Proxy
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+    hidden: false
 rules:
 - protocol:
     match: MTProto
@@ -173,6 +204,14 @@ rules:
 - rule_set:
     match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Twitter/Twitter.list
     policy: 𝕏
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Instagram/Instagram.list
+    policy: Instagram
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Telegram/Telegram.list
+    policy: Telegram
     disabled: false
 - rule_set:
     match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Nimbus.list

@@ -39,24 +39,28 @@ proxy-providers:
       interval: 300
 
 proxy-groups:
-- {name: Proxy, type: select, proxies: [Auto, 香港节点, 美国节点, 日本节点, 新加坡节点, 机场节点, 香港-1, 美国-1, 日本-1, 新加坡-1]}
-- {name: Auto, type: url-test, proxies: [香港-1, 美国-1, 日本-1, 新加坡-1], url: "http://www.gstatic.com/generate_204", interval: 300, tolerance: 50}
-- {name: AI, type: select, proxies: [美国-1, 日本-1]}
-- {name: 𝕏, type: select, proxies: [香港节点, 美国节点, Proxy]}
+- {name: Proxy, type: select, proxies: [Auto, 香港节点, 美国节点, 日本节点, 新加坡节点, 机场节点, 香港-1, 美国-1, 日本-1, 新加坡-1], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png"}
+- {name: Auto, type: url-test, proxies: [香港-1, 美国-1, 日本-1, 新加坡-1], url: "http://www.gstatic.com/generate_204", interval: 300, tolerance: 50, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png"}
+- {name: AI, type: select, proxies: [美国-1, 日本-1], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png"}
+- {name: 𝕏, type: select, proxies: [香港节点, 美国节点, Proxy], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png"}
+- {name: Instagram, type: select, proxies: [美国节点, 日本节点, 香港节点, Proxy], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png"}
+- {name: Telegram, type: select, proxies: [新加坡节点, 香港节点, 美国节点, Proxy], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"}
 # ── 地区节点组（filter 正则筛选机场订阅节点） ──
-- {name: 香港节点, type: select, use: [airport], filter: "🇭🇰|香港|HK"}
-- {name: 美国节点, type: select, use: [airport], filter: "🇺🇸|美国|洛杉矶|纽约|圣何塞|西雅图|芝加哥|达拉斯|LAX|SFO"}
-- {name: 新加坡节点, type: select, use: [airport], filter: "🇸🇬|新加坡|狮城|SG"}
-- {name: 日本节点, type: select, use: [airport], filter: "🇯🇵|日本|东京|大阪|JP"}
-- {name: 韩国节点, type: select, use: [airport], filter: "🇰🇷|韩国|首尔|KR"}
-- {name: 台湾节点, type: select, use: [airport], filter: "🇹🇼|台湾|台北|TW"}
+- {name: 香港节点, type: select, use: [airport], filter: "🇭🇰|香港|HK", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png"}
+- {name: 美国节点, type: select, use: [airport], filter: "🇺🇸|美国|洛杉矶|纽约|圣何塞|西雅图|芝加哥|达拉斯|LAX|SFO", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png"}
+- {name: 新加坡节点, type: select, use: [airport], filter: "🇸🇬|新加坡|狮城|SG", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png"}
+- {name: 日本节点, type: select, use: [airport], filter: "🇯🇵|日本|东京|大阪|JP", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png"}
+- {name: 韩国节点, type: select, use: [airport], filter: "🇰🇷|韩国|首尔|KR", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png"}
+- {name: 台湾节点, type: select, use: [airport], filter: "🇹🇼|台湾|台北|TW", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png"}
 # ── 机场节点（订阅全部节点） ──
-- {name: 机场节点, type: select, use: [airport]}
+- {name: 机场节点, type: select, use: [airport], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png"}
 
 rule-providers:
   IPCheck: {type: http, behavior: classical, url: "https://raw.githubusercontent.com/MiCat-S/Rule/refs/heads/main/rules/surge/IPCheck.list", path: ./ruleset/IPCheck.list, interval: 86400}
   Reject: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Reject.list", path: ./ruleset/Reject.list, interval: 86400}
   Twitter: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Twitter/Twitter.list", path: ./ruleset/Twitter.list, interval: 86400}
+  Instagram: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Instagram/Instagram.list", path: ./ruleset/Instagram.list, interval: 86400}
+  Telegram: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Telegram/Telegram.list", path: ./ruleset/Telegram.list, interval: 86400}
   Nimbus: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Nimbus.list", path: ./ruleset/Nimbus.list, interval: 86400}
   Cirrus: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Cirrus.list", path: ./ruleset/Cirrus.list, interval: 86400}
   Stratus: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Stratus.list", path: ./ruleset/Stratus.list, interval: 86400}
@@ -73,6 +77,8 @@ rules:
 - DOMAIN-SUFFIX,whatsapp.net,香港节点
 - DOMAIN-KEYWORD,whatsapp,香港节点
 - RULE-SET,Twitter,𝕏
+- RULE-SET,Instagram,Instagram
+- RULE-SET,Telegram,Telegram
 - RULE-SET,Nimbus,Proxy
 - RULE-SET,Cirrus,Proxy
 - RULE-SET,Stratus,Proxy
