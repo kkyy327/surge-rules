@@ -152,10 +152,10 @@ policy_groups:
 rules:
 - protocol:
     match: MTProto
-    policy: 香港-1
+    policy: 香港节点
 - domain:
     match: voice.google.com
-    policy: 美国-1
+    policy: 美国节点
     disabled: false
 - rule_set:
     match: https://raw.githubusercontent.com/MiCat-S/Rule/refs/heads/main/rules/surge/IPCheck.list

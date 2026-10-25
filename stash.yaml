@@ -21,11 +21,12 @@ dns:
   - 119.29.29.29
 
 proxies:
-# ⚠️ 节点示例（取消注释并填真实参数; 名字要和 proxy-groups / rules 里引用的对上）
-# - {name: 香港-1, type: snell, server: 1.2.3.4, port: 2345, psk: YOUR_PSK, version: 4}
-# - {name: 美国-1, type: snell, server: 1.2.3.4, port: 2345, psk: YOUR_PSK, version: 4}
-# - {name: 日本-1, type: snell, server: 1.2.3.4, port: 2345, psk: YOUR_PSK, version: 4}
-# - {name: 新加坡-1, type: anytls, server: 1.2.3.4, port: 443, password: YOUR_PASSWORD, skip-cert-verify: true}
+# ⚠️ 下面是假地址示例节点: Clash 系内核会校验引用, 节点必须真实存在才能导入
+# 导入后把 server/psk/password 换成你自己的, 或删掉这几行并同步删 proxy-groups 里的同名引用
+- {name: 香港-1, type: snell, server: 1.2.3.4, port: 2345, psk: YOUR_PSK, version: 4}
+- {name: 美国-1, type: snell, server: 1.2.3.4, port: 2345, psk: YOUR_PSK, version: 4}
+- {name: 日本-1, type: snell, server: 1.2.3.4, port: 2345, psk: YOUR_PSK, version: 4}
+- {name: 新加坡-1, type: anytls, server: 1.2.3.4, port: 443, password: YOUR_PASSWORD, skip-cert-verify: true}
 
 proxy-providers:
   airport:
@@ -64,7 +65,7 @@ rule-providers:
   Direct: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Direct.list", path: ./ruleset/Direct.list, interval: 86400}
 
 rules:
-- DOMAIN,voice.google.com,美国-1
+- DOMAIN,voice.google.com,美国节点
 - RULE-SET,IPCheck,Proxy
 - RULE-SET,Reject,REJECT
 # ── WhatsApp（内联展开, 走香港节点; 必须放在通用 Proxy 规则集之前） ──
