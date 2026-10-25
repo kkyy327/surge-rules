@@ -83,6 +83,47 @@ policy_groups:
     flatten: false
     hidden: false
 # ── 地区节点组（smart 按 filter 正则自动筛选机场节点, 也可手动往 policies 里加自己的节点） ──
+- select:
+    name: 𝕏
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png
+    policies:
+    - 香港节点
+    - 美国节点
+    - Proxy
+    flatten: false
+    hidden: false
+
+- select:
+    name: Instagram
+    policies:
+    - 美国节点
+    - 日本节点
+    - 香港节点
+    - Proxy
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png
+    hidden: false
+- select:
+    name: Telegram
+    policies:
+    - 新加坡节点
+    - 香港节点
+    - 美国节点
+    - Proxy
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+    hidden: false
+- select:
+    name: YouTube
+    policies:
+    - 美国节点
+    - 日本节点
+    - 新加坡节点
+    - 香港节点
+    - Proxy
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+    hidden: false
 - smart:
     name: 香港节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
@@ -149,47 +190,6 @@ policy_groups:
     policies:
     - airport
     flatten: true
-    hidden: false
-- select:
-    name: 𝕏
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png
-    policies:
-    - 香港节点
-    - 美国节点
-    - Proxy
-    flatten: false
-    hidden: false
-
-- select:
-    name: Instagram
-    policies:
-    - 美国节点
-    - 日本节点
-    - 香港节点
-    - Proxy
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png
-    hidden: false
-- select:
-    name: Telegram
-    policies:
-    - 新加坡节点
-    - 香港节点
-    - 美国节点
-    - Proxy
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
-    hidden: false
-- select:
-    name: YouTube
-    policies:
-    - 美国节点
-    - 日本节点
-    - 新加坡节点
-    - 香港节点
-    - Proxy
-    flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
     hidden: false
 rules:
 - protocol:
