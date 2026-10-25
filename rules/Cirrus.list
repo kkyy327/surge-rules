@@ -1,15 +1,73 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-25 11:12:04
-# DOMAIN: 32
-# DOMAIN-SUFFIX: 8487
-# DOMAIN-KEYWORD: 42
-# IP-CIDR: 1248
-# IP-CIDR6: 13
-# TOTAL: 9830
+# UPDATED: 2026-10-25 12:02:56
+# DOMAIN: 25
+# DOMAIN-SUFFIX: 8300
+# DOMAIN-KEYWORD: 40
+# IP-CIDR: 1244
+# IP-CIDR6: 12
+# TOTAL: 9628
 
 # PART: 2/3
+DOMAIN-SUFFIX,google.com.sv
+DOMAIN-SUFFIX,google.com.tj
+DOMAIN-SUFFIX,google.com.tr
+DOMAIN-SUFFIX,google.com.tw
+DOMAIN-SUFFIX,google.com.ua
+DOMAIN-SUFFIX,google.com.uy
+DOMAIN-SUFFIX,google.com.vc
+DOMAIN-SUFFIX,google.com.vn
+DOMAIN-SUFFIX,google.cv
+DOMAIN-SUFFIX,google.cz
+DOMAIN-SUFFIX,google.de
+DOMAIN-SUFFIX,google.dev
+DOMAIN-SUFFIX,google.dj
+DOMAIN-SUFFIX,google.dk
+DOMAIN-SUFFIX,google.dm
+DOMAIN-SUFFIX,google.dz
+DOMAIN-SUFFIX,google.ee
+DOMAIN-SUFFIX,google.es
+DOMAIN-SUFFIX,google.fi
+DOMAIN-SUFFIX,google.fm
+DOMAIN-SUFFIX,google.fr
+DOMAIN-SUFFIX,google.ga
+DOMAIN-SUFFIX,google.ge
+DOMAIN-SUFFIX,google.gg
+DOMAIN-SUFFIX,google.gl
+DOMAIN-SUFFIX,google.gm
+DOMAIN-SUFFIX,google.gr
+DOMAIN-SUFFIX,google.gy
+DOMAIN-SUFFIX,google.hn
+DOMAIN-SUFFIX,google.hr
+DOMAIN-SUFFIX,google.ht
+DOMAIN-SUFFIX,google.hu
+DOMAIN-SUFFIX,google.ie
+DOMAIN-SUFFIX,google.im
+DOMAIN-SUFFIX,google.iq
+DOMAIN-SUFFIX,google.is
+DOMAIN-SUFFIX,google.it
+DOMAIN-SUFFIX,google.je
+DOMAIN-SUFFIX,google.jo
+DOMAIN-SUFFIX,google.kg
+DOMAIN-SUFFIX,google.ki
+DOMAIN-SUFFIX,google.kz
+DOMAIN-SUFFIX,google.la
+DOMAIN-SUFFIX,google.li
+DOMAIN-SUFFIX,google.lk
+DOMAIN-SUFFIX,google.lt
+DOMAIN-SUFFIX,google.lu
+DOMAIN-SUFFIX,google.lv
+DOMAIN-SUFFIX,google.md
+DOMAIN-SUFFIX,google.me
+DOMAIN-SUFFIX,google.mg
+DOMAIN-SUFFIX,google.mk
+DOMAIN-SUFFIX,google.ml
+DOMAIN-SUFFIX,google.mn
+DOMAIN-SUFFIX,google.ms
+DOMAIN-SUFFIX,google.mu
+DOMAIN-SUFFIX,google.mv
+DOMAIN-SUFFIX,google.mw
 DOMAIN-SUFFIX,google.ne
 DOMAIN-SUFFIX,google.net
 DOMAIN-SUFFIX,google.nl
@@ -98,7 +156,6 @@ DOMAIN-SUFFIX,googletraveladservices.com
 DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-SUFFIX,googlevads-cn.com
 DOMAIN-SUFFIX,googleventures.com
-DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,googlr.com
 DOMAIN-SUFFIX,goolge.com
 DOMAIN-SUFFIX,gooogle.com
@@ -185,9 +242,7 @@ DOMAIN-SUFFIX,gvlib.com
 DOMAIN-SUFFIX,gvm.com.tw
 DOMAIN-SUFFIX,gvt0.com
 DOMAIN-SUFFIX,gvt1-cn.com
-DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt2-cn.com
-DOMAIN-SUFFIX,gvt2.com
 DOMAIN-SUFFIX,gvt3.com
 DOMAIN-SUFFIX,gvt5.com
 DOMAIN-SUFFIX,gvt6.com
@@ -442,7 +497,6 @@ DOMAIN-SUFFIX,hopedialogue.org
 DOMAIN-SUFFIX,hopto.org
 DOMAIN-SUFFIX,hornygamer.com
 DOMAIN-SUFFIX,hornytrip.com
-DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,hostloc.com
 DOMAIN-SUFFIX,hotair.com
 DOMAIN-SUFFIX,hotav.tv
@@ -627,7 +681,6 @@ DOMAIN-SUFFIX,idcflare.com
 DOMAIN-SUFFIX,iddddg.com
 DOMAIN-SUFFIX,idemocracy.asia
 DOMAIN-SUFFIX,identi.ca
-DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,idiomconnection.com
 DOMAIN-SUFFIX,idlcoyote.com
 DOMAIN-SUFFIX,idope.se
@@ -785,8 +838,6 @@ DOMAIN-SUFFIX,instructables.com
 DOMAIN-SUFFIX,intagram.com
 DOMAIN-SUFFIX,intagrm.com
 DOMAIN-SUFFIX,interactivebrokers.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,international-news.newsmagazine.asia
 DOMAIN-SUFFIX,internet.org
 DOMAIN-SUFFIX,internetfreedom.org
@@ -1166,7 +1217,6 @@ DOMAIN-SUFFIX,lastcombat.com
 DOMAIN-SUFFIX,lastfm.es
 DOMAIN-SUFFIX,latelinenews.com
 DOMAIN-SUFFIX,latibet.org
-DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,lausan.hk
 DOMAIN-SUFFIX,lbank.info
 DOMAIN-SUFFIX,lbctrl.com
@@ -2080,15 +2130,12 @@ DOMAIN-SUFFIX,nytstyle.com
 DOMAIN-SUFFIX,nzchinese.com
 DOMAIN-SUFFIX,nzchinese.net.nz
 DOMAIN-SUFFIX,o3o.ca
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,oanda.com
 DOMAIN-SUFFIX,oann.com
 DOMAIN-SUFFIX,oasisfeng.com
 DOMAIN-SUFFIX,oauth.net
 DOMAIN-SUFFIX,oauthz.com
 DOMAIN-SUFFIX,observechina.net
-DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,obutu.com
 DOMAIN-SUFFIX,obyte.org
 DOMAIN-SUFFIX,ocaspro.com
@@ -2188,8 +2235,6 @@ DOMAIN-SUFFIX,ooni.org
 DOMAIN-SUFFIX,oopsforum.com
 DOMAIN-SUFFIX,ooyala.com
 DOMAIN-SUFFIX,open.com.hk
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,openallweb.com
 DOMAIN-SUFFIX,openapi-quote.longbridge.cn
 DOMAIN-SUFFIX,openapi-trade.longbridge.cn
@@ -2762,6 +2807,10 @@ DOMAIN-SUFFIX,reddituploads.com
 DOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com
 DOMAIN-SUFFIX,redhat.com
 DOMAIN-SUFFIX,redhotlabs.com
+DOMAIN-SUFFIX,redirector.gcpcdn.gvt1.com
+DOMAIN-SUFFIX,redirector.gvt1.com
+DOMAIN-SUFFIX,redirector.offline-maps.gvt1.com
+DOMAIN-SUFFIX,redirector.snap.gvt1.com
 DOMAIN-SUFFIX,redkix.com
 DOMAIN-SUFFIX,redtube.com
 DOMAIN-SUFFIX,referer.us
@@ -2958,7 +3007,6 @@ DOMAIN-SUFFIX,seehua.com
 DOMAIN-SUFFIX,seesmic.com
 DOMAIN-SUFFIX,seevpn.com
 DOMAIN-SUFFIX,seezone.net
-DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sehuatang.net
 DOMAIN-SUFFIX,sehuatang.org
 DOMAIN-SUFFIX,sejie.com
@@ -2966,7 +3014,6 @@ DOMAIN-SUFFIX,sellclassics.com
 DOMAIN-SUFFIX,sendsmtp.com
 DOMAIN-SUFFIX,sendspace.com
 DOMAIN-SUFFIX,sensortower.com
-DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,seraph.me
 DOMAIN-SUFFIX,servehttp.com
 DOMAIN-SUFFIX,serveuser.com
@@ -3292,105 +3339,3 @@ DOMAIN-SUFFIX,ssglobal.co
 DOMAIN-SUFFIX,ssglobal.me
 DOMAIN-SUFFIX,ssh91.com
 DOMAIN-SUFFIX,ssl443.org
-DOMAIN-SUFFIX,sspanel.net
-DOMAIN-SUFFIX,sspanel.org
-DOMAIN-SUFFIX,sspro.ml
-DOMAIN-SUFFIX,ssr.tools
-DOMAIN-SUFFIX,ssrshare.com
-DOMAIN-SUFFIX,ssrshare.us
-DOMAIN-SUFFIX,ssrtool.com
-DOMAIN-SUFFIX,sss.camp
-DOMAIN-SUFFIX,sstatic.net
-DOMAIN-SUFFIX,sstm.moe
-DOMAIN-SUFFIX,sstmlt.moe
-DOMAIN-SUFFIX,sstmlt.net
-DOMAIN-SUFFIX,st.luluku.pw
-DOMAIN-SUFFIX,stackoverflow.com
-DOMAIN-SUFFIX,stadia.dev
-DOMAIN-SUFFIX,stage64.hk
-DOMAIN-SUFFIX,staging-controlbe.floonet.goog
-DOMAIN-SUFFIX,staging-databe.floonet.goog
-DOMAIN-SUFFIX,staging.databe.floonet.goog
-DOMAIN-SUFFIX,standard.co.uk
-DOMAIN-SUFFIX,standupfortibet.org
-DOMAIN-SUFFIX,standwithhk.org
-DOMAIN-SUFFIX,stanford.edu
-DOMAIN-SUFFIX,star-brasil.com
-DOMAIN-SUFFIX,star-latam.com
-DOMAIN-SUFFIX,starfishfx.com
-DOMAIN-SUFFIX,starott.com
-DOMAIN-SUFFIX,starp2p.com
-DOMAIN-SUFFIX,starplus.com
-DOMAIN-SUFFIX,startpage.com
-DOMAIN-SUFFIX,startuplivingchina.com
-DOMAIN-SUFFIX,starwars.com
-DOMAIN-SUFFIX,starwarsgalacticstarcruiser.com
-DOMAIN-SUFFIX,starwarskids.com
-DOMAIN-SUFFIX,state.gov
-DOMAIN-SUFFIX,static-economist.com
-DOMAIN-SUFFIX,static.pocketcasts.com
-DOMAIN-SUFFIX,statically.io
-DOMAIN-SUFFIX,staticflickr.com
-DOMAIN-SUFFIX,statueofdemocracy.org
-DOMAIN-SUFFIX,stboy.net
-DOMAIN-SUFFIX,stc.com.sa
-DOMAIN-SUFFIX,stcroixmosquito.com
-DOMAIN-SUFFIX,stcroixmosquitoproject.com
-DOMAIN-SUFFIX,steel-storm.com
-DOMAIN-SUFFIX,steemit.com
-DOMAIN-SUFFIX,steganos.com
-DOMAIN-SUFFIX,steganos.net
-DOMAIN-SUFFIX,stel.com
-DOMAIN-SUFFIX,stepchina.com
-DOMAIN-SUFFIX,stephaniered.com
-DOMAIN-SUFFIX,stheadline.com
-DOMAIN-SUFFIX,sthoo.com
-DOMAIN-SUFFIX,stickam.com
-DOMAIN-SUFFIX,stickeraction.com
-DOMAIN-SUFFIX,stileproject.com
-DOMAIN-SUFFIX,stitcher.com
-DOMAIN-SUFFIX,sto.cc
-DOMAIN-SUFFIX,stoporganharvesting.org
-DOMAIN-SUFFIX,stoptibetcrisis.net
-DOMAIN-SUFFIX,storagenewsletter.com
-DOMAIN-SUFFIX,storify.com
-DOMAIN-SUFFIX,storj.io
-DOMAIN-SUFFIX,storm.mg
-DOMAIN-SUFFIX,stormmediagroup.com
-DOMAIN-SUFFIX,storry.tv
-DOMAIN-SUFFIX,stoweboyd.com
-DOMAIN-SUFFIX,straitstimes.com
-DOMAIN-SUFFIX,stranabg.com
-DOMAIN-SUFFIX,straplessdildo.com
-DOMAIN-SUFFIX,streaks.jp
-DOMAIN-SUFFIX,streamable.com
-DOMAIN-SUFFIX,streamguys1.com
-DOMAIN-SUFFIX,streamingdisney.net
-DOMAIN-SUFFIX,streamingthe.net
-DOMAIN-SUFFIX,streema.com
-DOMAIN-SUFFIX,streetvoice.com
-DOMAIN-SUFFIX,strikingly.com
-DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,strongvpn.com
-DOMAIN-SUFFIX,strongwindpress.com
-DOMAIN-SUFFIX,student.tw
-DOMAIN-SUFFIX,studentsforafreetibet.org
-DOMAIN-SUFFIX,studywatchbyverily.com
-DOMAIN-SUFFIX,studywatchbyverily.org
-DOMAIN-SUFFIX,stumbleupon.com
-DOMAIN-SUFFIX,stupidvideos.com
-DOMAIN-SUFFIX,stweetly.com
-DOMAIN-SUFFIX,stxmosquito.com
-DOMAIN-SUFFIX,stxmosquitoproject.com
-DOMAIN-SUFFIX,stxmosquitoproject.net
-DOMAIN-SUFFIX,stxmosquitoproject.org
-DOMAIN-SUFFIX,subacme.rerouted.org
-DOMAIN-SUFFIX,subhd.tv
-DOMAIN-SUFFIX,substack.com
-DOMAIN-SUFFIX,successfn.com
-DOMAIN-SUFFIX,sueddeutsche.de
-DOMAIN-SUFFIX,sugarsync.com
-DOMAIN-SUFFIX,sugobbs.com
-DOMAIN-SUFFIX,sugumiru18.com
-DOMAIN-SUFFIX,suissl.com
-DOMAIN-SUFFIX,sulian.me

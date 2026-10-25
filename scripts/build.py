@@ -14,9 +14,13 @@ FALLBACK = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/maste
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Surge / Shadowrocket / Loon 通用的可移植规则类型
-PORTABLE_TYPES = {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "IP-CIDR", "IP-CIDR6"}
+PORTABLE_TYPES = {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "IP-CIDR", "IP-CIDR6", "IP-ASN"}
 
 UPSTREAM = "blackmatrix7/ios_rule_script"
+
+# 已从 Proxy 聚合排除的服务：其规则改走专用 RULE-SET，不再混进通用代理集
+# （Twitter 已单拆给 𝕏 策略组，指向 blackmatrix7 官方 Twitter.list）
+PROXY_EXCLUDE_SERVICES = ["Twitter", "OpenAI", "Claude", "Anthropic", "YouTube"]
 
 
 def fetch(url: str) -> str:
@@ -71,7 +75,7 @@ def merge_suffix(rules):
         seen.add((typ, val))
         out.append((typ, val))
     # 稳定排序: 类型 -> 值
-    order = {"DOMAIN": 0, "DOMAIN-SUFFIX": 1, "DOMAIN-KEYWORD": 2, "IP-CIDR": 3, "IP-CIDR6": 4}
+    order = {"DOMAIN": 0, "DOMAIN-SUFFIX": 1, "DOMAIN-KEYWORD": 2, "IP-CIDR": 3, "IP-CIDR6": 4, "IP-ASN": 5}
     out.sort(key=lambda x: (order.get(x[0], 9), x[1]))
     return out
 
@@ -111,12 +115,16 @@ def load_custom(path: str):
         return parse(f.read())
 
 
-def build(name: str, sources: list[str], custom_file: str):
+def build(name: str, sources: list[str], custom_file: str, exclude: set | None = None):
     rules = []
     for src in sources:
         print(f"  拉取 {src}")
         rules.extend(parse(fetch(src)))
     rules.extend(load_custom(os.path.join(ROOT, "custom", custom_file)))
+    if exclude:
+        before = len(rules)
+        rules = [r for r in rules if r not in exclude]
+        print(f"  排除命中 {before - len(rules)} 条")
     merged = merge_suffix(rules)
     counts = {}
     for t, _ in merged:
@@ -185,7 +193,14 @@ def main():
         else:
             print(f"  [跳过] {s}: 无可用 .list")
     print(f"  重点服务命中 {pok}/{len(pservices)}")
-    n_proxy, proxy_files = build("Proxy", proxy_sources, "proxy_custom.list")
+    exclude = set()
+    for s in PROXY_EXCLUDE_SERVICES:
+        url = resolve_service_url(s)
+        if url:
+            got = parse(fetch(url))
+            exclude.update(got)
+            print(f"  排除 {s}: 上游 {len(got)} 条")
+    n_proxy, proxy_files = build("Proxy", proxy_sources, "proxy_custom.list", exclude=exclude)
 
     print("== Direct ==")
     direct_sources = [f"{BASE}/ChinaMedia/ChinaMedia.list"]
