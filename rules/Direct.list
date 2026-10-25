@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-25 14:24:27
+# UPDATED: 2026-10-25 17:25:54
 # DOMAIN: 32
-# DOMAIN-SUFFIX: 3312
+# DOMAIN-SUFFIX: 3314
 # DOMAIN-KEYWORD: 237
 # IP-CIDR: 167
 # IP-CIDR6: 95
-# TOTAL: 3847
+# TOTAL: 3849
 
 DOMAIN,00713915daab0be43def5c338c02c80b.dlied1.cdntips.net
 DOMAIN,113-219-145-1.ksyungslb.com
@@ -1214,6 +1214,7 @@ DOMAIN-SUFFIX,domesticmediagame.net
 DOMAIN-SUFFIX,domesticmediapay.cn
 DOMAIN-SUFFIX,domesticmediapay.com
 DOMAIN-SUFFIX,doticloud.com
+DOMAIN-SUFFIX,doubao.com
 DOMAIN-SUFFIX,doutianshequ.com
 DOMAIN-SUFFIX,douyincdn.com
 DOMAIN-SUFFIX,douyinpic.com
@@ -2892,6 +2893,7 @@ DOMAIN-SUFFIX,vmoso.cn
 DOMAIN-SUFFIX,vmylan.com
 DOMAIN-SUFFIX,vnet.cn
 DOMAIN-SUFFIX,voddlb.com
+DOMAIN-SUFFIX,volces.com
 DOMAIN-SUFFIX,volleychina.org
 DOMAIN-SUFFIX,vosvmamt.com
 DOMAIN-SUFFIX,vplay8.com
