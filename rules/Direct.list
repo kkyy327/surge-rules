@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-25 17:25:54
+# UPDATED: 2026-10-25 17:32:22
 # DOMAIN: 32
-# DOMAIN-SUFFIX: 3314
+# DOMAIN-SUFFIX: 3319
 # DOMAIN-KEYWORD: 237
-# IP-CIDR: 167
+# IP-CIDR: 170
 # IP-CIDR6: 95
-# TOTAL: 3849
+# TOTAL: 3857
 
 DOMAIN,00713915daab0be43def5c338c02c80b.dlied1.cdntips.net
 DOMAIN,113-219-145-1.ksyungslb.com
@@ -1347,6 +1347,7 @@ DOMAIN-SUFFIX,fhldns.net
 DOMAIN-SUFFIX,fie1i.cn
 DOMAIN-SUFFIX,fihlx.cn
 DOMAIN-SUFFIX,fldvz.cn
+DOMAIN-SUFFIX,flyert.com
 DOMAIN-SUFFIX,fm18l.cn
 DOMAIN-SUFFIX,fmsdlb.com
 DOMAIN-SUFFIX,fmssrc.com
@@ -2329,6 +2330,10 @@ DOMAIN-SUFFIX,paidaojia.cn
 DOMAIN-SUFFIX,paipai.com
 DOMAIN-SUFFIX,paogame.cn
 DOMAIN-SUFFIX,passivedns.cn
+DOMAIN-SUFFIX,paypal-mktg.com
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypal.me
+DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,pddpic.com
 DOMAIN-SUFFIX,peijian.com
 DOMAIN-SUFFIX,peoplerail.com
@@ -3682,10 +3687,13 @@ IP-CIDR,161.117.0.0/16,no-resolve
 IP-CIDR,163.181.0.0/16,no-resolve
 IP-CIDR,164.52.76.18/32,no-resolve
 IP-CIDR,170.33.0.0/16,no-resolve
+IP-CIDR,182.254.116.0/24
 IP-CIDR,182.92.170.253/32,no-resolve
 IP-CIDR,193.112.159.225/32,no-resolve
 IP-CIDR,198.11.128.0/18,no-resolve
 IP-CIDR,203.107.1.0/24,no-resolve
+IP-CIDR,203.205.238.0/23
+IP-CIDR,203.205.254.0/23
 IP-CIDR,203.209.224.0/19,no-resolve
 IP-CIDR,203.211.4.169/32,no-resolve
 IP-CIDR,203.211.4.193/32,no-resolve

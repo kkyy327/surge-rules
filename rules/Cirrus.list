@@ -1,13 +1,13 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-25 14:23:19
+# UPDATED: 2026-10-25 17:31:26
 # DOMAIN: 25
 # DOMAIN-SUFFIX: 8296
-# DOMAIN-KEYWORD: 40
+# DOMAIN-KEYWORD: 39
 # IP-CIDR: 1244
 # IP-CIDR6: 12
-# TOTAL: 9624
+# TOTAL: 9623
 
 # PART: 2/3
 DOMAIN-SUFFIX,google.com.sv
@@ -3337,4 +3337,3 @@ DOMAIN-SUFFIX,ssglobal.me
 DOMAIN-SUFFIX,ssh91.com
 DOMAIN-SUFFIX,ssl443.org
 DOMAIN-SUFFIX,sspanel.net
-DOMAIN-SUFFIX,sspanel.org

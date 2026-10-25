@@ -36,3 +36,11 @@ DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,qcloud.com
 DOMAIN-SUFFIX,doubao.com
 DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,flyert.com
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypal.me
+DOMAIN-SUFFIX,paypal-mktg.com
+DOMAIN-SUFFIX,paypalobjects.com
+IP-CIDR,182.254.116.0/24
+IP-CIDR,203.205.238.0/23
+IP-CIDR,203.205.254.0/23

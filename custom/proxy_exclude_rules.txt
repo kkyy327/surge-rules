@@ -1,0 +1,2 @@
+# Proxy 聚合精确规则排除（一行一条完整规则原文）
+DOMAIN-KEYWORD,paypal

@@ -214,6 +214,15 @@ def main():
     if os.path.exists(_edf):
         with open(_edf, encoding="utf-8") as _f:
             proxy_exclude_domains = {l.strip() for l in _f if l.strip() and not l.startswith("#")}
+    _erf = os.path.join(ROOT, "custom", "proxy_exclude_rules.txt")
+    if os.path.exists(_erf):
+        with open(_erf, encoding="utf-8") as _f:
+            for _l in _f:
+                _l = _l.strip()
+                if _l and not _l.startswith("#"):
+                    _p = _l.split(",", 1)
+                    if len(_p) == 2:
+                        exclude.add((_p[0].strip(), _p[1].strip()))
     n_proxy, proxy_files = build("Proxy", proxy_sources, "proxy_custom.list", exclude=exclude, exclude_domains=proxy_exclude_domains)
 
     print("== Direct ==")
