@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-25 11:24:10
+# UPDATED: 2026-10-25 13:53:48
 # DOMAIN: 32
-# DOMAIN-SUFFIX: 3308
+# DOMAIN-SUFFIX: 3311
 # DOMAIN-KEYWORD: 237
 # IP-CIDR: 167
 # IP-CIDR6: 95
-# TOTAL: 3843
+# TOTAL: 3846
 
 DOMAIN,00713915daab0be43def5c338c02c80b.dlied1.cdntips.net
 DOMAIN,113-219-145-1.ksyungslb.com
@@ -763,6 +763,7 @@ DOMAIN-SUFFIX,btei6pis99.com
 DOMAIN-SUFFIX,btzgamepkg.com
 DOMAIN-SUFFIX,buyjingxi.com
 DOMAIN-SUFFIX,by0pq.cn
+DOMAIN-SUFFIX,byteimg.com
 DOMAIN-SUFFIX,c-ctrip.com
 DOMAIN-SUFFIX,c052kzyp55.com
 DOMAIN-SUFFIX,c0f1lk250w.com
@@ -1681,6 +1682,7 @@ DOMAIN-SUFFIX,iqiyi.demo.uwp
 DOMAIN-SUFFIX,iqiyiedge.com
 DOMAIN-SUFFIX,iqiyiedge.net
 DOMAIN-SUFFIX,iqiyipic.com
+DOMAIN-SUFFIX,isnssdk.com
 DOMAIN-SUFFIX,isvjcloud.com
 DOMAIN-SUFFIX,isvjd.com
 DOMAIN-SUFFIX,itakutf.com
@@ -3326,6 +3328,7 @@ DOMAIN-SUFFIX,zhuanspirit.com
 DOMAIN-SUFFIX,zhuanzfx.com
 DOMAIN-SUFFIX,zhuanzhuan.com
 DOMAIN-SUFFIX,zhutidasai.com
+DOMAIN-SUFFIX,zijieapi.com
 DOMAIN-SUFFIX,zimuzu.io
 DOMAIN-SUFFIX,zimuzu.tv
 DOMAIN-SUFFIX,zmz2019.com
