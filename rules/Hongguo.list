@@ -1,3 +1,11 @@
-# Hongguo (红果短剧) ad-block test list
-# ByteDance ad creative CDN (keyword match for p*-ad-sign.byteimg.com)
-DOMAIN-KEYWORD,-ad-sign.byteimg.com
+# NAME: Hongguo
+# REPO: https://github.com/kkyy327/surge-rules
+# 红果短剧直连集: 红果与番茄共用字节国内接口(snssdk/zijieapi)与图床(byteimg/pstatp)
+# 这些域名有部分混在 Proxy 聚合里, 本集靠在配置中前置引用实现优先直连
+# 第一条为广告素材子域, 单独 REJECT（红果去广告试验, 仅图片广告层）
+DOMAIN-KEYWORD,-ad-sign.byteimg.com,REJECT
+DOMAIN-SUFFIX,snssdk.com,DIRECT
+DOMAIN-SUFFIX,isnssdk.com,DIRECT
+DOMAIN-SUFFIX,zijieapi.com,DIRECT
+DOMAIN-SUFFIX,byteimg.com,DIRECT
+DOMAIN-SUFFIX,pstatp.com,DIRECT

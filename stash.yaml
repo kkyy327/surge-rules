@@ -74,6 +74,12 @@ rules:
 - DOMAIN,voice.google.com,美国节点
 - RULE-SET,IPCheck,Proxy
 - RULE-SET,Reject,REJECT
+- DOMAIN-KEYWORD,-ad-sign.byteimg.com,REJECT
+- DOMAIN-SUFFIX,snssdk.com,DIRECT
+- DOMAIN-SUFFIX,isnssdk.com,DIRECT
+- DOMAIN-SUFFIX,zijieapi.com,DIRECT
+- DOMAIN-SUFFIX,byteimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
 # ── WhatsApp（内联展开, 走香港节点; 必须放在通用 Proxy 规则集之前） ──
 - DOMAIN-SUFFIX,whatsapp.com,香港节点
 - DOMAIN-SUFFIX,whatsapp.net,香港节点
