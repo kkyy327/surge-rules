@@ -75,6 +75,13 @@ rules:
 - RULE-SET,IPCheck,Proxy
 - RULE-SET,Reject,REJECT
 - DOMAIN-KEYWORD,-ad-sign.byteimg.com,REJECT
+- DOMAIN,dl.google.com,DIRECT
+- DOMAIN,dl.l.google.com,DIRECT
+- DOMAIN,redirector.gvt1.com,DIRECT
+- DOMAIN,clientservices.googleapis.com,DIRECT
+- DOMAIN,update.googleapis.com,DIRECT
+- DOMAIN,ci.android.com,DIRECT
+- DOMAIN-SUFFIX,blog.google,DIRECT
 - DOMAIN-SUFFIX,snssdk.com,DIRECT
 - DOMAIN-SUFFIX,isnssdk.com,DIRECT
 - DOMAIN-SUFFIX,zijieapi.com,DIRECT

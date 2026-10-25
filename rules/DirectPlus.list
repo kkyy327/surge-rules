@@ -1,0 +1,11 @@
+# DirectPlus.list — 境外服务的国内直连例外（借鉴 ConnersHua/RuleGo Direct+ 思路）
+# 这些域名在国内有可直连的 Anycast/CDN 节点，走代理纯绕路；因被 Proxy 聚合的
+# microsoft/google 关键词与后缀规则压制，必须由配置在聚合之前引用本文件才生效。
+# 手工维护文件，build.py 不生成。
+DOMAIN,dl.google.com
+DOMAIN,dl.l.google.com
+DOMAIN,redirector.gvt1.com
+DOMAIN,clientservices.googleapis.com
+DOMAIN,update.googleapis.com
+DOMAIN,ci.android.com
+DOMAIN-SUFFIX,blog.google

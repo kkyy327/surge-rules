@@ -208,6 +208,10 @@ rules:
     policy: REJECT
     disabled: false
 - rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/DirectPlus.list
+    policy: DIRECT
+    disabled: false
+- rule_set:
     match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Hongguo.list
     policy: DIRECT
     disabled: false
