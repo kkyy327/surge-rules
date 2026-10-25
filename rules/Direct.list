@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-25 13:53:48
+# UPDATED: 2026-10-25 14:24:27
 # DOMAIN: 32
-# DOMAIN-SUFFIX: 3311
+# DOMAIN-SUFFIX: 3312
 # DOMAIN-KEYWORD: 237
 # IP-CIDR: 167
 # IP-CIDR6: 95
-# TOTAL: 3846
+# TOTAL: 3847
 
 DOMAIN,00713915daab0be43def5c338c02c80b.dlied1.cdntips.net
 DOMAIN,113-219-145-1.ksyungslb.com
@@ -2385,6 +2385,7 @@ DOMAIN-SUFFIX,qaeczbxr.com
 DOMAIN-SUFFIX,qazwobdu.com
 DOMAIN-SUFFIX,qbox.me
 DOMAIN-SUFFIX,qbox.net
+DOMAIN-SUFFIX,qcloud.com
 DOMAIN-SUFFIX,qd.ink
 DOMAIN-SUFFIX,qeoagphm.com
 DOMAIN-SUFFIX,qeopzvgm.com

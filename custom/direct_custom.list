@@ -1,0 +1,36 @@
+# 手动补充的直连规则（每次自动更新都会保留）
+DOMAIN-SUFFIX,alipayhk.com
+# 微信直连规则（原 115302zl/wechat-asn.list，已合并，减少一条远程订阅）
+IP-ASN,132203
+IP-ASN,56040
+IP-ASN,45090
+DOMAIN-SUFFIX,wechat.com,extended-matching
+DOMAIN,dns.weixin.qq.com
+DOMAIN,dns.weixin.qq.com.cn
+IP-CIDR,43.156.222.113/32,no-resolve
+IP-CIDR,43.156.222.152/32,no-resolve
+IP-CIDR,43.156.222.176/32,no-resolve
+IP-CIDR,43.156.222.205/32,no-resolve
+IP-CIDR,43.156.223.202/32,no-resolve
+IP-CIDR,43.156.255.184/32,no-resolve
+IP-CIDR,101.32.104.4/32,no-resolve
+IP-CIDR,101.32.104.41/32,no-resolve
+IP-CIDR,101.32.104.56/32,no-resolve
+IP-CIDR,101.32.104.104/32,no-resolve
+IP-CIDR,101.32.118.25/32,no-resolve
+IP-CIDR,101.32.133.16/32,no-resolve
+IP-CIDR,101.32.133.53/32,no-resolve
+IP-CIDR,101.32.133.209/32,no-resolve
+IP-CIDR,129.226.3.47/32,no-resolve
+IP-CIDR,129.226.107.59/32,no-resolve
+IP-CIDR,129.226.107.244/32,no-resolve
+DOMAIN-SUFFIX,zabank.com.hk
+DOMAIN-SUFFIX,za.group
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,hsbc.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,isnssdk.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,qcloud.com

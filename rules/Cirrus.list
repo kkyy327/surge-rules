@@ -1,13 +1,13 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-25 12:02:56
+# UPDATED: 2026-10-25 14:23:19
 # DOMAIN: 25
-# DOMAIN-SUFFIX: 8300
+# DOMAIN-SUFFIX: 8296
 # DOMAIN-KEYWORD: 40
 # IP-CIDR: 1244
 # IP-CIDR6: 12
-# TOTAL: 9628
+# TOTAL: 9624
 
 # PART: 2/3
 DOMAIN-SUFFIX,google.com.sv
@@ -900,7 +900,6 @@ DOMAIN-SUFFIX,islamtoday.net
 DOMAIN-SUFFIX,ismaelan.com
 DOMAIN-SUFFIX,ismalltits.com
 DOMAIN-SUFFIX,ismprofessional.net
-DOMAIN-SUFFIX,isnssdk.com
 DOMAIN-SUFFIX,isohunt.com
 DOMAIN-SUFFIX,israbox.com
 DOMAIN-SUFFIX,issuu.com
@@ -3101,7 +3100,6 @@ DOMAIN-SUFFIX,shopee.tw
 DOMAIN-SUFFIX,shopfacebook.com
 DOMAIN-SUFFIX,shopping.com
 DOMAIN-SUFFIX,shops-disney.com
-DOMAIN-SUFFIX,shortconn.im.qcloud.com
 DOMAIN-SUFFIX,showbiz.omy.sg
 DOMAIN-SUFFIX,showhaotu.com
 DOMAIN-SUFFIX,showtime.jp
@@ -3209,7 +3207,6 @@ DOMAIN-SUFFIX,snaptu.com
 DOMAIN-SUFFIX,sndcdn.com
 DOMAIN-SUFFIX,sneakme.net
 DOMAIN-SUFFIX,snowlionpub.com
-DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,sntp.uk
 DOMAIN-SUFFIX,sobees.com
 DOMAIN-SUFFIX,soc.mil
@@ -3339,3 +3336,5 @@ DOMAIN-SUFFIX,ssglobal.co
 DOMAIN-SUFFIX,ssglobal.me
 DOMAIN-SUFFIX,ssh91.com
 DOMAIN-SUFFIX,ssl443.org
+DOMAIN-SUFFIX,sspanel.net
+DOMAIN-SUFFIX,sspanel.org

@@ -115,7 +115,7 @@ def load_custom(path: str):
         return parse(f.read())
 
 
-def build(name: str, sources: list[str], custom_file: str, exclude: set | None = None):
+def build(name: str, sources: list[str], custom_file: str, exclude: set | None = None, exclude_domains: set | None = None):
     rules = []
     for src in sources:
         print(f"  拉取 {src}")
@@ -125,6 +125,15 @@ def build(name: str, sources: list[str], custom_file: str, exclude: set | None =
         before = len(rules)
         rules = [r for r in rules if r not in exclude]
         print(f"  排除命中 {before - len(rules)} 条")
+    if exclude_domains:
+        before = len(rules)
+        def _hit(tv):
+            t, v = tv
+            if t not in ("DOMAIN", "DOMAIN-SUFFIX"):
+                return False
+            return any(v == d or v.endswith("." + d) for d in exclude_domains)
+        rules = [r for r in rules if not _hit(r)]
+        print(f"  域名排除命中 {before - len(rules)} 条")
     merged = merge_suffix(rules)
     counts = {}
     for t, _ in merged:
@@ -200,7 +209,12 @@ def main():
             got = parse(fetch(url))
             exclude.update(got)
             print(f"  排除 {s}: 上游 {len(got)} 条")
-    n_proxy, proxy_files = build("Proxy", proxy_sources, "proxy_custom.list", exclude=exclude)
+    proxy_exclude_domains = set()
+    _edf = os.path.join(ROOT, "custom", "proxy_exclude_domains.txt")
+    if os.path.exists(_edf):
+        with open(_edf, encoding="utf-8") as _f:
+            proxy_exclude_domains = {l.strip() for l in _f if l.strip() and not l.startswith("#")}
+    n_proxy, proxy_files = build("Proxy", proxy_sources, "proxy_custom.list", exclude=exclude, exclude_domains=proxy_exclude_domains)
 
     print("== Direct ==")
     direct_sources = [f"{BASE}/ChinaMedia/ChinaMedia.list"]

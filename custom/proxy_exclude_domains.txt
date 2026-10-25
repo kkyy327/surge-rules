@@ -1,0 +1,8 @@
+# Proxy 聚合域名级排除名单（一行一个域名后缀）
+# 命中规则：聚合中 DOMAIN/DOMAIN-SUFFIX 的值等于该域名或为其子域名时剔除
+# 用途：国内服务域名被上游混进 Proxy 大杂烩、而 Direct 集合顺序在后压不住时，从源头剔除
+# 对应直连归属见 custom/direct_custom.list（snssdk/isnssdk 在其中；c.mi.com 由 Direct 的 mi.com 覆盖；qcloud.com 在其中）
+snssdk.com
+isnssdk.com
+c.mi.com
+qcloud.com
