@@ -2,8 +2,6 @@
 
 自用的 Surge / Shadowrocket 聚合分流规则。
 
-上游：[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)（28k+ star，每日更新）
-
 ## 订阅链接
 
 | 规则 | 用途 | 链接 |
