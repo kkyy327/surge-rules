@@ -1,0 +1,104 @@
+# surge-rules 配套 Stash 配置模板
+# 仓库: https://github.com/kkyy327/surge-rules
+# 使用方法:
+# 1. Stash → 配置文件 → 添加, 导入本文件
+# 2. proxies 里的注释示例换成你自己的节点（删行首 # 并填真实参数）
+#    Stash 原生支持 Snell / AnyTLS, 示例即按这两种协议写
+# 3. proxy-providers.airport 的 url 换成你的机场订阅链接:
+#    地区组用 filter 正则从订阅节点里自动筛选
+# 注意:
+# - 本文件不含任何个人节点/密钥信息
+# - Clash 系没有 MTProto 规则, 故无此条
+# - WhatsApp / AI 两个小规则集原文件行尾带策略名, Clash 规则集不认,
+#   已展开成内联规则写在 rules 里, 效果相同
+
+mode: rule
+
+dns:
+  enable: true
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+
+proxies:
+# ⚠️ 节点示例（取消注释并填真实参数; 名字要和 proxy-groups / rules 里引用的对上）
+# - {name: 香港-1, type: snell, server: 1.2.3.4, port: 2345, psk: YOUR_PSK, version: 4}
+# - {name: 美国-1, type: snell, server: 1.2.3.4, port: 2345, psk: YOUR_PSK, version: 4}
+# - {name: 日本-1, type: snell, server: 1.2.3.4, port: 2345, psk: YOUR_PSK, version: 4}
+# - {name: 新加坡-1, type: anytls, server: 1.2.3.4, port: 443, password: YOUR_PASSWORD, skip-cert-verify: true}
+
+proxy-providers:
+  airport:
+    type: http
+    url: "https://你的机场订阅链接"
+    interval: 86400
+    health-check:
+      enable: true
+      url: "http://www.gstatic.com/generate_204"
+      interval: 300
+
+proxy-groups:
+- {name: Proxy, type: select, proxies: [Auto, 香港节点, 美国节点, 日本节点, 新加坡节点, 机场节点, 香港-1, 美国-1, 日本-1, 新加坡-1]}
+- {name: Auto, type: url-test, proxies: [香港-1, 美国-1, 日本-1, 新加坡-1], url: "http://www.gstatic.com/generate_204", interval: 300, tolerance: 50}
+- {name: AI, type: select, proxies: [美国-1, 日本-1]}
+- {name: 𝕏, type: select, proxies: [香港节点, 美国节点, Proxy]}
+# ── 地区节点组（filter 正则筛选机场订阅节点） ──
+- {name: 香港节点, type: select, use: [airport], filter: "🇭🇰|香港|HK"}
+- {name: 美国节点, type: select, use: [airport], filter: "🇺🇸|美国|洛杉矶|纽约|圣何塞|西雅图|芝加哥|达拉斯|LAX|SFO"}
+- {name: 新加坡节点, type: select, use: [airport], filter: "🇸🇬|新加坡|狮城|SG"}
+- {name: 日本节点, type: select, use: [airport], filter: "🇯🇵|日本|东京|大阪|JP"}
+- {name: 韩国节点, type: select, use: [airport], filter: "🇰🇷|韩国|首尔|KR"}
+- {name: 台湾节点, type: select, use: [airport], filter: "🇹🇼|台湾|台北|TW"}
+# ── 机场节点（订阅全部节点） ──
+- {name: 机场节点, type: select, use: [airport]}
+
+rule-providers:
+  IPCheck: {type: http, behavior: classical, url: "https://raw.githubusercontent.com/MiCat-S/Rule/refs/heads/main/rules/surge/IPCheck.list", path: ./ruleset/IPCheck.list, interval: 86400}
+  Reject: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Reject.list", path: ./ruleset/Reject.list, interval: 86400}
+  Twitter: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Twitter/Twitter.list", path: ./ruleset/Twitter.list, interval: 86400}
+  Nimbus: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Nimbus.list", path: ./ruleset/Nimbus.list, interval: 86400}
+  Cirrus: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Cirrus.list", path: ./ruleset/Cirrus.list, interval: 86400}
+  Stratus: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Stratus.list", path: ./ruleset/Stratus.list, interval: 86400}
+  Apple: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Apple/Apple.list", path: ./ruleset/Apple.list, interval: 86400}
+  Rules115: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/115302zl@main/115320-rules.list", path: ./ruleset/Rules115.list, interval: 86400}
+  Direct: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Direct.list", path: ./ruleset/Direct.list, interval: 86400}
+
+rules:
+- DOMAIN,voice.google.com,美国-1
+- RULE-SET,IPCheck,Proxy
+- RULE-SET,Reject,REJECT
+# ── WhatsApp（内联展开, 走香港节点; 必须放在通用 Proxy 规则集之前） ──
+- DOMAIN-SUFFIX,whatsapp.com,香港节点
+- DOMAIN-SUFFIX,whatsapp.net,香港节点
+- DOMAIN-KEYWORD,whatsapp,香港节点
+- RULE-SET,Twitter,𝕏
+- RULE-SET,Nimbus,Proxy
+- RULE-SET,Cirrus,Proxy
+- RULE-SET,Stratus,Proxy
+# ── AI（内联展开: Apple 智能/Siri; 必须放在 Apple 直连规则之前） ──
+- DOMAIN-KEYWORD,siri,AI
+- DOMAIN,guzzoni.apple.com,AI
+- DOMAIN,mask.apple-dns.net,AI
+- DOMAIN,mask-t.apple-dns.net,AI
+- DOMAIN,mask-api.icloud.com,AI
+- DOMAIN,mask-api.fe.apple-dns.net,AI
+- DOMAIN,apple-relay.akamaized.net,AI
+- DOMAIN-SUFFIX,smoot.apple.com,AI
+- DOMAIN-SUFFIX,cp4.cloudflare.com,AI
+- DOMAIN-SUFFIX,apple-relay.apple.com,AI
+- DOMAIN-SUFFIX,apple-relay.cloudflare.com,AI
+- DOMAIN-SUFFIX,apple-relay.fastly-edge.com,AI
+- DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net,AI
+- DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,AI
+- DOMAIN-SUFFIX,bag.itunes.apple.com,AI
+- DOMAIN-SUFFIX,configuration.apple.com,AI
+- DOMAIN-SUFFIX,ipcdn.apple.com,AI
+- DOMAIN-SUFFIX,mask.icloud.com,AI
+- DOMAIN-SUFFIX,mask-h2.icloud.com,AI
+- DOMAIN-SUFFIX,apps.mzstatic.com,AI
+- RULE-SET,Apple,DIRECT
+- RULE-SET,Rules115,DIRECT
+# 国内服务直连(微信/支付宝/银行/京东/B站等, 含微信 ASN 规则)
+- RULE-SET,Direct,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,Proxy
