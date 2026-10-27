@@ -5,6 +5,3 @@
 DOMAIN-SUFFIX,whatsapp.com,香港节点
 DOMAIN-SUFFIX,whatsapp.net,香港节点
 DOMAIN-KEYWORD,whatsapp,香港节点
-
-# NodeSeek 也走香港（套 Cloudflare，借道本表免改配置）
-DOMAIN-SUFFIX,nodeseek.com,香港节点
