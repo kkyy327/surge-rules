@@ -1,0 +1,7 @@
+# NAME: Rex
+# REPO: https://github.com/kkyy327/surge-rules
+# Rex 模块：指定域名强制走代理（手工维护，build.py 不生成）
+# 5721004.xyz / 515355.xyz：资源站域名；pandalive.co.kr：韩国 PandaTV 直播
+DOMAIN-SUFFIX,5721004.xyz
+DOMAIN-SUFFIX,515355.xyz
+DOMAIN-SUFFIX,pandalive.co.kr

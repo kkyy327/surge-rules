@@ -87,6 +87,9 @@ rules:
 - DOMAIN-SUFFIX,zijieapi.com,DIRECT
 - DOMAIN-SUFFIX,byteimg.com,DIRECT
 - DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,5721004.xyz,Proxy
+- DOMAIN-SUFFIX,515355.xyz,Proxy
+- DOMAIN-SUFFIX,pandalive.co.kr,Proxy
 # ── WhatsApp（内联展开, 走香港节点; 必须放在通用 Proxy 规则集之前） ──
 - DOMAIN-SUFFIX,whatsapp.com,香港节点
 - DOMAIN-SUFFIX,whatsapp.net,香港节点

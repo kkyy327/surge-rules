@@ -215,6 +215,10 @@ rules:
     match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Hongguo.list
     policy: DIRECT
     disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Rex.list
+    policy: Proxy
+    disabled: false
 # ── 专用规则（必须放在通用 Proxy 规则集之前） ──
 - rule_set:
     match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/WhatsApp.list
