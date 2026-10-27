@@ -92,7 +92,7 @@ rules:
 - DOMAIN-SUFFIX,5721004.xyz,Proxy
 - DOMAIN-SUFFIX,515355.xyz,Proxy
 - DOMAIN-SUFFIX,pandalive.co.kr,Proxy
-- DOMAIN-SUFFIX,nodeseek.com,香港节点
+- DOMAIN-SUFFIX,nodeseek.com,Proxy
 # ── WhatsApp（内联展开, 走香港节点; 必须放在通用 Proxy 规则集之前） ──
 - DOMAIN-SUFFIX,whatsapp.com,香港节点
 - DOMAIN-SUFFIX,whatsapp.net,香港节点

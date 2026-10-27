@@ -5,3 +5,5 @@
 DOMAIN-SUFFIX,5721004.xyz
 DOMAIN-SUFFIX,515355.xyz
 DOMAIN-SUFFIX,pandalive.co.kr
+# nodeseek.com：论坛，套 Cloudflare，走代理更快
+DOMAIN-SUFFIX,nodeseek.com

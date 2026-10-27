@@ -1,5 +1,2 @@
 # NAME: HK
-# REPO: https://github.com/kkyy327/surge-rules
-# HK 模块：指定域名固定走香港节点（手工维护，build.py 不生成）
-# nodeseek.com：套 Cloudflare，移动直连和默认代理都绕路，走香港节点最快
-DOMAIN-SUFFIX,nodeseek.com
+# 已合并进 rules/Rex.list，本文件留空作废

@@ -6,5 +6,5 @@ snssdk.com
 isnssdk.com
 c.mi.com
 qcloud.com
-# nodeseek.com 改走香港节点（rules/HK.list），勿回聚合
+# nodeseek.com 改走香港节点（rules/Rex.list），勿回聚合
 nodeseek.com
