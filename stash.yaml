@@ -69,6 +69,8 @@ rule-providers:
   Apple: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Apple/Apple.list", path: ./ruleset/Apple.list, interval: 86400}
   Rules115: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/115302zl@main/115320-rules.list", path: ./ruleset/Rules115.list, interval: 86400}
   Direct: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Direct.list", path: ./ruleset/Direct.list, interval: 86400}
+  ChinaMax: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/ChinaMax/ChinaMax.list", path: ./ruleset/ChinaMax.list, interval: 86400}
+  ChinaASN: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/ChinaASN/ChinaASN.list", path: ./ruleset/ChinaASN.list, interval: 86400}
 
 rules:
 - DOMAIN,voice.google.com,美国节点
@@ -168,5 +170,14 @@ rules:
 - RULE-SET,Rules115,DIRECT
 # 国内服务直连(微信/支付宝/银行/京东/B站等, 含微信 ASN 规则)
 - RULE-SET,Direct,DIRECT
+- RULE-SET,ChinaMax,DIRECT
+- RULE-SET,ChinaASN,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- IP-CIDR,224.0.0.0/24,DIRECT,no-resolve
 - GEOIP,CN,DIRECT
 - MATCH,Proxy

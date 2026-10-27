@@ -271,6 +271,49 @@ rules:
     match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Direct.list
     policy: DIRECT
     disabled: false
+# ── 中国直连补强（ChinaMax/ChinaASN + .cn + 内网段, 放在 GeoIP 之前） ──
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/ChinaMax/ChinaMax.list
+    policy: DIRECT
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/ChinaASN/ChinaASN.list
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: cn
+    policy: DIRECT
+    disabled: false
+- ip_cidr:
+    match: 192.168.0.0/16
+    policy: DIRECT
+    no_resolve: true
+    disabled: false
+- ip_cidr:
+    match: 10.0.0.0/8
+    policy: DIRECT
+    no_resolve: true
+    disabled: false
+- ip_cidr:
+    match: 127.0.0.0/8
+    policy: DIRECT
+    no_resolve: true
+    disabled: false
+- ip_cidr:
+    match: 172.16.0.0/12
+    policy: DIRECT
+    no_resolve: true
+    disabled: false
+- ip_cidr:
+    match: 100.64.0.0/10
+    policy: DIRECT
+    no_resolve: true
+    disabled: false
+- ip_cidr:
+    match: 224.0.0.0/24
+    policy: DIRECT
+    no_resolve: true
+    disabled: false
 - geoip:
     match: CN
     policy: DIRECT
