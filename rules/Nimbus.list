@@ -1,13 +1,13 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-25 17:31:26
+# UPDATED: 2026-10-28 01:53:00
 # DOMAIN: 25
-# DOMAIN-SUFFIX: 8296
+# DOMAIN-SUFFIX: 8315
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 1244
 # IP-CIDR6: 12
-# TOTAL: 9623
+# TOTAL: 9642
 
 # PART: 1/3
 DOMAIN,api.imem.app
@@ -50,6 +50,7 @@ DOMAIN-SUFFIX,111666.best
 DOMAIN-SUFFIX,112263.com
 DOMAIN-SUFFIX,123av.com
 DOMAIN-SUFFIX,123av.me
+DOMAIN-SUFFIX,123av.org
 DOMAIN-SUFFIX,123rf.com
 DOMAIN-SUFFIX,12bet.com
 DOMAIN-SUFFIX,12vpn.com
@@ -742,6 +743,7 @@ DOMAIN-SUFFIX,biblesforamerica.org
 DOMAIN-SUFFIX,bibliocommons.com
 DOMAIN-SUFFIX,bibox.com
 DOMAIN-SUFFIX,bic2011.org
+DOMAIN-SUFFIX,bidobido.xyz
 DOMAIN-SUFFIX,biedian.me
 DOMAIN-SUFFIX,big.one
 DOMAIN-SUFFIX,bigbeans.solutions
@@ -752,6 +754,8 @@ DOMAIN-SUFFIX,bigmoney.biz
 DOMAIN-SUFFIX,bignews.org
 DOMAIN-SUFFIX,bigone.com
 DOMAIN-SUFFIX,bigsound.org
+DOMAIN-SUFFIX,bikaios.xyz
+DOMAIN-SUFFIX,bikawebapp.com
 DOMAIN-SUFFIX,bild.de
 DOMAIN-SUFFIX,bilinovel.com
 DOMAIN-SUFFIX,biliworld.com
@@ -1477,6 +1481,7 @@ DOMAIN-SUFFIX,compress.to
 DOMAIN-SUFFIX,conoha.jp
 DOMAIN-SUFFIX,conscrypt.com
 DOMAIN-SUFFIX,conscrypt.org
+DOMAIN-SUFFIX,console.typesafe.ai
 DOMAIN-SUFFIX,constitutionalism.solutions
 DOMAIN-SUFFIX,contactmagazine.net
 DOMAIN-SUFFIX,content.office.net
@@ -1850,6 +1855,7 @@ DOMAIN-SUFFIX,disqus.com
 DOMAIN-SUFFIX,disquscdn.com
 DOMAIN-SUFFIX,dit-inc.us
 DOMAIN-SUFFIX,divdyn.com
+DOMAIN-SUFFIX,diwodiwo.xyz
 DOMAIN-SUFFIX,diyin.org
 DOMAIN-SUFFIX,dizhidizhi.com
 DOMAIN-SUFFIX,dizhuzhishang.com
@@ -2918,6 +2924,7 @@ DOMAIN-SUFFIX,g.kfd.me
 DOMAIN-SUFFIX,g.page
 DOMAIN-SUFFIX,g0v.social
 DOMAIN-SUFFIX,g6hentai.com
+DOMAIN-SUFFIX,ga.jspm.io
 DOMAIN-SUFFIX,gab.com
 DOMAIN-SUFFIX,gabia.net
 DOMAIN-SUFFIX,gabocorp.com
@@ -3278,4 +3285,3 @@ DOMAIN-SUFFIX,google.com.qa
 DOMAIN-SUFFIX,google.com.sa
 DOMAIN-SUFFIX,google.com.sb
 DOMAIN-SUFFIX,google.com.sg
-DOMAIN-SUFFIX,google.com.sl
