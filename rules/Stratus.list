@@ -1,15 +1,19 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-25 17:31:26
+# UPDATED: 2026-10-28 01:53:00
 # DOMAIN: 25
-# DOMAIN-SUFFIX: 8296
+# DOMAIN-SUFFIX: 8315
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 1244
 # IP-CIDR6: 12
-# TOTAL: 9623
+# TOTAL: 9642
 
 # PART: 3/3
+DOMAIN-SUFFIX,ssglobal.me
+DOMAIN-SUFFIX,ssh91.com
+DOMAIN-SUFFIX,ssl443.org
+DOMAIN-SUFFIX,sspanel.net
 DOMAIN-SUFFIX,sspanel.org
 DOMAIN-SUFFIX,sspro.ml
 DOMAIN-SUFFIX,ssr.tools
@@ -522,6 +526,7 @@ DOMAIN-SUFFIX,tinypaste.com
 DOMAIN-SUFFIX,tinypic.com
 DOMAIN-SUFFIX,tinyurl.com
 DOMAIN-SUFFIX,tipas.net
+DOMAIN-SUFFIX,tipatipa.xyz
 DOMAIN-SUFFIX,tistory.com
 DOMAIN-SUFFIX,tkcs-collins.com
 DOMAIN-SUFFIX,tl.gd
@@ -1268,6 +1273,7 @@ DOMAIN-SUFFIX,whylover.com
 DOMAIN-SUFFIX,whyx.org
 DOMAIN-SUFFIX,widevine.com
 DOMAIN-SUFFIX,wikaba.com
+DOMAIN-SUFFIX,wikawika.xyz
 DOMAIN-SUFFIX,wiki.esu.im
 DOMAIN-SUFFIX,wiki.kfd.me
 DOMAIN-SUFFIX,wikia.com
@@ -1718,6 +1724,7 @@ DOMAIN-SUFFIX,zoozle.net
 DOMAIN-SUFFIX,zophar.net
 DOMAIN-SUFFIX,zorrovpn.com
 DOMAIN-SUFFIX,zozotown.com
+DOMAIN-SUFFIX,zozovideo.com
 DOMAIN-SUFFIX,zpn.im
 DOMAIN-SUFFIX,zsdxzk.com
 DOMAIN-SUFFIX,zspeeder.me
