@@ -241,6 +241,21 @@ def main():
     print(f"  国内服务命中 {ok}/{len(services)}")
     n_direct, direct_files = build("Direct", direct_sources, "direct_custom.list")
 
+    print("== TikTok（单拆独立集，供引用） ==")
+    tk = merge_suffix(parse(fetch(service_list_url("TikTok"))))
+    tk_header = [
+        "# NAME: TikTok",
+        f"# REPO: https://github.com/kkyy327/surge-rules",
+        f"# UPSTREAM: https://github.com/{UPSTREAM}",
+        f"# UPDATED: {__import__('datetime').datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+        f"# TOTAL: {len(tk)}",
+        "",
+    ]
+    with open(os.path.join(ROOT, "rules", "TikTok.list"), "w", encoding="utf-8") as f:
+        f.write("\n".join(tk_header))
+        f.write("\n".join(f"{t},{v}" for t, v in tk) + "\n")
+    print(f"  -> rules/TikTok.list: {len(tk)} 条")
+
     print("== Reject ==")
     n_reject, reject_files = build("Reject", [f"{BASE}/AdvertisingLite/AdvertisingLite.list"],
                                    "reject_custom.list")
