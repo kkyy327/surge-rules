@@ -240,6 +240,10 @@ rules:
     policy: 日本节点
     disabled: false
 - rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/JavDB.list
+    policy: 香港节点
+    disabled: false
+- rule_set:
     match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Twitter/Twitter.list
     policy: 𝕏
     disabled: false

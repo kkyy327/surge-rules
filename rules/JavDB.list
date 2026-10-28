@@ -1,0 +1,12 @@
+# NAME: JavDB
+# REPO: https://github.com/kkyy327/surge-rules
+# 用法: RULE-SET,<url>,香港节点
+# 注意: 必须放在 Nimbus/Cirrus/Stratus 三条通用 Proxy RULE-SET 之前 (Surge 按顺序匹配)
+# JavDB 封日本 IP（版权限制页），全家钉香港节点（2026-10-28 手工维护，build.py 不生成）
+DOMAIN-SUFFIX,javdb.com,香港节点
+DOMAIN-SUFFIX,javdb561.com,香港节点
+DOMAIN-SUFFIX,javdb570.com,香港节点
+DOMAIN-SUFFIX,jdforrepam.com,香港节点
+DOMAIN-SUFFIX,c0.jdbstatic.com,香港节点
+DOMAIN-SUFFIX,tp.spfcas.com,香港节点
+DOMAIN-KEYWORD,javdb,香港节点

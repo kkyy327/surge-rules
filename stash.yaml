@@ -103,6 +103,14 @@ rules:
 - DOMAIN-SUFFIX,pics.dmm.co.jp,日本节点
 - DOMAIN-SUFFIX,awsimgsrc.dmm.co.jp,日本节点
 - DOMAIN-SUFFIX,image.mgstage.com,日本节点
+# ── JavDB（内联展开, 走香港节点; 日本 IP 被 JavDB 封） ──
+- DOMAIN-SUFFIX,javdb.com,香港节点
+- DOMAIN-SUFFIX,javdb561.com,香港节点
+- DOMAIN-SUFFIX,javdb570.com,香港节点
+- DOMAIN-SUFFIX,jdforrepam.com,香港节点
+- DOMAIN-SUFFIX,c0.jdbstatic.com,香港节点
+- DOMAIN-SUFFIX,tp.spfcas.com,香港节点
+- DOMAIN-KEYWORD,javdb,香港节点
 - RULE-SET,Twitter,𝕏
 - RULE-SET,Instagram,Instagram
 - RULE-SET,Telegram,Telegram

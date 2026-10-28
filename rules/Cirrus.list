@@ -1,15 +1,16 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-28 22:46:29
+# UPDATED: 2026-10-28 23:01:05
 # DOMAIN: 21
-# DOMAIN-SUFFIX: 8295
-# DOMAIN-KEYWORD: 37
+# DOMAIN-SUFFIX: 8289
+# DOMAIN-KEYWORD: 36
 # IP-CIDR: 1244
 # IP-CIDR6: 12
-# TOTAL: 9616
+# TOTAL: 9609
 
 # PART: 2/3
+DOMAIN-SUFFIX,google.com.sv
 DOMAIN-SUFFIX,google.com.tj
 DOMAIN-SUFFIX,google.com.tr
 DOMAIN-SUFFIX,google.com.tw
@@ -961,9 +962,6 @@ DOMAIN-SUFFIX,javakiba.org
 DOMAIN-SUFFIX,javbus.co
 DOMAIN-SUFFIX,javbus.com
 DOMAIN-SUFFIX,javchu.com
-DOMAIN-SUFFIX,javdb.com
-DOMAIN-SUFFIX,javdb561.com
-DOMAIN-SUFFIX,javdb570.com
 DOMAIN-SUFFIX,javfinder.ai
 DOMAIN-SUFFIX,javfor.me
 DOMAIN-SUFFIX,javfree.me
@@ -984,7 +982,6 @@ DOMAIN-SUFFIX,jbtalks.cc
 DOMAIN-SUFFIX,jbtalks.com
 DOMAIN-SUFFIX,jbtalks.my
 DOMAIN-SUFFIX,jcpenney.com
-DOMAIN-SUFFIX,jdforrepam.com
 DOMAIN-SUFFIX,jdwsy.com
 DOMAIN-SUFFIX,jeanyim.com
 DOMAIN-SUFFIX,jetbra.in
@@ -3334,3 +3331,4 @@ DOMAIN-SUFFIX,squarespace.com
 DOMAIN-SUFFIX,squirly.info
 DOMAIN-SUFFIX,squirrelvpn.com
 DOMAIN-SUFFIX,srocket.us
+DOMAIN-SUFFIX,ss-link.com

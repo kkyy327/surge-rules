@@ -10,3 +10,5 @@ qcloud.com
 nodeseek.com
 # TikTok 已单拆给 TikTok 策略组：tiktokcdn-eu.com 不在上游 TikTok.list 里（由其 DOMAIN-KEYWORD,tiktok 覆盖），从聚合剔除
 tiktokcdn-eu.com
+# JavDB 已单拆 rules/JavDB.list（钉香港节点）：上游自带的 javdb.com 从聚合剔除
+javdb.com
