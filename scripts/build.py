@@ -19,8 +19,8 @@ PORTABLE_TYPES = {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "IP-CIDR", "IP-CI
 UPSTREAM = "blackmatrix7/ios_rule_script"
 
 # 已从 Proxy 聚合排除的服务：其规则改走专用 RULE-SET，不再混进通用代理集
-# （Twitter 已单拆给 𝕏 策略组，指向 blackmatrix7 官方 Twitter.list）
-PROXY_EXCLUDE_SERVICES = ["Twitter", "OpenAI", "Claude", "Anthropic", "YouTube"]
+# （Twitter 已单拆给 𝕏 策略组、TikTok 已单拆给 TikTok 策略组，均指向 blackmatrix7 官方列表）
+PROXY_EXCLUDE_SERVICES = ["Twitter", "OpenAI", "Claude", "Anthropic", "YouTube", "TikTok"]
 
 
 def fetch(url: str) -> str:

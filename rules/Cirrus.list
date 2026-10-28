@@ -1,17 +1,15 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-28 01:53:00
-# DOMAIN: 25
-# DOMAIN-SUFFIX: 8315
-# DOMAIN-KEYWORD: 39
+# UPDATED: 2026-10-28 17:43:33
+# DOMAIN: 21
+# DOMAIN-SUFFIX: 8288
+# DOMAIN-KEYWORD: 37
 # IP-CIDR: 1244
 # IP-CIDR6: 12
-# TOTAL: 9642
+# TOTAL: 9609
 
 # PART: 2/3
-DOMAIN-SUFFIX,google.com.sl
-DOMAIN-SUFFIX,google.com.sv
 DOMAIN-SUFFIX,google.com.tj
 DOMAIN-SUFFIX,google.com.tr
 DOMAIN-SUFFIX,google.com.tw
@@ -664,8 +662,6 @@ DOMAIN-SUFFIX,iblogserv-f.net
 DOMAIN-SUFFIX,ibros.org
 DOMAIN-SUFFIX,ibtimes.com
 DOMAIN-SUFFIX,ibvpn.com
-DOMAIN-SUFFIX,ibytedtos.com
-DOMAIN-SUFFIX,ibyteimg.com
 DOMAIN-SUFFIX,icams.com
 DOMAIN-SUFFIX,icdf.org.tw
 DOMAIN-SUFFIX,icedrive.net
@@ -874,7 +870,6 @@ DOMAIN-SUFFIX,ipoock.com
 DOMAIN-SUFFIX,iportal.me
 DOMAIN-SUFFIX,ippotv.com
 DOMAIN-SUFFIX,ipredator.se
-DOMAIN-SUFFIX,ipstatp.com
 DOMAIN-SUFFIX,iptv.com.tw
 DOMAIN-SUFFIX,iptvbin.com
 DOMAIN-SUFFIX,ipvanish.com
@@ -1454,7 +1449,6 @@ DOMAIN-SUFFIX,marc.info
 DOMAIN-SUFFIX,marguerite.su
 DOMAIN-SUFFIX,marketwatch.com
 DOMAIN-SUFFIX,markzuckerberg.com
-DOMAIN-SUFFIX,marscode.com
 DOMAIN-SUFFIX,martau.com
 DOMAIN-SUFFIX,martincartoons.com
 DOMAIN-SUFFIX,martinoei.com
@@ -1763,11 +1757,9 @@ DOMAIN-SUFFIX,multiproxy.org
 DOMAIN-SUFFIX,multiupload.com
 DOMAIN-SUFFIX,mummysgold.com
 DOMAIN-SUFFIX,murmur.tw
-DOMAIN-SUFFIX,muscdn.com
 DOMAIN-SUFFIX,muse.ai
 DOMAIN-SUFFIX,mushymush.tv
 DOMAIN-SUFFIX,musicade.net
-DOMAIN-SUFFIX,musical.ly
 DOMAIN-SUFFIX,musixmatch.com
 DOMAIN-SUFFIX,muslimvideo.com
 DOMAIN-SUFFIX,muzi.com
@@ -3050,7 +3042,6 @@ DOMAIN-SUFFIX,sfshibao.com
 DOMAIN-SUFFIX,sftindia.org
 DOMAIN-SUFFIX,sftuk.org
 DOMAIN-SUFFIX,sfx.ms
-DOMAIN-SUFFIX,sgpstatp.com
 DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
 DOMAIN-SUFFIX,sgwritings.com
 DOMAIN-SUFFIX,sgzhan.com
@@ -3341,5 +3332,3 @@ DOMAIN-SUFFIX,squirrelvpn.com
 DOMAIN-SUFFIX,srocket.us
 DOMAIN-SUFFIX,ss-link.com
 DOMAIN-SUFFIX,ss.levyhsu.com
-DOMAIN-SUFFIX,ssa.gov
-DOMAIN-SUFFIX,ssglobal.co

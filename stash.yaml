@@ -46,6 +46,7 @@ proxy-groups:
 - {name: Instagram, type: select, proxies: [美国节点, 日本节点, 香港节点, Proxy], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png"}
 - {name: Telegram, type: select, proxies: [新加坡节点, 香港节点, 美国节点, Proxy], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"}
 - {name: YouTube, type: select, proxies: [美国节点, 日本节点, 新加坡节点, 香港节点, Proxy], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"}
+- {name: TikTok, type: select, proxies: [美国节点, 日本节点, 新加坡节点, 香港节点, Proxy], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png"}
 # ── 地区节点组（filter 正则筛选机场订阅节点） ──
 - {name: 香港节点, type: select, use: [airport], filter: "🇭🇰|香港|HK", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png"}
 - {name: 美国节点, type: select, use: [airport], filter: "🇺🇸|美国|洛杉矶|纽约|圣何塞|西雅图|芝加哥|达拉斯|LAX|SFO", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png"}
@@ -63,6 +64,7 @@ rule-providers:
   Instagram: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Instagram/Instagram.list", path: ./ruleset/Instagram.list, interval: 86400}
   Telegram: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Telegram/Telegram.list", path: ./ruleset/Telegram.list, interval: 86400}
   YouTube: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/YouTube/YouTube.list", path: ./ruleset/YouTube.list, interval: 86400}
+  TikTok: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/TikTok/TikTok.list", path: ./ruleset/TikTok.list, interval: 86400}
   Nimbus: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Nimbus.list", path: ./ruleset/Nimbus.list, interval: 86400}
   Cirrus: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Cirrus.list", path: ./ruleset/Cirrus.list, interval: 86400}
   Stratus: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Stratus.list", path: ./ruleset/Stratus.list, interval: 86400}
@@ -101,6 +103,7 @@ rules:
 - RULE-SET,Instagram,Instagram
 - RULE-SET,Telegram,Telegram
 - RULE-SET,YouTube,YouTube
+- RULE-SET,TikTok,TikTok
 - RULE-SET,Nimbus,Proxy
 - RULE-SET,Cirrus,Proxy
 - RULE-SET,Stratus,Proxy

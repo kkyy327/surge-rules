@@ -8,3 +8,5 @@ c.mi.com
 qcloud.com
 # nodeseek.com 改走香港节点（rules/Rex.list），勿回聚合
 nodeseek.com
+# TikTok 已单拆给 TikTok 策略组：tiktokcdn-eu.com 不在上游 TikTok.list 里（由其 DOMAIN-KEYWORD,tiktok 覆盖），从聚合剔除
+tiktokcdn-eu.com

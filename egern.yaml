@@ -124,6 +124,17 @@ policy_groups:
     flatten: false
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
     hidden: false
+- select:
+    name: TikTok
+    policies:
+    - 美国节点
+    - 日本节点
+    - 新加坡节点
+    - 香港节点
+    - Proxy
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+    hidden: false
 - smart:
     name: 香港节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
@@ -239,6 +250,10 @@ rules:
 - rule_set:
     match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/YouTube/YouTube.list
     policy: YouTube
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/TikTok/TikTok.list
+    policy: TikTok
     disabled: false
 - rule_set:
     match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Nimbus.list

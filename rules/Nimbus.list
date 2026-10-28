@@ -1,13 +1,13 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-28 01:53:00
-# DOMAIN: 25
-# DOMAIN-SUFFIX: 8315
-# DOMAIN-KEYWORD: 39
+# UPDATED: 2026-10-28 17:43:33
+# DOMAIN: 21
+# DOMAIN-SUFFIX: 8288
+# DOMAIN-KEYWORD: 37
 # IP-CIDR: 1244
 # IP-CIDR6: 12
-# TOTAL: 9642
+# TOTAL: 9609
 
 # PART: 1/3
 DOMAIN,api.imem.app
@@ -26,14 +26,10 @@ DOMAIN,gateway.bingviz.microsoft.net
 DOMAIN,h-netflix.online-metrix.net
 DOMAIN,heads-ak-spotify-com.akamaized.net
 DOMAIN,in.appcenter.ms
-DOMAIN,lf16-effectcdn.byteeffecttos-g.com
-DOMAIN,lf16-pkgcdn.pitaya-clientai.com
 DOMAIN,live-mediashield-ava-hulustream-com.akamaized.net
 DOMAIN,login.microsoftonline.com
-DOMAIN,p16-tiktokcdn-com.akamaized.net
 DOMAIN,spotify.map.fastlylb.net
 DOMAIN,testflight.apple.com
-DOMAIN,trae-api-sg.mchost.guru
 DOMAIN,voice.telephony.goog
 DOMAIN-SUFFIX,000webhost.com
 DOMAIN-SUFFIX,030buy.com
@@ -1061,10 +1057,6 @@ DOMAIN-SUFFIX,bynet.co.il
 DOMAIN-SUFFIX,bypasscensorship.org
 DOMAIN-SUFFIX,byrut.org
 DOMAIN-SUFFIX,byspotify.com
-DOMAIN-SUFFIX,bytedapm.com
-DOMAIN-SUFFIX,bytegecko-i18n.com
-DOMAIN-SUFFIX,byteintlapi.com
-DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,c-est-simple.com
 DOMAIN-SUFFIX,c-span.org
 DOMAIN-SUFFIX,c-spanvideo.org
@@ -1107,10 +1099,6 @@ DOMAIN-SUFFIX,cao.im
 DOMAIN-SUFFIX,caobian.info
 DOMAIN-SUFFIX,caochangqing.com
 DOMAIN-SUFFIX,cap.org.hk
-DOMAIN-SUFFIX,capcut.com
-DOMAIN-SUFFIX,capcutapi.com
-DOMAIN-SUFFIX,capcutapi.us
-DOMAIN-SUFFIX,capcutstatic.com
 DOMAIN-SUFFIX,capitalg.com
 DOMAIN-SUFFIX,carabinasypistolas.com
 DOMAIN-SUFFIX,cardinalkungfoundation.org
@@ -3285,3 +3273,5 @@ DOMAIN-SUFFIX,google.com.qa
 DOMAIN-SUFFIX,google.com.sa
 DOMAIN-SUFFIX,google.com.sb
 DOMAIN-SUFFIX,google.com.sg
+DOMAIN-SUFFIX,google.com.sl
+DOMAIN-SUFFIX,google.com.sv
