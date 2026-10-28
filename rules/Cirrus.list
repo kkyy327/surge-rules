@@ -1,15 +1,16 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-25 17:31:26
+# UPDATED: 2026-10-28 01:53:00
 # DOMAIN: 25
-# DOMAIN-SUFFIX: 8296
+# DOMAIN-SUFFIX: 8315
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 1244
 # IP-CIDR6: 12
-# TOTAL: 9623
+# TOTAL: 9642
 
 # PART: 2/3
+DOMAIN-SUFFIX,google.com.sl
 DOMAIN-SUFFIX,google.com.sv
 DOMAIN-SUFFIX,google.com.tj
 DOMAIN-SUFFIX,google.com.tr
@@ -553,6 +554,7 @@ DOMAIN-SUFFIX,htx.com
 DOMAIN-SUFFIX,hu1u.com
 DOMAIN-SUFFIX,hua-yue.net
 DOMAIN-SUFFIX,huaglad.com
+DOMAIN-SUFFIX,huakacomic.com
 DOMAIN-SUFFIX,huanghuagang.org
 DOMAIN-SUFFIX,huangyiyu.com
 DOMAIN-SUFFIX,huaren.us
@@ -1129,6 +1131,7 @@ DOMAIN-SUFFIX,khmusic.com.tw
 DOMAIN-SUFFIX,kichiku-doujinko.com
 DOMAIN-SUFFIX,kik.com
 DOMAIN-SUFFIX,killwall.com
+DOMAIN-SUFFIX,kimootoko.net
 DOMAIN-SUFFIX,kindle4rss.com
 DOMAIN-SUFFIX,kindleren.com
 DOMAIN-SUFFIX,kingdomsalvation.org
@@ -1436,6 +1439,7 @@ DOMAIN-SUFFIX,mangafox.com
 DOMAIN-SUFFIX,mangafox.me
 DOMAIN-SUFFIX,mangaup.jp
 DOMAIN-SUFFIX,mangmang.run
+DOMAIN-SUFFIX,manhuabika.com
 DOMAIN-SUFFIX,manhuaren.com
 DOMAIN-SUFFIX,maniash.com
 DOMAIN-SUFFIX,manicur4ik.ru
@@ -1627,6 +1631,7 @@ DOMAIN-SUFFIX,minhhue.net
 DOMAIN-SUFFIX,miniforum.org
 DOMAIN-SUFFIX,miningpoolhub.com
 DOMAIN-SUFFIX,ministrybooks.org
+DOMAIN-SUFFIX,minkch.com
 DOMAIN-SUFFIX,minzhuhua.net
 DOMAIN-SUFFIX,minzhuzhanxian.com
 DOMAIN-SUFFIX,minzhuzhongguo.org
@@ -1723,6 +1728,7 @@ DOMAIN-SUFFIX,motor4ik.ru
 DOMAIN-SUFFIX,mousebreaker.com
 DOMAIN-SUFFIX,movements.org
 DOMAIN-SUFFIX,moves-export.com
+DOMAIN-SUFFIX,movie.eroterest.net
 DOMAIN-SUFFIX,moviefap.com
 DOMAIN-SUFFIX,moviesanywhere.com
 DOMAIN-SUFFIX,mozilla.org
@@ -2023,6 +2029,9 @@ DOMAIN-SUFFIX,nitter.net
 DOMAIN-SUFFIX,niu.moe
 DOMAIN-SUFFIX,niusnews.com
 DOMAIN-SUFFIX,njactb.org
+DOMAIN-SUFFIX,njav.com
+DOMAIN-SUFFIX,njav.tv
+DOMAIN-SUFFIX,njavtv.com
 DOMAIN-SUFFIX,njuice.com
 DOMAIN-SUFFIX,nlfreevpn.com
 DOMAIN-SUFFIX,nmsl.website
@@ -2430,6 +2439,7 @@ DOMAIN-SUFFIX,phptutorial.net
 DOMAIN-SUFFIX,phuquocservices.com
 DOMAIN-SUFFIX,piaotia.com
 DOMAIN-SUFFIX,piaotian.net
+DOMAIN-SUFFIX,pica-id.com
 DOMAIN-SUFFIX,picacomic.com
 DOMAIN-SUFFIX,picacomiccn.com
 DOMAIN-SUFFIX,picasa.com
@@ -2515,6 +2525,7 @@ DOMAIN-SUFFIX,plus28.com
 DOMAIN-SUFFIX,plusbb.com
 DOMAIN-SUFFIX,pmatehunter.com
 DOMAIN-SUFFIX,pmates.com
+DOMAIN-SUFFIX,po-kaki-to.com
 DOMAIN-SUFFIX,po2b.com
 DOMAIN-SUFFIX,pobieramy.top
 DOMAIN-SUFFIX,podbean.com
@@ -3332,7 +3343,3 @@ DOMAIN-SUFFIX,ss-link.com
 DOMAIN-SUFFIX,ss.levyhsu.com
 DOMAIN-SUFFIX,ssa.gov
 DOMAIN-SUFFIX,ssglobal.co
-DOMAIN-SUFFIX,ssglobal.me
-DOMAIN-SUFFIX,ssh91.com
-DOMAIN-SUFFIX,ssl443.org
-DOMAIN-SUFFIX,sspanel.net
