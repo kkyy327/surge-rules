@@ -1,0 +1,8 @@
+# NAME: JP
+# REPO: https://github.com/kkyy327/surge-rules
+# 用法: RULE-SET,<url>,日本节点
+# 注意: 必须放在 Nimbus/Cirrus/Stratus 三条通用 Proxy RULE-SET 之前 (Surge 按顺序匹配)
+# DMM 封面拼接 / mgstage 图片：仅日本 IP 可取（2026-10-28 手工维护，build.py 不生成）
+DOMAIN-SUFFIX,pics.dmm.co.jp,日本节点
+DOMAIN-SUFFIX,awsimgsrc.dmm.co.jp,日本节点
+DOMAIN-SUFFIX,image.mgstage.com,日本节点

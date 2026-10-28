@@ -1,13 +1,13 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-28 17:43:33
+# UPDATED: 2026-10-28 22:46:29
 # DOMAIN: 21
-# DOMAIN-SUFFIX: 8288
+# DOMAIN-SUFFIX: 8295
 # DOMAIN-KEYWORD: 37
 # IP-CIDR: 1244
 # IP-CIDR6: 12
-# TOTAL: 9609
+# TOTAL: 9616
 
 # PART: 2/3
 DOMAIN-SUFFIX,google.com.tj
@@ -974,6 +974,8 @@ DOMAIN-SUFFIX,javlibrary.com
 DOMAIN-SUFFIX,javmobile.net
 DOMAIN-SUFFIX,javmoo.com
 DOMAIN-SUFFIX,javmoo.xyz
+DOMAIN-SUFFIX,javp.cc
+DOMAIN-SUFFIX,javp.cc.cd
 DOMAIN-SUFFIX,javseen.com
 DOMAIN-SUFFIX,javtag.com
 DOMAIN-SUFFIX,javzoo.com
@@ -982,6 +984,7 @@ DOMAIN-SUFFIX,jbtalks.cc
 DOMAIN-SUFFIX,jbtalks.com
 DOMAIN-SUFFIX,jbtalks.my
 DOMAIN-SUFFIX,jcpenney.com
+DOMAIN-SUFFIX,jdforrepam.com
 DOMAIN-SUFFIX,jdwsy.com
 DOMAIN-SUFFIX,jeanyim.com
 DOMAIN-SUFFIX,jetbra.in
@@ -1538,6 +1541,7 @@ DOMAIN-SUFFIX,melon365.com
 DOMAIN-SUFFIX,meltoday.com
 DOMAIN-SUFFIX,memehk.com
 DOMAIN-SUFFIX,memes.tw
+DOMAIN-SUFFIX,memojav.com
 DOMAIN-SUFFIX,memorybbs.com
 DOMAIN-SUFFIX,memri.org
 DOMAIN-SUFFIX,memrijttm.org
@@ -3330,5 +3334,3 @@ DOMAIN-SUFFIX,squarespace.com
 DOMAIN-SUFFIX,squirly.info
 DOMAIN-SUFFIX,squirrelvpn.com
 DOMAIN-SUFFIX,srocket.us
-DOMAIN-SUFFIX,ss-link.com
-DOMAIN-SUFFIX,ss.levyhsu.com

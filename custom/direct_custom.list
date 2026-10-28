@@ -47,3 +47,5 @@ IP-CIDR,203.205.254.0/23
 DOMAIN-SUFFIX,l.qq.com
 DOMAIN-SUFFIX,tagtic.cn
 DOMAIN,app.adjust.com
+# 115 网盘直连（2026-10-28 手工补）
+DOMAIN-SUFFIX,115.com

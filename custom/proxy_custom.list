@@ -1,3 +1,16 @@
 # 手动补充的代理规则（上游缺失或个人需求），每次自动更新都会保留
 # Google Voice 网页版：上游 GoogleVoice.list 里没有 voice.google.com，手动补上
 DOMAIN,voice.google.com
+# JavDB：主域名 javdb.com 上游已有，这里补数字镜像站（官方轮换 javdbNNN.com），KEYWORD 兜底未来新镜像
+DOMAIN-SUFFIX,javdb561.com
+DOMAIN-SUFFIX,javdb570.com
+DOMAIN-KEYWORD,javdb
+# JavDB 镜像/静态/校验域名（2026-10-28 手工补，上游缺失）
+DOMAIN-SUFFIX,jdforrepam.com
+DOMAIN-SUFFIX,c0.jdbstatic.com
+DOMAIN-SUFFIX,tp.spfcas.com
+# 播放源/预告片（2026-10-28 手工补；jable.tv、missav.ai 上游已有，不重复加）
+DOMAIN-SUFFIX,memojav.com
+DOMAIN-SUFFIX,javp.cc
+DOMAIN-SUFFIX,javp.cc.cd
+DOMAIN-SUFFIX,fourhoi.com

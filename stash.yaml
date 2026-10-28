@@ -99,6 +99,10 @@ rules:
 - DOMAIN-SUFFIX,whatsapp.com,香港节点
 - DOMAIN-SUFFIX,whatsapp.net,香港节点
 - DOMAIN-KEYWORD,whatsapp,香港节点
+# ── JP（内联展开, 走日本节点; DMM 封面/mgstage 图片） ──
+- DOMAIN-SUFFIX,pics.dmm.co.jp,日本节点
+- DOMAIN-SUFFIX,awsimgsrc.dmm.co.jp,日本节点
+- DOMAIN-SUFFIX,image.mgstage.com,日本节点
 - RULE-SET,Twitter,𝕏
 - RULE-SET,Instagram,Instagram
 - RULE-SET,Telegram,Telegram

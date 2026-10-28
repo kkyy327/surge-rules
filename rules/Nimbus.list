@@ -1,13 +1,13 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-10-28 17:43:33
+# UPDATED: 2026-10-28 22:46:29
 # DOMAIN: 21
-# DOMAIN-SUFFIX: 8288
+# DOMAIN-SUFFIX: 8295
 # DOMAIN-KEYWORD: 37
 # IP-CIDR: 1244
 # IP-CIDR6: 12
-# TOTAL: 9609
+# TOTAL: 9616
 
 # PART: 1/3
 DOMAIN,api.imem.app
@@ -1062,6 +1062,7 @@ DOMAIN-SUFFIX,c-span.org
 DOMAIN-SUFFIX,c-spanvideo.org
 DOMAIN-SUFFIX,c.gle
 DOMAIN-SUFFIX,c.go-mpulse.net
+DOMAIN-SUFFIX,c0.jdbstatic.com
 DOMAIN-SUFFIX,c100tibet.org
 DOMAIN-SUFFIX,c2cx.com
 DOMAIN-SUFFIX,c3pool.com
@@ -2704,6 +2705,7 @@ DOMAIN-SUFFIX,fosebook.com
 DOMAIN-SUFFIX,fotile.me
 DOMAIN-SUFFIX,fountmedia.io
 DOMAIN-SUFFIX,fourface.nodesnoop.com
+DOMAIN-SUFFIX,fourhoi.com
 DOMAIN-SUFFIX,fourthinternational.org
 DOMAIN-SUFFIX,foxbusiness.com
 DOMAIN-SUFFIX,foxdie.us
