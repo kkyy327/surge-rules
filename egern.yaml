@@ -373,11 +373,6 @@ rules:
     match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Apple/Apple.list
     policy: DIRECT
     disabled: false
-# ── 自有规则（115302zl） ──
-- rule_set:
-    match: https://cdn.jsdelivr.net/gh/kkyy327/115302zl@main/115320-rules.list
-    policy: DIRECT
-    disabled: false
 # 国内服务直连(微信/支付宝/银行/京东/B站等, 含微信 ASN 规则)
 - rule_set:
     match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Direct.list
