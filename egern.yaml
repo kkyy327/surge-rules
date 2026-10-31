@@ -218,12 +218,58 @@ rules:
     match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Reject.list
     policy: REJECT
     disabled: false
-- rule_set:
-    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/DirectPlus.list
+# ── DirectPlus（内联展开, 原 rules/DirectPlus.list; 必须在 Proxy 聚合之前） ──
+- domain:
+    match: dl.google.com
     policy: DIRECT
     disabled: false
-- rule_set:
-    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Hongguo.list
+- domain:
+    match: dl.l.google.com
+    policy: DIRECT
+    disabled: false
+- domain:
+    match: redirector.gvt1.com
+    policy: DIRECT
+    disabled: false
+- domain:
+    match: clientservices.googleapis.com
+    policy: DIRECT
+    disabled: false
+- domain:
+    match: update.googleapis.com
+    policy: DIRECT
+    disabled: false
+- domain:
+    match: ci.android.com
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: blog.google
+    policy: DIRECT
+    disabled: false
+# ── Hongguo（内联展开, 原 rules/Hongguo.list） ──
+- domain_keyword:
+    match: -ad-sign.byteimg.com
+    policy: REJECT
+    disabled: false
+- domain_suffix:
+    match: snssdk.com
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: isnssdk.com
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: zijieapi.com
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: byteimg.com
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: pstatp.com
     policy: DIRECT
     disabled: false
 - rule_set:
@@ -231,16 +277,59 @@ rules:
     policy: Proxy
     disabled: false
 # ── 专用规则（必须放在通用 Proxy 规则集之前） ──
-- rule_set:
-    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/WhatsApp.list
+# ── WhatsApp（内联展开, 原 rules/WhatsApp.list） ──
+- domain_suffix:
+    match: whatsapp.com
     policy: 香港节点
     disabled: false
-- rule_set:
-    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/JP.list
+- domain_suffix:
+    match: whatsapp.net
+    policy: 香港节点
+    disabled: false
+- domain_keyword:
+    match: whatsapp
+    policy: 香港节点
+    disabled: false
+# ── JP（内联展开, 原 rules/JP.list） ──
+- domain_suffix:
+    match: pics.dmm.co.jp
     policy: 日本节点
     disabled: false
-- rule_set:
-    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/JavDB.list
+- domain_suffix:
+    match: awsimgsrc.dmm.co.jp
+    policy: 日本节点
+    disabled: false
+- domain_suffix:
+    match: image.mgstage.com
+    policy: 日本节点
+    disabled: false
+# ── JavDB（内联展开, 原 rules/JavDB.list） ──
+- domain_suffix:
+    match: javdb.com
+    policy: 香港节点
+    disabled: false
+- domain_suffix:
+    match: javdb561.com
+    policy: 香港节点
+    disabled: false
+- domain_suffix:
+    match: javdb570.com
+    policy: 香港节点
+    disabled: false
+- domain_suffix:
+    match: jdforrepam.com
+    policy: 香港节点
+    disabled: false
+- domain_suffix:
+    match: c0.jdbstatic.com
+    policy: 香港节点
+    disabled: false
+- domain_suffix:
+    match: tp.spfcas.com
+    policy: 香港节点
+    disabled: false
+- domain_keyword:
+    match: javdb
     policy: 香港节点
     disabled: false
 - rule_set:
@@ -294,15 +383,7 @@ rules:
     match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Direct.list
     policy: DIRECT
     disabled: false
-# ── 中国直连补强（ChinaMax/ChinaASN + .cn + 内网段, 放在 GeoIP 之前） ──
-- rule_set:
-    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/ChinaMax/ChinaMax.list
-    policy: DIRECT
-    disabled: false
-- rule_set:
-    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/ChinaASN/ChinaASN.list
-    policy: DIRECT
-    disabled: false
+# ── 中国直连补强（.cn + 内网段, 放在 GeoIP 之前; ChinaMax/ChinaASN 已由 Direct 集 + GEOIP 覆盖） ──
 - domain_suffix:
     match: cn
     policy: DIRECT
