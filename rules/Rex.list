@@ -7,3 +7,10 @@ DOMAIN-SUFFIX,515355.xyz
 DOMAIN-SUFFIX,pandalive.co.kr
 # nodeseek.com：论坛，套 Cloudflare，走代理更快
 DOMAIN-SUFFIX,nodeseek.com
+# Rex 首页数据（2026-10-31 并入，原 kenxtbecdi7690/rex-home）：模块脚本/订阅与 TMDB 片库走 DMIT
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
+DOMAIN,module-host.xtbecdi7690.workers.dev
+DOMAIN,douban-bridge.baran.wang
