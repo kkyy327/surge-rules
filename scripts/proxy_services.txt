@@ -8,7 +8,6 @@ Anthropic
 Gemini
 BardAI
 Copilot
-Twitter
 Instagram
 YouTube
 Telegram

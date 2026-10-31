@@ -49,3 +49,7 @@ DOMAIN-SUFFIX,tagtic.cn
 DOMAIN,app.adjust.com
 # 115 网盘直连（2026-10-28 手工补）
 DOMAIN-SUFFIX,115.com
+# MagicRule 的 12306 集只有 .com、缺官方 .cn（2026-10-31 迁移时补）；海南航空 MagicRule 无此集
+DOMAIN-SUFFIX,12306.cn
+DOMAIN-SUFFIX,hnair.net
+DOMAIN-SUFFIX,hnair.com
