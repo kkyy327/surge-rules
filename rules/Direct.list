@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-10-31 19:06:14
-# DOMAIN: 38
-# DOMAIN-SUFFIX: 10645
-# DOMAIN-KEYWORD: 22
-# IP-CIDR: 266
+# UPDATED: 2026-10-31 19:51:43
+# DOMAIN: 51
+# DOMAIN-SUFFIX: 10656
+# DOMAIN-KEYWORD: 32
+# IP-CIDR: 269
 # IP-CIDR6: 38
-# TOTAL: 11012
+# TOTAL: 11049
 
 DOMAIN,127.skk.moe
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -24,6 +24,7 @@ DOMAIN,dl.google.com
 DOMAIN,dl.ubnt.com
 DOMAIN,end-api.shallow.ink
 DOMAIN,end.shallow.ink
+DOMAIN,fmao.fun
 DOMAIN,gstore.val.manlaxy.com
 DOMAIN,hotspot.cslwifi.com
 DOMAIN,i.dell.com
@@ -41,11 +42,23 @@ DOMAIN,public.localsend.org
 DOMAIN,repeater.asus.com
 DOMAIN,rewards.hypixel.net
 DOMAIN,router.asus.com
+DOMAIN,sd.sduc.site
 DOMAIN,setmeup.arubanetworks.com
+DOMAIN,shandian.blog
 DOMAIN,steamcommunity-a.akamaihd.net
 DOMAIN,time.izatcloud.net
 DOMAIN,time.xtracloud.net
+DOMAIN,tv.214521.xyz
+DOMAIN,woog.430520.xyz
+DOMAIN,woog.nxog.eu.org
+DOMAIN,woog.nxog.fun
+DOMAIN,www.123684.com
+DOMAIN,www.123865.com
+DOMAIN,www.hjzhencai.top
 DOMAIN,www.layuicdn.com
+DOMAIN,www.miqk.cc
+DOMAIN,www.mmpanpan.site
+DOMAIN,www.muoua.top
 DOMAIN,xtratime.qcomgeo2.com
 DOMAIN-SUFFIX,001wifi.com
 DOMAIN-SUFFIX,00cdn.com
@@ -107,6 +120,7 @@ DOMAIN-SUFFIX,123245.com
 DOMAIN-SUFFIX,123254.com
 DOMAIN-SUFFIX,123278.com
 DOMAIN-SUFFIX,123294.com
+DOMAIN-SUFFIX,123295.com
 DOMAIN-SUFFIX,123624.com
 DOMAIN-SUFFIX,123641.com
 DOMAIN-SUFFIX,12365auto.com
@@ -278,6 +292,7 @@ DOMAIN-SUFFIX,3304399.com
 DOMAIN-SUFFIX,3304399.net
 DOMAIN-SUFFIX,3322.net
 DOMAIN-SUFFIX,3322.org
+DOMAIN-SUFFIX,333291.xyz
 DOMAIN-SUFFIX,3387.com
 DOMAIN-SUFFIX,33lc.com
 DOMAIN-SUFFIX,3454.com
@@ -551,6 +566,7 @@ DOMAIN-SUFFIX,64oak78y99.com
 DOMAIN-SUFFIX,64ptd74095.com
 DOMAIN-SUFFIX,6600.org
 DOMAIN-SUFFIX,6655.com
+DOMAIN-SUFFIX,666291.xyz
 DOMAIN-SUFFIX,666kuaishou.com
 DOMAIN-SUFFIX,666kuaishou.net
 DOMAIN-SUFFIX,66rpg.com
@@ -1908,6 +1924,7 @@ DOMAIN-SUFFIX,cd-tencentclb.work
 DOMAIN-SUFFIX,cd120.com
 DOMAIN-SUFFIX,cd120.info
 DOMAIN-SUFFIX,cdkeynogap.com
+DOMAIN-SUFFIX,cdn.278612356.xyz
 DOMAIN-SUFFIX,cdn20.com
 DOMAIN-SUFFIX,cdn20.info
 DOMAIN-SUFFIX,cdn20.org
@@ -2023,6 +2040,7 @@ DOMAIN-SUFFIX,cf-ns.com
 DOMAIN-SUFFIX,cf-ns.net
 DOMAIN-SUFFIX,cf-ns.site
 DOMAIN-SUFFIX,cf-ns.tech
+DOMAIN-SUFFIX,cf.278612356.xyz
 DOMAIN-SUFFIX,cfc108.com
 DOMAIN-SUFFIX,cfmeutencent.com
 DOMAIN-SUFFIX,cfmna-tencent.com
@@ -6145,6 +6163,7 @@ DOMAIN-SUFFIX,migutv.com
 DOMAIN-SUFFIX,miguvideo.com
 DOMAIN-SUFFIX,mihayo.com
 DOMAIN-SUFFIX,mihayou.com
+DOMAIN-SUFFIX,mihdr.top
 DOMAIN-SUFFIX,mihoyo.com
 DOMAIN-SUFFIX,mihoyocg.com
 DOMAIN-SUFFIX,mihoyogift.com
@@ -6755,6 +6774,7 @@ DOMAIN-SUFFIX,paipai.com
 DOMAIN-SUFFIX,paipaibang.com
 DOMAIN-SUFFIX,palmda.com
 DOMAIN-SUFFIX,pandarzli.com
+DOMAIN-SUFFIX,panel.988726.xyz
 DOMAIN-SUFFIX,pangolin-dsp-toutiao-b.com
 DOMAIN-SUFFIX,pangolin-dsp-toutiao.com
 DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
@@ -7949,6 +7969,7 @@ DOMAIN-SUFFIX,sspai.com
 DOMAIN-SUFFIX,ssports.com
 DOMAIN-SUFFIX,ssrcdn.com
 DOMAIN-SUFFIX,ssscdn.com
+DOMAIN-SUFFIX,st.stluma.com
 DOMAIN-SUFFIX,stage1st.com
 DOMAIN-SUFFIX,starbaby.cc
 DOMAIN-SUFFIX,starbaby.com
@@ -9205,6 +9226,7 @@ DOMAIN-SUFFIX,vhisxs.com
 DOMAIN-SUFFIX,viayoo.com
 DOMAIN-SUFFIX,vic18.com
 DOMAIN-SUFFIX,video-voip.com
+DOMAIN-SUFFIX,video.emos.best
 DOMAIN-SUFFIX,videocc.net
 DOMAIN-SUFFIX,videohudong.com
 DOMAIN-SUFFIX,videojj.com
@@ -9876,6 +9898,7 @@ DOMAIN-SUFFIX,xiaoaiscan.net
 DOMAIN-SUFFIX,xiaoaisound.com
 DOMAIN-SUFFIX,xiaobai.com
 DOMAIN-SUFFIX,xiaobaixitong.com
+DOMAIN-SUFFIX,xiaocgege.shop
 DOMAIN-SUFFIX,xiaochuanyun.com
 DOMAIN-SUFFIX,xiaodutv.com
 DOMAIN-SUFFIX,xiaoe-tech.com
@@ -10080,6 +10103,7 @@ DOMAIN-SUFFIX,xvwprdk.com
 DOMAIN-SUFFIX,xwbank.com
 DOMAIN-SUFFIX,xwuorvhz.com
 DOMAIN-SUFFIX,xxghh.biz
+DOMAIN-SUFFIX,xxrmb.com
 DOMAIN-SUFFIX,xxrsm.com
 DOMAIN-SUFFIX,xxsy.com
 DOMAIN-SUFFIX,xxsy.net
@@ -10694,6 +10718,9 @@ DOMAIN-SUFFIX,zzzcaculator.top
 DOMAIN-SUFFIX,zzzmap.com
 DOMAIN-KEYWORD,-cn
 DOMAIN-KEYWORD,.tmall.com
+DOMAIN-KEYWORD,123pan
+DOMAIN-KEYWORD,2xiaopan
+DOMAIN-KEYWORD,2xiaozhan
 DOMAIN-KEYWORD,alicdn
 DOMAIN-KEYWORD,alipay
 DOMAIN-KEYWORD,aliyun
@@ -10703,6 +10730,9 @@ DOMAIN-KEYWORD,cnki.net
 DOMAIN-KEYWORD,deepdyve
 DOMAIN-KEYWORD,els-cdn
 DOMAIN-KEYWORD,elsevier
+DOMAIN-KEYWORD,erixaopan
+DOMAIN-KEYWORD,erxiaopan
+DOMAIN-KEYWORD,erxiaozhan
 DOMAIN-KEYWORD,microsoft
 DOMAIN-KEYWORD,officecdn
 DOMAIN-KEYWORD,pkulaw
@@ -10714,6 +10744,10 @@ DOMAIN-KEYWORD,wanfangdata
 DOMAIN-KEYWORD,wb_ad
 DOMAIN-KEYWORD,weibo
 DOMAIN-KEYWORD,westlawchina
+DOMAIN-KEYWORD,wexwp
+DOMAIN-KEYWORD,wogg
+DOMAIN-KEYWORD,xiaoheixh
+DOMAIN-KEYWORD,yydsys
 IP-CIDR,101.224.0.0/13,no-resolve
 IP-CIDR,101.227.0.0/16,no-resolve
 IP-CIDR,101.32.104.104/32,no-resolve
@@ -10731,6 +10765,7 @@ IP-CIDR,103.126.92.133/32,no-resolve
 IP-CIDR,103.206.40.0/22,no-resolve
 IP-CIDR,103.238.16.0/23,no-resolve
 IP-CIDR,103.38.56.0/22,no-resolve
+IP-CIDR,103.40.14.172/32
 IP-CIDR,103.44.56.0/22,no-resolve
 IP-CIDR,103.5.34.153/32,no-resolve
 IP-CIDR,103.52.196.0/22,no-resolve
@@ -10917,6 +10952,8 @@ IP-CIDR,23.40.241.251/32,no-resolve
 IP-CIDR,23.40.242.10/32,no-resolve
 IP-CIDR,23.53.32.88/32,no-resolve
 IP-CIDR,27.159.95.0/32,no-resolve
+IP-CIDR,38.76.197.172/32
+IP-CIDR,38.76.216.46/32
 IP-CIDR,39.105.175.128/32,no-resolve
 IP-CIDR,39.105.63.80/32,no-resolve
 IP-CIDR,41.222.240.0/22,no-resolve
