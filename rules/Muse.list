@@ -1,0 +1,5 @@
+# NAME: Muse
+# REPO: https://github.com/kkyy327/surge-rules
+# Muse（Meta 官方个人 AI 智能体）原厂域名（手工维护，build.py 不生成）：裸规则，策略在引用处给
+# 官网/App/网页端均为 muse.ai，子域名一并覆盖；登录走 Meta 账户（meta.com 已在 AI 集内）
+DOMAIN-SUFFIX,muse.ai
