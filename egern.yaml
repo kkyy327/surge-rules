@@ -256,11 +256,11 @@ rules:
     policy: Telegram
     disabled: false
 - rule_set:
-    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/YouTube/YouTube.list
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/YouTube.list
     policy: YouTube
     disabled: false
 - rule_set:
-    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/TikTok/TikTok.list
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/TikTok.list
     policy: TikTok
     disabled: false
 - rule_set:
