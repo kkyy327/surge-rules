@@ -30,9 +30,15 @@ DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-SUFFIX,hsbc.com
 DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,isnssdk.com
+DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,zijieapi.com
 DOMAIN-SUFFIX,byteimg.com
 DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,pstatp.cn
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,bytecdn.cn
+DOMAIN-SUFFIX,amemv.cn
+DOMAIN-SUFFIX,douyinvideo.com
 DOMAIN-SUFFIX,qcloud.com
 DOMAIN-SUFFIX,doubao.com
 DOMAIN-SUFFIX,volces.com

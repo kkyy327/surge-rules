@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-10-31 12:08:39
+# UPDATED: 2026-10-31 19:06:14
 # DOMAIN: 38
-# DOMAIN-SUFFIX: 10643
+# DOMAIN-SUFFIX: 10645
 # DOMAIN-KEYWORD: 22
 # IP-CIDR: 266
 # IP-CIDR6: 38
-# TOTAL: 11010
+# TOTAL: 11012
 
 DOMAIN,127.skk.moe
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -2959,6 +2959,7 @@ DOMAIN-SUFFIX,douyinmusicpromotion.com
 DOMAIN-SUFFIX,douyinpay.com
 DOMAIN-SUFFIX,douyinpic.com
 DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,douyinvideo.com
 DOMAIN-SUFFIX,douyinvod.com
 DOMAIN-SUFFIX,douyu.com
 DOMAIN-SUFFIX,douyu.tv
@@ -4709,6 +4710,7 @@ DOMAIN-SUFFIX,ibreader.com
 DOMAIN-SUFFIX,ibuscloud.com
 DOMAIN-SUFFIX,ibuychem.com
 DOMAIN-SUFFIX,ibytedapm.com
+DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,ibytepluses-test.com
 DOMAIN-SUFFIX,ica-alliance.org
 DOMAIN-SUFFIX,icaidao.com
