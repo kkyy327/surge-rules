@@ -1,0 +1,191 @@
+# surge-rules 配套 Stash 配置模板
+# 仓库: https://github.com/kkyy327/surge-rules
+# 使用方法:
+# 1. Stash → 配置文件 → 添加, 导入本文件
+# 2. proxies 里的注释示例换成你自己的节点（删行首 # 并填真实参数）
+#    Stash 原生支持 Snell / AnyTLS, 示例即按这两种协议写
+# 3. proxy-providers.airport 的 url 换成你的机场订阅链接:
+#    地区组用 filter 正则从订阅节点里自动筛选
+# 注意:
+# - 本文件不含任何个人节点/密钥信息
+# - Clash 系没有 MTProto 规则, 故无此条
+# - WhatsApp / AI 两个小规则集原文件行尾带策略名, Clash 规则集不认,
+#   已展开成内联规则写在 rules 里, 效果相同
+
+mode: rule
+
+dns:
+  enable: true
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+
+proxies:
+# ⚠️ 下面是假地址示例节点: Clash 系内核会校验引用, 节点必须真实存在才能导入
+# 导入后把 server/psk/password 换成你自己的, 或删掉这几行并同步删 proxy-groups 里的同名引用
+- {name: 香港-1, type: snell, server: 1.2.3.4, port: 2345, psk: YOUR_PSK, version: 4}
+- {name: 美国-1, type: snell, server: 1.2.3.4, port: 2345, psk: YOUR_PSK, version: 4}
+- {name: 日本-1, type: snell, server: 1.2.3.4, port: 2345, psk: YOUR_PSK, version: 4}
+- {name: 新加坡-1, type: anytls, server: 1.2.3.4, port: 443, password: YOUR_PASSWORD, skip-cert-verify: true}
+
+proxy-providers:
+  airport:
+    type: http
+    url: "https://你的机场订阅链接"
+    interval: 86400
+    health-check:
+      enable: true
+      url: "http://www.gstatic.com/generate_204"
+      interval: 300
+
+proxy-groups:
+- {name: Proxy, type: select, proxies: [Auto, 香港节点, 美国节点, 日本节点, 新加坡节点, 机场节点, 香港-1, 美国-1, 日本-1, 新加坡-1], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png"}
+- {name: Auto, type: url-test, proxies: [香港-1, 美国-1, 日本-1, 新加坡-1], url: "http://www.gstatic.com/generate_204", interval: 300, tolerance: 50, icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png"}
+- {name: AI, type: select, proxies: [美国-1, 日本-1], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png"}
+- {name: 𝕏, type: select, proxies: [香港节点, 美国节点, Proxy], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png"}
+- {name: Instagram, type: select, proxies: [美国节点, 日本节点, 香港节点, Proxy], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png"}
+- {name: Telegram, type: select, proxies: [新加坡节点, 香港节点, 美国节点, Proxy], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"}
+- {name: YouTube, type: select, proxies: [美国节点, 日本节点, 新加坡节点, 香港节点, Proxy], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"}
+- {name: TikTok, type: select, proxies: [美国节点, 日本节点, 新加坡节点, 香港节点, Proxy], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png"}
+# ── 地区节点组（filter 正则筛选机场订阅节点） ──
+- {name: 香港节点, type: select, use: [airport], filter: "🇭🇰|香港|HK", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png"}
+- {name: 美国节点, type: select, use: [airport], filter: "🇺🇸|美国|洛杉矶|纽约|圣何塞|西雅图|芝加哥|达拉斯|LAX|SFO", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png"}
+- {name: 新加坡节点, type: select, use: [airport], filter: "🇸🇬|新加坡|狮城|SG", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png"}
+- {name: 日本节点, type: select, use: [airport], filter: "🇯🇵|日本|东京|大阪|JP", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png"}
+- {name: 韩国节点, type: select, use: [airport], filter: "🇰🇷|韩国|首尔|KR", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png"}
+- {name: 台湾节点, type: select, use: [airport], filter: "🇹🇼|台湾|台北|TW", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png"}
+# ── 机场节点（订阅全部节点） ──
+- {name: 机场节点, type: select, use: [airport], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png"}
+
+rule-providers:
+  IPCheck: {type: http, behavior: classical, url: "https://raw.githubusercontent.com/MiCat-S/Rule/refs/heads/main/rules/surge/IPCheck.list", path: ./ruleset/IPCheck.list, interval: 86400}
+  Reject: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Reject.list", path: ./ruleset/Reject.list, interval: 86400}
+  Twitter: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Twitter/Twitter.list", path: ./ruleset/Twitter.list, interval: 86400}
+  Instagram: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Instagram/Instagram.list", path: ./ruleset/Instagram.list, interval: 86400}
+  Telegram: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Telegram/Telegram.list", path: ./ruleset/Telegram.list, interval: 86400}
+  YouTube: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/YouTube.list", path: ./ruleset/YouTube.list, interval: 86400}
+  TikTok: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/TikTok.list", path: ./ruleset/TikTok.list, interval: 86400}
+  Nimbus: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Nimbus.list", path: ./ruleset/Nimbus.list, interval: 86400}
+  Cirrus: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Cirrus.list", path: ./ruleset/Cirrus.list, interval: 86400}
+  Stratus: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Stratus.list", path: ./ruleset/Stratus.list, interval: 86400}
+  Direct: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Direct.list", path: ./ruleset/Direct.list, interval: 86400}
+
+rules:
+- DOMAIN,voice.google.com,美国节点
+- RULE-SET,IPCheck,Proxy
+- RULE-SET,Reject,REJECT
+- DOMAIN-KEYWORD,-ad-sign.byteimg.com,REJECT
+- DOMAIN,dl.google.com,DIRECT
+- DOMAIN,dl.l.google.com,DIRECT
+- DOMAIN,redirector.gvt1.com,DIRECT
+- DOMAIN,clientservices.googleapis.com,DIRECT
+- DOMAIN,update.googleapis.com,DIRECT
+- DOMAIN,ci.android.com,DIRECT
+- DOMAIN-SUFFIX,blog.google,DIRECT
+- DOMAIN-SUFFIX,snssdk.com,DIRECT
+- DOMAIN-SUFFIX,isnssdk.com,DIRECT
+- DOMAIN-SUFFIX,zijieapi.com,DIRECT
+- DOMAIN-SUFFIX,byteimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,5721004.xyz,Proxy
+- DOMAIN-SUFFIX,515355.xyz,Proxy
+- DOMAIN-SUFFIX,pandalive.co.kr,Proxy
+- DOMAIN-SUFFIX,nodeseek.com,Proxy
+# ── WhatsApp（内联展开, 走香港节点; 必须放在通用 Proxy 规则集之前） ──
+- DOMAIN-SUFFIX,whatsapp.com,香港节点
+- DOMAIN-SUFFIX,whatsapp.net,香港节点
+- DOMAIN-KEYWORD,whatsapp,香港节点
+# ── JP（内联展开, 走日本节点; DMM 封面/mgstage 图片） ──
+- DOMAIN-SUFFIX,pics.dmm.co.jp,日本节点
+- DOMAIN-SUFFIX,awsimgsrc.dmm.co.jp,日本节点
+- DOMAIN-SUFFIX,image.mgstage.com,日本节点
+# ── JavDB（内联展开, 走香港节点; 日本 IP 被 JavDB 封） ──
+- DOMAIN-SUFFIX,javdb.com,香港节点
+- DOMAIN-SUFFIX,javdb561.com,香港节点
+- DOMAIN-SUFFIX,javdb570.com,香港节点
+- DOMAIN-SUFFIX,jdforrepam.com,香港节点
+- DOMAIN-SUFFIX,c0.jdbstatic.com,香港节点
+- DOMAIN-SUFFIX,tp.spfcas.com,香港节点
+- DOMAIN-KEYWORD,javdb,香港节点
+- RULE-SET,Twitter,𝕏
+- RULE-SET,Instagram,Instagram
+- RULE-SET,Telegram,Telegram
+- RULE-SET,YouTube,YouTube
+- RULE-SET,TikTok,TikTok
+- RULE-SET,Nimbus,Proxy
+- RULE-SET,Cirrus,Proxy
+- RULE-SET,Stratus,Proxy
+# ── AI（内联展开: Apple 智能/Siri; 必须放在 Direct 之前(Apple 规则已并入 Direct)） ──
+- DOMAIN-KEYWORD,siri,AI
+- DOMAIN,guzzoni.apple.com,AI
+- DOMAIN,mask.apple-dns.net,AI
+- DOMAIN,mask-t.apple-dns.net,AI
+- DOMAIN,mask-api.icloud.com,AI
+- DOMAIN,mask-api.fe.apple-dns.net,AI
+- DOMAIN,apple-relay.akamaized.net,AI
+- DOMAIN-SUFFIX,smoot.apple.com,AI
+- DOMAIN-SUFFIX,cp4.cloudflare.com,AI
+- DOMAIN-SUFFIX,apple-relay.apple.com,AI
+- DOMAIN-SUFFIX,apple-relay.cloudflare.com,AI
+- DOMAIN-SUFFIX,apple-relay.fastly-edge.com,AI
+- DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net,AI
+- DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,AI
+- DOMAIN-SUFFIX,bag.itunes.apple.com,AI
+- DOMAIN-SUFFIX,configuration.apple.com,AI
+- DOMAIN-SUFFIX,ipcdn.apple.com,AI
+- DOMAIN-SUFFIX,mask.icloud.com,AI
+- DOMAIN-SUFFIX,mask-h2.icloud.com,AI
+- DOMAIN-SUFFIX,apps.mzstatic.com,AI
+- DOMAIN,browser-intake-datadoghq.com,AI
+- DOMAIN,chat.openai.com.cdn.cloudflare.net,AI
+- DOMAIN,openai-api.arkoselabs.com,AI
+- DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,AI
+- DOMAIN,openaicomproductionae4b.blob.core.windows.net,AI
+- DOMAIN,production-openaicom-storage.azureedge.net,AI
+- DOMAIN,static.cloudflareinsights.com,AI
+- DOMAIN-SUFFIX,ai.com,AI
+- DOMAIN-SUFFIX,algolia.net,AI
+- DOMAIN-SUFFIX,api.statsig.com,AI
+- DOMAIN-SUFFIX,auth0.com,AI
+- DOMAIN-SUFFIX,chatgpt.com,AI
+- DOMAIN-SUFFIX,chatgpt.livekit.cloud,AI
+- DOMAIN-SUFFIX,client-api.arkoselabs.com,AI
+- DOMAIN-SUFFIX,events.statsigapi.net,AI
+- DOMAIN-SUFFIX,featuregates.org,AI
+- DOMAIN-SUFFIX,host.livekit.cloud,AI
+- DOMAIN-SUFFIX,identrust.com,AI
+- DOMAIN-SUFFIX,intercom.io,AI
+- DOMAIN-SUFFIX,intercomcdn.com,AI
+- DOMAIN-SUFFIX,launchdarkly.com,AI
+- DOMAIN-SUFFIX,oaistatic.com,AI
+- DOMAIN-SUFFIX,oaiusercontent.com,AI
+- DOMAIN-SUFFIX,observeit.net,AI
+- DOMAIN-SUFFIX,openai.com,AI
+- DOMAIN-SUFFIX,openaiapi-site.azureedge.net,AI
+- DOMAIN-SUFFIX,openaicom.imgix.net,AI
+- DOMAIN-SUFFIX,segment.io,AI
+- DOMAIN-SUFFIX,sentry.io,AI
+- DOMAIN-SUFFIX,stripe.com,AI
+- DOMAIN-SUFFIX,turn.livekit.cloud,AI
+- DOMAIN-KEYWORD,openai,AI
+- IP-CIDR,24.199.123.28/32,AI,no-resolve
+- IP-CIDR,64.23.132.171/32,AI,no-resolve
+- DOMAIN,cdn.usefathom.com,AI
+- DOMAIN-SUFFIX,anthropic.com,AI
+- DOMAIN-SUFFIX,claude.ai,AI
+- DOMAIN,servd-anthropic-website.b-cdn.net,AI
+- DOMAIN-SUFFIX,chat.openai.com,AI
+- DOMAIN-SUFFIX,chatgpt.site,AI
+- DOMAIN-SUFFIX,claude.com,AI
+- DOMAIN-KEYWORD,openaicom-api,AI
+# 国内服务直连(微信/支付宝/银行/京东/B站等, 含微信 ASN 规则)
+- RULE-SET,Direct,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- IP-CIDR,224.0.0.0/24,DIRECT,no-resolve
+- GEOIP,CN,DIRECT
+- MATCH,Proxy

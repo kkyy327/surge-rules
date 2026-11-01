@@ -1,0 +1,423 @@
+# surge-rules 配套 Egern 配置模板（与 surge.conf 同一套规则）
+# 仓库: https://github.com/kkyy327/surge-rules
+# 使用方法:
+# 1. 把下面 proxies 里的注释示例换成你自己的节点（删 # 改真实参数）
+# 2. 把 airport 订阅组里的 urls 换成你的机场订阅链接
+# 3. 整体粘贴导入 Egern
+# 注意: 本文件不含任何个人节点/密钥信息, MITM 证书需在 Egern 里自己生成
+
+ipv6: false
+geoip_db_url: https://git.io/GeoLite2-City.mmdb
+asn_db_url: https://git.io/GeoLite2-ASN.mmdb
+proxy_latency_test_url: http://www.gstatic.com/generate_204
+direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
+
+dns:
+  bootstrap:
+  - system
+  - 223.5.5.5
+  - 119.29.29.29
+
+proxies:
+# ⚠️ 节点示例（取消注释并填真实参数; 名字要和 policy_groups / rules 里引用的对上）
+# - snell:
+#     name: 香港-1
+#     server: 1.2.3.4
+#     port: 2345
+#     psk: YOUR_PSK
+#     version: 4
+# - snell:
+#     name: 美国-1
+#     server: 1.2.3.4
+#     port: 2345
+#     psk: YOUR_PSK
+#     version: 4
+# - snell:
+#     name: 日本-1
+#     server: 1.2.3.4
+#     port: 2345
+#     psk: YOUR_PSK
+#     version: 4
+# - anytls:
+#     name: 新加坡-1
+#     server: 1.2.3.4
+#     port: 443
+#     password: YOUR_PASSWORD
+#     tls:
+#       skip_cert_verify: true
+
+policy_groups:
+- select:
+    name: Proxy
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+    policies:
+    - Auto
+    - 香港节点
+    - 美国节点
+    - 日本节点
+    - 新加坡节点
+    - 香港-1
+    - 美国-1
+    - 日本-1
+    - 新加坡-1
+    flatten: false
+    hidden: false
+- url_test:
+    name: Auto
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    policies:
+    - 香港-1
+    - 美国-1
+    - 日本-1
+    - 新加坡-1
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    hidden: true
+- select:
+    name: AI
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png
+    policies:
+    - 美国-1
+    - 日本-1
+    flatten: false
+    hidden: false
+# ── 地区节点组（smart 按 filter 正则自动筛选机场节点, 也可手动往 policies 里加自己的节点） ──
+- select:
+    name: 𝕏
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png
+    policies:
+    - 香港节点
+    - 美国节点
+    - Proxy
+    flatten: false
+    hidden: false
+
+- select:
+    name: Instagram
+    policies:
+    - 美国节点
+    - 日本节点
+    - 香港节点
+    - Proxy
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png
+    hidden: false
+- select:
+    name: Telegram
+    policies:
+    - 新加坡节点
+    - 香港节点
+    - 美国节点
+    - Proxy
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+    hidden: false
+- select:
+    name: YouTube
+    policies:
+    - 美国节点
+    - 日本节点
+    - 新加坡节点
+    - 香港节点
+    - Proxy
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+    hidden: false
+- select:
+    name: TikTok
+    policies:
+    - 美国节点
+    - 日本节点
+    - 新加坡节点
+    - 香港节点
+    - Proxy
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+    hidden: false
+- smart:
+    name: 香港节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    policies:
+    - airport
+    - 香港-1
+    flatten: true
+    filter: (🇭🇰)|(香港)|(HK)
+    hidden: false
+- smart:
+    name: 美国节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+    policies:
+    - airport
+    - 美国-1
+    flatten: true
+    filter: (🇺🇸)|(美国)|(洛杉矶)|(纽约)|(圣何塞)|(西雅图)|(芝加哥)|(达拉斯)|(LAX)|(SFO)
+    hidden: false
+- smart:
+    name: 新加坡节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+    policies:
+    - airport
+    - 新加坡-1
+    flatten: true
+    filter: (🇸🇬)|(新加坡)|(狮城)|(SG)
+    hidden: false
+- smart:
+    name: 日本节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+    policies:
+    - airport
+    - 日本-1
+    flatten: true
+    filter: (🇯🇵)|(日本)|(东京)|(大阪)|(JP)
+    hidden: false
+- smart:
+    name: 韩国节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
+    policies:
+    - airport
+    flatten: true
+    filter: (🇰🇷)|(韩国)|(首尔)|(KR)
+    hidden: false
+- smart:
+    name: 台湾节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
+    policies:
+    - airport
+    flatten: true
+    filter: (🇹🇼)|(台湾)|(台北)|(TW)
+    hidden: false
+# ── 机场节点（订阅导入口 + 总组） ──
+- external:
+    name: airport
+    type: select
+    urls:
+    - https://你的机场订阅链接
+    update_interval: 0
+    hidden: true
+- select:
+    name: 机场节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png
+    policies:
+    - airport
+    flatten: true
+    hidden: false
+rules:
+- protocol:
+    match: MTProto
+    policy: 香港节点
+- domain:
+    match: voice.google.com
+    policy: 美国节点
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/MiCat-S/Rule/refs/heads/main/rules/surge/IPCheck.list
+    policy: Proxy
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Reject.list
+    policy: REJECT
+    disabled: false
+# ── DirectPlus（内联展开, 原 rules/DirectPlus.list; 必须在 Proxy 聚合之前） ──
+- domain:
+    match: dl.google.com
+    policy: DIRECT
+    disabled: false
+- domain:
+    match: dl.l.google.com
+    policy: DIRECT
+    disabled: false
+- domain:
+    match: redirector.gvt1.com
+    policy: DIRECT
+    disabled: false
+- domain:
+    match: clientservices.googleapis.com
+    policy: DIRECT
+    disabled: false
+- domain:
+    match: update.googleapis.com
+    policy: DIRECT
+    disabled: false
+- domain:
+    match: ci.android.com
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: blog.google
+    policy: DIRECT
+    disabled: false
+# ── Hongguo（内联展开, 原 rules/Hongguo.list） ──
+- domain_keyword:
+    match: -ad-sign.byteimg.com
+    policy: REJECT
+    disabled: false
+- domain_suffix:
+    match: snssdk.com
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: isnssdk.com
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: zijieapi.com
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: byteimg.com
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: pstatp.com
+    policy: DIRECT
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Rex.list
+    policy: Proxy
+    disabled: false
+# ── 专用规则（必须放在通用 Proxy 规则集之前） ──
+# ── WhatsApp（内联展开, 原 rules/WhatsApp.list） ──
+- domain_suffix:
+    match: whatsapp.com
+    policy: 香港节点
+    disabled: false
+- domain_suffix:
+    match: whatsapp.net
+    policy: 香港节点
+    disabled: false
+- domain_keyword:
+    match: whatsapp
+    policy: 香港节点
+    disabled: false
+# ── JP（内联展开, 原 rules/JP.list） ──
+- domain_suffix:
+    match: pics.dmm.co.jp
+    policy: 日本节点
+    disabled: false
+- domain_suffix:
+    match: awsimgsrc.dmm.co.jp
+    policy: 日本节点
+    disabled: false
+- domain_suffix:
+    match: image.mgstage.com
+    policy: 日本节点
+    disabled: false
+# ── JavDB（内联展开, 原 rules/JavDB.list） ──
+- domain_suffix:
+    match: javdb.com
+    policy: 香港节点
+    disabled: false
+- domain_suffix:
+    match: javdb561.com
+    policy: 香港节点
+    disabled: false
+- domain_suffix:
+    match: javdb570.com
+    policy: 香港节点
+    disabled: false
+- domain_suffix:
+    match: jdforrepam.com
+    policy: 香港节点
+    disabled: false
+- domain_suffix:
+    match: c0.jdbstatic.com
+    policy: 香港节点
+    disabled: false
+- domain_suffix:
+    match: tp.spfcas.com
+    policy: 香港节点
+    disabled: false
+- domain_keyword:
+    match: javdb
+    policy: 香港节点
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Twitter/Twitter.list
+    policy: 𝕏
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Instagram/Instagram.list
+    policy: Instagram
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Telegram/Telegram.list
+    policy: Telegram
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/YouTube.list
+    policy: YouTube
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/TikTok.list
+    policy: TikTok
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Nimbus.list
+    policy: Proxy
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Cirrus.list
+    policy: Proxy
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Stratus.list
+    policy: Proxy
+    disabled: false
+# ── AI（Apple 智能/Siri, 必须放在 Direct 之前(Apple 规则已并入 Direct)） ──
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/AI.list
+    policy: AI
+    disabled: false
+# 国内服务直连(微信/支付宝/银行/京东/B站等, 含微信 ASN 规则)
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Direct.list
+    policy: DIRECT
+    disabled: false
+# ── 中国直连补强（.cn + 内网段, 放在 GeoIP 之前; ChinaMax/ChinaASN 已由 Direct 集 + GEOIP 覆盖） ──
+- domain_suffix:
+    match: cn
+    policy: DIRECT
+    disabled: false
+- ip_cidr:
+    match: 192.168.0.0/16
+    policy: DIRECT
+    no_resolve: true
+    disabled: false
+- ip_cidr:
+    match: 10.0.0.0/8
+    policy: DIRECT
+    no_resolve: true
+    disabled: false
+- ip_cidr:
+    match: 127.0.0.0/8
+    policy: DIRECT
+    no_resolve: true
+    disabled: false
+- ip_cidr:
+    match: 172.16.0.0/12
+    policy: DIRECT
+    no_resolve: true
+    disabled: false
+- ip_cidr:
+    match: 100.64.0.0/10
+    policy: DIRECT
+    no_resolve: true
+    disabled: false
+- ip_cidr:
+    match: 224.0.0.0/24
+    policy: DIRECT
+    no_resolve: true
+    disabled: false
+- geoip:
+    match: CN
+    policy: DIRECT
+    no_resolve: false
+    disabled: false
+- default:
+    policy: Proxy
+
+# MITM（如需使用, 在 Egern 里生成自己的 CA 后填入; 不要用别人的证书）
+# mitm:
+#   ca_p12: YOUR_CA_P12_BASE64
+#   ca_passphrase: YOUR_CA_PASSPHRASE
