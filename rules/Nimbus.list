@@ -1,13 +1,13 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-10-31 12:07:43
-# DOMAIN: 1809
-# DOMAIN-SUFFIX: 22771
+# UPDATED: 2026-11-05 02:16:10
+# DOMAIN: 1810
+# DOMAIN-SUFFIX: 22790
 # DOMAIN-KEYWORD: 65
 # IP-CIDR: 1511
 # IP-CIDR6: 206
-# TOTAL: 26370
+# TOTAL: 26390
 
 # PART: 1/3
 DOMAIN,1password.drift.click
@@ -162,6 +162,7 @@ DOMAIN,assets.streamlinehq.com
 DOMAIN,assets.swiftkey.com
 DOMAIN,assets.swoogo.com
 DOMAIN,assets.tatlerasia.com
+DOMAIN,assets.temporary-phone-number.com
 DOMAIN,assets.the-independent.com
 DOMAIN,assets.tigerdata.com
 DOMAIN,assets.tokopedia.net
@@ -1923,6 +1924,7 @@ DOMAIN-SUFFIX,18comic-god.club
 DOMAIN-SUFFIX,18comic-god.xyz
 DOMAIN-SUFFIX,18comic.cc
 DOMAIN-SUFFIX,18comic.company
+DOMAIN-SUFFIX,18comic.ink
 DOMAIN-SUFFIX,18comic.org
 DOMAIN-SUFFIX,18comic.vip
 DOMAIN-SUFFIX,18commic.com
@@ -3220,6 +3222,7 @@ DOMAIN-SUFFIX,antd.org
 DOMAIN-SUFFIX,anthemgame.com
 DOMAIN-SUFFIX,anthemthegame.com
 DOMAIN-SUFFIX,anthonycalzadilla.com
+DOMAIN-SUFFIX,anthropic.auth0.com
 DOMAIN-SUFFIX,anti1984.com
 DOMAIN-SUFFIX,antichristendom.com
 DOMAIN-SUFFIX,antiwave.net
@@ -4667,6 +4670,7 @@ DOMAIN-SUFFIX,befuck.net
 DOMAIN-SUFFIX,beget.app
 DOMAIN-SUFFIX,beget.cloud
 DOMAIN-SUFFIX,beget.com
+DOMAIN-SUFFIX,beget.email
 DOMAIN-SUFFIX,beget.hosting
 DOMAIN-SUFFIX,beget.pro
 DOMAIN-SUFFIX,beget.tech
@@ -4871,6 +4875,7 @@ DOMAIN-SUFFIX,bikawebapp.com
 DOMAIN-SUFFIX,bili2.cc
 DOMAIN-SUFFIX,bili888.com
 DOMAIN-SUFFIX,bili999.com
+DOMAIN-SUFFIX,bilibili.tv
 DOMAIN-SUFFIX,bilinovel.com
 DOMAIN-SUFFIX,biliplus.com
 DOMAIN-SUFFIX,biliworld.com
@@ -4945,6 +4950,7 @@ DOMAIN-SUFFIX,bingpix.com
 DOMAIN-SUFFIX,bingpk.com
 DOMAIN-SUFFIX,bings.com
 DOMAIN-SUFFIX,bingsandbox.com
+DOMAIN-SUFFIX,bingstatic.com
 DOMAIN-SUFFIX,bingtoolbar.com
 DOMAIN-SUFFIX,bingtranslator.com
 DOMAIN-SUFFIX,bingvisualsearch.com
@@ -5177,6 +5183,7 @@ DOMAIN-SUFFIX,bmfinn.com
 DOMAIN-SUFFIX,bmia.org
 DOMAIN-SUFFIX,bmj.com
 DOMAIN-SUFFIX,bml.info
+DOMAIN-SUFFIX,bmonkeys.net
 DOMAIN-SUFFIX,bmp.ovh
 DOMAIN-SUFFIX,bmw-abudhabi.com
 DOMAIN-SUFFIX,bmw-adventskalender.com
@@ -5423,6 +5430,7 @@ DOMAIN-SUFFIX,bohemia.net
 DOMAIN-SUFFIX,bokep.net
 DOMAIN-SUFFIX,bokepseks.org
 DOMAIN-SUFFIX,bokepvidz.com
+DOMAIN-SUFFIX,boldgrid.com
 DOMAIN-SUFFIX,bolehvpn.net
 DOMAIN-SUFFIX,bollywoodlife.com
 DOMAIN-SUFFIX,boltdns.net
@@ -5643,6 +5651,7 @@ DOMAIN-SUFFIX,bsappapi.cc
 DOMAIN-SUFFIX,bsappapi.com
 DOMAIN-SUFFIX,bscdnweb.com
 DOMAIN-SUFFIX,bsky.app
+DOMAIN-SUFFIX,bsky.chat
 DOMAIN-SUFFIX,bstarstatic.com
 DOMAIN-SUFFIX,bstatic.com
 DOMAIN-SUFFIX,bsxm1213.pro
@@ -6672,6 +6681,7 @@ DOMAIN-SUFFIX,cloudns.net
 DOMAIN-SUFFIX,cloudproxy.app
 DOMAIN-SUFFIX,cloudrobotics.com
 DOMAIN-SUFFIX,cloudvolumes.com
+DOMAIN-SUFFIX,cloudwp.dev
 DOMAIN-SUFFIX,cloudyzgirl.com
 DOMAIN-SUFFIX,cloupia.com
 DOMAIN-SUFFIX,cloupia.net
@@ -8856,5 +8866,3 @@ DOMAIN-SUFFIX,expertmaker.com
 DOMAIN-SUFFIX,experts-univers.com
 DOMAIN-SUFFIX,explainthis.io
 DOMAIN-SUFFIX,explicittube.com
-DOMAIN-SUFFIX,exploader.net
-DOMAIN-SUFFIX,exploitedcollegegirls.com

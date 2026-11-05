@@ -1,15 +1,17 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-10-31 12:07:43
-# DOMAIN: 1809
-# DOMAIN-SUFFIX: 22771
+# UPDATED: 2026-11-05 02:16:10
+# DOMAIN: 1810
+# DOMAIN-SUFFIX: 22790
 # DOMAIN-KEYWORD: 65
 # IP-CIDR: 1511
 # IP-CIDR6: 206
-# TOTAL: 26370
+# TOTAL: 26390
 
 # PART: 2/3
+DOMAIN-SUFFIX,exploader.net
+DOMAIN-SUFFIX,exploitedcollegegirls.com
 DOMAIN-SUFFIX,exploitedteensasia.com
 DOMAIN-SUFFIX,explorebing.com
 DOMAIN-SUFFIX,exploreintel.com
@@ -5419,6 +5421,9 @@ DOMAIN-SUFFIX,lilaoshibushinilaoshi.com
 DOMAIN-SUFFIX,lilhumpers.com
 DOMAIN-SUFFIX,liliav.com
 DOMAIN-SUFFIX,lilith-soft.com
+DOMAIN-SUFFIX,limbuscompany.global
+DOMAIN-SUFFIX,limbuscompanyapi.com
+DOMAIN-SUFFIX,limbuscompanycdn.org
 DOMAIN-SUFFIX,limelight.com
 DOMAIN-SUFFIX,limertw.cc
 DOMAIN-SUFFIX,limeteensex.com
@@ -8009,6 +8014,7 @@ DOMAIN-SUFFIX,npmfs.com
 DOMAIN-SUFFIX,npmjs.com
 DOMAIN-SUFFIX,npmjs.org
 DOMAIN-SUFFIX,npms.io
+DOMAIN-SUFFIX,npmx.dev
 DOMAIN-SUFFIX,npnt.me
 DOMAIN-SUFFIX,npr.org
 DOMAIN-SUFFIX,npsboost.com

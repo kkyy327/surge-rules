@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-11-01 09:43:27
+# UPDATED: 2026-11-05 02:18:03
 # DOMAIN: 59
-# DOMAIN-SUFFIX: 12138
+# DOMAIN-SUFFIX: 12159
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 279
 # IP-CIDR6: 41
-# TOTAL: 12559
+# TOTAL: 12580
 
 DOMAIN,127.skk.moe
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -1211,6 +1211,7 @@ DOMAIN-SUFFIX,allday.work
 DOMAIN-SUFFIX,allhistory.com
 DOMAIN-SUFFIX,allinbots.com
 DOMAIN-SUFFIX,alloyteam.com
+DOMAIN-SUFFIX,allwinnertech.com
 DOMAIN-SUFFIX,allyes.com
 DOMAIN-SUFFIX,alookweb.com
 DOMAIN-SUFFIX,aloys233.top
@@ -2391,6 +2392,7 @@ DOMAIN-SUFFIX,burningvocabulary.com
 DOMAIN-SUFFIX,burstly.net
 DOMAIN-SUFFIX,burstlyrewards.com
 DOMAIN-SUFFIX,businesswebwise.com
+DOMAIN-SUFFIX,busyming.com
 DOMAIN-SUFFIX,buy-from-shanghai.com
 DOMAIN-SUFFIX,buyaapl.com
 DOMAIN-SUFFIX,buyaapl.net
@@ -2572,6 +2574,7 @@ DOMAIN-SUFFIX,caiyuncdn.com
 DOMAIN-SUFFIX,calatopia.com
 DOMAIN-SUFFIX,calendarserver.org
 DOMAIN-SUFFIX,calorietech.com
+DOMAIN-SUFFIX,cambricon.com
 DOMAIN-SUFFIX,camcard.com
 DOMAIN-SUFFIX,camelphat.com
 DOMAIN-SUFFIX,camelspaceeffect.com
@@ -3778,6 +3781,7 @@ DOMAIN-SUFFIX,douban.fm
 DOMAIN-SUFFIX,doubanio.com
 DOMAIN-SUFFIX,doubao-dev.com
 DOMAIN-SUFFIX,doubao.com
+DOMAIN-SUFFIX,doubaoapps.com
 DOMAIN-SUFFIX,doubaocdn.com
 DOMAIN-SUFFIX,doubo03.com
 DOMAIN-SUFFIX,doucang.com
@@ -4253,6 +4257,9 @@ DOMAIN-SUFFIX,fastcdn.com
 DOMAIN-SUFFIX,fastidea.cc
 DOMAIN-SUFFIX,fastidea.me
 DOMAIN-SUFFIX,fatfreader.com
+DOMAIN-SUFFIX,favonis.cloud
+DOMAIN-SUFFIX,favonis.com
+DOMAIN-SUFFIX,favonis.space
 DOMAIN-SUFFIX,faxingbao.com
 DOMAIN-SUFFIX,fbank.com
 DOMAIN-SUFFIX,fcapp.run
@@ -5250,6 +5257,7 @@ DOMAIN-SUFFIX,haier.net
 DOMAIN-SUFFIX,haiersmarthomes.com
 DOMAIN-SUFFIX,haihub.co
 DOMAIN-SUFFIX,hailuoai.com
+DOMAIN-SUFFIX,haimian.com
 DOMAIN-SUFFIX,haina.com
 DOMAIN-SUFFIX,haina.net
 DOMAIN-SUFFIX,hainanairlines.com
@@ -5450,6 +5458,7 @@ DOMAIN-SUFFIX,hnair.net
 DOMAIN-SUFFIX,hnbntv.com
 DOMAIN-SUFFIX,hnchasing.com
 DOMAIN-SUFFIX,hndt.com
+DOMAIN-SUFFIX,hnlshm.com
 DOMAIN-SUFFIX,hnol.net
 DOMAIN-SUFFIX,hnrcsc.com
 DOMAIN-SUFFIX,hntncdn.com
@@ -7474,6 +7483,12 @@ DOMAIN-SUFFIX,mmonsterheadphones.net
 DOMAIN-SUFFIX,mmqidian.com
 DOMAIN-SUFFIX,mmstat.com
 DOMAIN-SUFFIX,mnbvtgv.com
+DOMAIN-SUFFIX,mnc000.mcc460.pub.3gppnetwork.org
+DOMAIN-SUFFIX,mnc002.mcc460.pub.3gppnetwork.org
+DOMAIN-SUFFIX,mnc004.mcc460.pub.3gppnetwork.org
+DOMAIN-SUFFIX,mnc007.mcc460.pub.3gppnetwork.org
+DOMAIN-SUFFIX,mnc011.mcc460.pub.3gppnetwork.org
+DOMAIN-SUFFIX,mnc015.mcc460.pub.3gppnetwork.org
 DOMAIN-SUFFIX,mndqlib.net
 DOMAIN-SUFFIX,mob.com
 DOMAIN-SUFFIX,mobike.com
@@ -7628,6 +7643,7 @@ DOMAIN-SUFFIX,mszq.com
 DOMAIN-SUFFIX,mt22q4s3w5.com
 DOMAIN-SUFFIX,mt3.com
 DOMAIN-SUFFIX,mtgmcim.com
+DOMAIN-SUFFIX,mthreads.com
 DOMAIN-SUFFIX,mti100.com
 DOMAIN-SUFFIX,mtime.com
 DOMAIN-SUFFIX,mting.info
@@ -8430,6 +8446,7 @@ DOMAIN-SUFFIX,qianxun.com
 DOMAIN-SUFFIX,qianyierp.com
 DOMAIN-SUFFIX,qianzhan.com
 DOMAIN-SUFFIX,qiaobutang.com
+DOMAIN-SUFFIX,qiaqiafood.com
 DOMAIN-SUFFIX,qibox.com
 DOMAIN-SUFFIX,qichacha.com
 DOMAIN-SUFFIX,qichamao.com
@@ -9328,6 +9345,7 @@ DOMAIN-SUFFIX,soufunimg.com
 DOMAIN-SUFFIX,soulteary.com
 DOMAIN-SUFFIX,soulvoice.club
 DOMAIN-SUFFIX,souqian.com
+DOMAIN-SUFFIX,southchip.com
 DOMAIN-SUFFIX,southcn.com
 DOMAIN-SUFFIX,southmoney.com
 DOMAIN-SUFFIX,sparenode.com
@@ -9972,6 +9990,7 @@ DOMAIN-SUFFIX,tengmed.com
 DOMAIN-SUFFIX,tengyunqq.com
 DOMAIN-SUFFIX,tenovatech.com
 DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,tenpayglobal.com
 DOMAIN-SUFFIX,tensure.com
 DOMAIN-SUFFIX,tenwukong.com
 DOMAIN-SUFFIX,tenxcloud.com
@@ -11070,6 +11089,7 @@ DOMAIN-SUFFIX,wesimiot.com
 DOMAIN-SUFFIX,wesing-game.com
 DOMAIN-SUFFIX,wesingapp.com
 DOMAIN-SUFFIX,west95582.com
+DOMAIN-SUFFIX,wesure100.com
 DOMAIN-SUFFIX,wetest.host
 DOMAIN-SUFFIX,wetest.net
 DOMAIN-SUFFIX,wetest.org
@@ -12197,6 +12217,7 @@ DOMAIN-SUFFIX,zxxk.com
 DOMAIN-SUFFIX,zybang.com
 DOMAIN-SUFFIX,zygvqivs.com
 DOMAIN-SUFFIX,zyh365.com
+DOMAIN-SUFFIX,zymls.com
 DOMAIN-SUFFIX,zysn.net
 DOMAIN-SUFFIX,zysou.com
 DOMAIN-SUFFIX,zyyct.com

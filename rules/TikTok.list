@@ -1,11 +1,11 @@
 # NAME: TikTok
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-10-31 12:08:39
+# UPDATED: 2026-11-05 02:18:03
 # DOMAIN: 8
-# DOMAIN-SUFFIX: 48
+# DOMAIN-SUFFIX: 51
 # DOMAIN-KEYWORD: 4
-# TOTAL: 60
+# TOTAL: 63
 
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
 DOMAIN,lf16-pkgcdn.pitaya-clientai.com
@@ -50,11 +50,14 @@ DOMAIN-SUFFIX,tiktokglobalshopv.com
 DOMAIN-SUFFIX,tiktokminis.us
 DOMAIN-SUFFIX,tiktokmusic.app
 DOMAIN-SUFFIX,tiktokrow-cdn.com
+DOMAIN-SUFFIX,tiktokshop.com
+DOMAIN-SUFFIX,tiktokstaticb.com
 DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,tiktokv.com.edgekey.net
 DOMAIN-SUFFIX,tiktokv.com.edgesuite.net
 DOMAIN-SUFFIX,tiktokv.eu
 DOMAIN-SUFFIX,tiktokv.us
+DOMAIN-SUFFIX,tiktokvapp.com
 DOMAIN-SUFFIX,tiktokw.eu
 DOMAIN-SUFFIX,tiktokw.us
 DOMAIN-SUFFIX,trae.ai

@@ -1,13 +1,13 @@
 # NAME: Proxy
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-10-31 12:07:43
-# DOMAIN: 1809
-# DOMAIN-SUFFIX: 22771
+# UPDATED: 2026-11-05 02:16:10
+# DOMAIN: 1810
+# DOMAIN-SUFFIX: 22790
 # DOMAIN-KEYWORD: 65
 # IP-CIDR: 1511
 # IP-CIDR6: 206
-# TOTAL: 26370
+# TOTAL: 26390
 
 # PART: 3/3
 DOMAIN-SUFFIX,pinkworld.com
@@ -2092,6 +2092,7 @@ DOMAIN-SUFFIX,skillbox.pro
 DOMAIN-SUFFIX,skillshare.com
 DOMAIN-SUFFIX,skimtube.com
 DOMAIN-SUFFIX,skinstrip.net
+DOMAIN-SUFFIX,skinswap.com
 DOMAIN-SUFFIX,skk.moe
 DOMAIN-SUFFIX,skokka.com
 DOMAIN-SUFFIX,sksarab.top
@@ -2681,6 +2682,7 @@ DOMAIN-SUFFIX,steamdeck.com
 DOMAIN-SUFFIX,steamgames.com
 DOMAIN-SUFFIX,steaminventoryhelper.com
 DOMAIN-SUFFIX,steamos.cloud
+DOMAIN-SUFFIX,steampeek.hu
 DOMAIN-SUFFIX,steampowered.com
 DOMAIN-SUFFIX,steampowered.com.8686c.com
 DOMAIN-SUFFIX,steamserver.net
@@ -3723,6 +3725,7 @@ DOMAIN-SUFFIX,toritonssl.com
 DOMAIN-SUFFIX,torlock.com
 DOMAIN-SUFFIX,torproject.org
 DOMAIN-SUFFIX,torrentkitty.tv
+DOMAIN-SUFFIX,torrentleech.org
 DOMAIN-SUFFIX,torrentmac.net
 DOMAIN-SUFFIX,torrentprivacy.com
 DOMAIN-SUFFIX,torrenty.org
@@ -5213,7 +5216,9 @@ DOMAIN-SUFFIX,webcamtubexxx.com
 DOMAIN-SUFFIX,webcitation.org
 DOMAIN-SUFFIX,webevader.org
 DOMAIN-SUFFIX,webex.com
+DOMAIN-SUFFIX,webflow-ext.com
 DOMAIN-SUFFIX,webflow.com
+DOMAIN-SUFFIX,webflow.io
 DOMAIN-SUFFIX,webfreer.com
 DOMAIN-SUFFIX,webgata.net
 DOMAIN-SUFFIX,webgirlsonline.net
@@ -6521,6 +6526,7 @@ DOMAIN-SUFFIX,youtooz.com
 DOMAIN-SUFFIX,youtrack.cloud
 DOMAIN-SUFFIX,youtrannytube.com
 DOMAIN-SUFFIX,youversion.com
+DOMAIN-SUFFIX,youversionapi.com
 DOMAIN-SUFFIX,youwin.com
 DOMAIN-SUFFIX,youwuss.com
 DOMAIN-SUFFIX,youxu.info
