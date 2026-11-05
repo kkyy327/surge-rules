@@ -1,0 +1,6 @@
+# NAME: Emby
+# REPO: https://github.com/kkyy327/surge-rules
+# 第三方 Emby 服地址（手工维护，build.py 不生成）：裸规则，策略在引用处给；须放在通用 Proxy 规则集之前引用
+DOMAIN-SUFFIX,emby.sadchicktv.com
+DOMAIN-SUFFIX,emby101.origamiart.uk
+DOMAIN-SUFFIX,mi.miraiemby.com
