@@ -1,8 +1,12 @@
 # NAME: Twitter
 # REPO: https://github.com/kkyy327/surge-rules
-# 推特/X 规则（手工维护，build.py 不生成）：合并 blackmatrix7 与 MagicRule 两家上游当前版本并去重；裸规则，策略在引用处给
-# UPDATED: 2026-11-05
-# DOMAIN-KEYWORD: 1 / DOMAIN-SUFFIX: 27 / IP-CIDR: 8 / TOTAL: 36
+# UPSTREAM: https://magicrule.pages.dev + https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2026-11-05 13:12:44
+# DOMAIN-SUFFIX: 27
+# DOMAIN-KEYWORD: 1
+# IP-CIDR: 8
+# TOTAL: 36
+
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,cms-twdigitalassets.com
 DOMAIN-SUFFIX,grok.com
