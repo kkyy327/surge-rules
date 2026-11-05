@@ -353,15 +353,7 @@ rules:
     policy: TikTok
     disabled: false
 - rule_set:
-    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Nimbus.list
-    policy: Proxy
-    disabled: false
-- rule_set:
-    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Cirrus.list
-    policy: Proxy
-    disabled: false
-- rule_set:
-    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Stratus.list
+    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Proxy+.list
     policy: Proxy
     disabled: false
 # ── AI（Apple 智能/Siri, 必须放在 Direct 之前(Apple 规则已并入 Direct)） ──
