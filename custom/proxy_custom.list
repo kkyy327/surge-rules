@@ -6,3 +6,6 @@ DOMAIN-SUFFIX,memojav.com
 DOMAIN-SUFFIX,javp.cc
 DOMAIN-SUFFIX,javp.cc.cd
 DOMAIN-SUFFIX,fourhoi.com
+# NodeSeek（2026-11-05 手工补；上游 NodeSeek 集未被聚合收录，本站与备用域不在 Proxy+ 里）
+DOMAIN-SUFFIX,nodeseek.com
+DOMAIN-SUFFIX,22112211.xyz
