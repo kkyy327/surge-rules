@@ -16,3 +16,5 @@ DOMAIN,module-host.xtbecdi7690.workers.dev
 DOMAIN,douban-bridge.baran.wang
 # asmrhoney.com：用户指定走代理（2026-11-08）
 DOMAIN-SUFFIX,asmrhoney.com
+# sooplive.com：韩国 SOOP 直播，用户指定走代理（2026-11-08；Proxy+ 里只有几个子域名，主站未覆盖）
+DOMAIN-SUFFIX,sooplive.com
