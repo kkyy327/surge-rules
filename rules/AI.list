@@ -67,6 +67,14 @@ DOMAIN-SUFFIX,chat.openai.com,AI
 DOMAIN-SUFFIX,chatgpt.site,AI
 DOMAIN-SUFFIX,claude.com,AI
 DOMAIN-KEYWORD,openaicom-api,AI
+# 2026-11-08 补：与 nngyz G+S+Y+O 比对的 OpenAI 缺口
+DOMAIN-SUFFIX,chat.com,AI
+DOMAIN-SUFFIX,sora.com,AI
+DOMAIN-SUFFIX,oaistatsig.com,AI
+DOMAIN-SUFFIX,statsigapi.net,AI
+DOMAIN-SUFFIX,crixet.com,AI
+DOMAIN-KEYWORD,chatgpt,AI
+DOMAIN-KEYWORD,chatgpt-async-webps-prod,AI
 
 # ── Meta AI / Wabi / Hark（2026-10-31 并入，原 zhaohantao1360-hash/surge-rules MetaAI.list；ai.meta.com 等子域已被 meta.com 后缀覆盖）──
 DOMAIN-SUFFIX,meta.ai,AI
