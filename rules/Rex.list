@@ -14,3 +14,5 @@ DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,tmdb.org
 DOMAIN,module-host.xtbecdi7690.workers.dev
 DOMAIN,douban-bridge.baran.wang
+# asmrhoney.com：用户指定走代理（2026-11-08）
+DOMAIN-SUFFIX,asmrhoney.com
