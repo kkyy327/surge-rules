@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-11-07 18:27:07
+# UPDATED: 2026-11-08 12:41:00
 # DOMAIN: 57
-# DOMAIN-SUFFIX: 12578
+# DOMAIN-SUFFIX: 12592
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 284
 # IP-CIDR6: 41
-# TOTAL: 13002
+# TOTAL: 13016
 
 DOMAIN,api.blipsandchitz.me
 DOMAIN,app.adjust.com
@@ -2948,6 +2948,7 @@ DOMAIN-SUFFIX,chinaclothesstore.com
 DOMAIN-SUFFIX,chinacow.com
 DOMAIN-SUFFIX,chinadongchu.com
 DOMAIN-SUFFIX,chinadsl.net
+DOMAIN-SUFFIX,chinadzfp.com
 DOMAIN-SUFFIX,chinaexpressair.com
 DOMAIN-SUFFIX,chinafix.com
 DOMAIN-SUFFIX,chinafph.com
@@ -3177,6 +3178,8 @@ DOMAIN-SUFFIX,cloudyanan.com
 DOMAIN-SUFFIX,cloudyancheng.com
 DOMAIN-SUFFIX,cloudyantai.com
 DOMAIN-SUFFIX,cloudyinchuan.com
+DOMAIN-SUFFIX,cloudytrace.com
+DOMAIN-SUFFIX,cloudytrace.org
 DOMAIN-SUFFIX,cloudyueyang.com
 DOMAIN-SUFFIX,cloudyuncheng.com
 DOMAIN-SUFFIX,cloudyuxi.com
@@ -8483,6 +8486,7 @@ DOMAIN-SUFFIX,pingcode.com
 DOMAIN-SUFFIX,pingplusplus.com
 DOMAIN-SUFFIX,pingwest.com
 DOMAIN-SUFFIX,pingxx.com
+DOMAIN-SUFFIX,pinjiago.com
 DOMAIN-SUFFIX,pintu360.com
 DOMAIN-SUFFIX,pipaw.com
 DOMAIN-SUFFIX,pipaw.net
@@ -9758,9 +9762,17 @@ DOMAIN-SUFFIX,sundaydragon.com
 DOMAIN-SUFFIX,sunglassessale2014.com
 DOMAIN-SUFFIX,suning.com
 DOMAIN-SUFFIX,suningbank.com
+DOMAIN-SUFFIX,suningcdn.com
+DOMAIN-SUFFIX,suningcdn.net
 DOMAIN-SUFFIX,suningcloud.com
+DOMAIN-SUFFIX,suningdns.com
+DOMAIN-SUFFIX,suningdns.net
 DOMAIN-SUFFIX,suningestate.com
+DOMAIN-SUFFIX,suninggslb.net
 DOMAIN-SUFFIX,suningholdings.com
+DOMAIN-SUFFIX,suninghotel.com
+DOMAIN-SUFFIX,suningmail.com
+DOMAIN-SUFFIX,suningyunyou.com
 DOMAIN-SUFFIX,sunlife-everbright.com
 DOMAIN-SUFFIX,sunlogin.net
 DOMAIN-SUFFIX,sunrtb.com
@@ -11641,6 +11653,7 @@ DOMAIN-SUFFIX,wujistatic.com
 DOMAIN-SUFFIX,wukong.com
 DOMAIN-SUFFIX,wukongwenda.com
 DOMAIN-SUFFIX,wuliujie.com
+DOMAIN-SUFFIX,wuliuyun.com
 DOMAIN-SUFFIX,wumii.com
 DOMAIN-SUFFIX,wuming.com
 DOMAIN-SUFFIX,wuuxiang.com
@@ -12104,6 +12117,7 @@ DOMAIN-SUFFIX,yicai.com
 DOMAIN-SUFFIX,yiche.com
 DOMAIN-SUFFIX,yichengwlkj.com
 DOMAIN-SUFFIX,yidianliulan.com
+DOMAIN-SUFFIX,yifubao.com
 DOMAIN-SUFFIX,yigao.com
 DOMAIN-SUFFIX,yigoonet.com
 DOMAIN-SUFFIX,yihaodian.com
