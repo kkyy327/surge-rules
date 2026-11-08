@@ -1,13 +1,13 @@
 # NAME: Proxy+
 # REPO: https://github.com/kkyy327/surge-rules
-# UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-11-07 18:25:44
+# UPSTREAM: https://magicrule.pages.dev + https://github.com/blackmatrix7/ios_rule_script（仅 Twitter 部分）
+# UPDATED: 2026-11-08 14:47:01
 # DOMAIN: 1804
-# DOMAIN-SUFFIX: 23259
-# DOMAIN-KEYWORD: 80
-# IP-CIDR: 1534
+# DOMAIN-SUFFIX: 23279
+# DOMAIN-KEYWORD: 81
+# IP-CIDR: 1542
 # IP-CIDR6: 206
-# TOTAL: 26891
+# TOTAL: 26920
 
 DOMAIN,1password.drift.click
 DOMAIN,3dna.nationbuilder.com
@@ -2618,6 +2618,7 @@ DOMAIN-SUFFIX,adobexdplatform.com
 DOMAIN-SUFFIX,adorableorchid.com
 DOMAIN-SUFFIX,adorevids.com
 DOMAIN-SUFFIX,ads-blocker.pro
+DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,adsense.com
 DOMAIN-SUFFIX,adsensecustomsearchads.com
 DOMAIN-SUFFIX,adsenseformobileapps.com
@@ -6766,6 +6767,7 @@ DOMAIN-SUFFIX,cmegroup.com
 DOMAIN-SUFFIX,cmhalq.com
 DOMAIN-SUFFIX,cmoinc.org
 DOMAIN-SUFFIX,cmpaas.com
+DOMAIN-SUFFIX,cms-twdigitalassets.com
 DOMAIN-SUFFIX,cmule.com
 DOMAIN-SUFFIX,cmule.org
 DOMAIN-SUFFIX,cmx.im
@@ -11270,7 +11272,7 @@ DOMAIN-SUFFIX,greginhollywood.com
 DOMAIN-SUFFIX,grep.app
 DOMAIN-SUFFIX,gridaware.app
 DOMAIN-SUFFIX,grindr.com
-DOMAIN-SUFFIX,grok.x.com
+DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,grokipedia.com
 DOMAIN-SUFFIX,grooby.com
 DOMAIN-SUFFIX,groq.com
@@ -17996,6 +17998,7 @@ DOMAIN-SUFFIX,perfectsexnow.com
 DOMAIN-SUFFIX,perfectshemales.com
 DOMAIN-SUFFIX,perfecttitspics.com
 DOMAIN-SUFFIX,perfectvpn.net
+DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,perl.org
 DOMAIN-SUFFIX,perma.cc
 DOMAIN-SUFFIX,permaweb.io
@@ -18549,6 +18552,7 @@ DOMAIN-SUFFIX,prts.plus
 DOMAIN-SUFFIX,ps
 DOMAIN-SUFFIX,ps-exchange.com
 DOMAIN-SUFFIX,psblog.name
+DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,pshvpn.com
 DOMAIN-SUFFIX,psiphon3.com
 DOMAIN-SUFFIX,psiphontoday.com
@@ -21395,6 +21399,7 @@ DOMAIN-SUFFIX,telemundo.com
 DOMAIN-SUFFIX,telerik.com
 DOMAIN-SUFFIX,telesell.com
 DOMAIN-SUFFIX,telex.cc
+DOMAIN-SUFFIX,tellapart.com
 DOMAIN-SUFFIX,tellme.pw
 DOMAIN-SUFFIX,tellmewhygame.com
 DOMAIN-SUFFIX,temetube.xyz
@@ -22228,6 +22233,7 @@ DOMAIN-SUFFIX,tweetbackup.com
 DOMAIN-SUFFIX,tweetboard.com
 DOMAIN-SUFFIX,tweetboner.biz
 DOMAIN-SUFFIX,tweetcs.com
+DOMAIN-SUFFIX,tweetdeck.com
 DOMAIN-SUFFIX,tweetedtimes.com
 DOMAIN-SUFFIX,tweetmarker.net
 DOMAIN-SUFFIX,tweetphoto.com
@@ -22261,6 +22267,8 @@ DOMAIN-SUFFIX,twilightsex.com
 DOMAIN-SUFFIX,twilio.com
 DOMAIN-SUFFIX,twilog.org
 DOMAIN-SUFFIX,twimbow.com
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twimg.org
 DOMAIN-SUFFIX,twindexx.com
 DOMAIN-SUFFIX,twinkboyfriends.tv
 DOMAIN-SUFFIX,twinkybf.com
@@ -22288,8 +22296,15 @@ DOMAIN-SUFFIX,twitlonger.com
 DOMAIN-SUFFIX,twitmania.com
 DOMAIN-SUFFIX,twitoaster.com
 DOMAIN-SUFFIX,twitonmsn.com
+DOMAIN-SUFFIX,twitpic.com
 DOMAIN-SUFFIX,twitstat.com
 DOMAIN-SUFFIX,twittbot.net
+DOMAIN-SUFFIX,twitter.biz
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twittercommunity.com
+DOMAIN-SUFFIX,twitterflightschool.com
+DOMAIN-SUFFIX,twitterinc.com
+DOMAIN-SUFFIX,twitteroauth.com
 DOMAIN-SUFFIX,twitthat.com
 DOMAIN-SUFFIX,twittpr.com
 DOMAIN-SUFFIX,twitturk.com
@@ -22309,7 +22324,11 @@ DOMAIN-SUFFIX,twstalker.com
 DOMAIN-SUFFIX,twstar.net
 DOMAIN-SUFFIX,twt.tl
 DOMAIN-SUFFIX,twtkr.com
+DOMAIN-SUFFIX,twtrdns.net
 DOMAIN-SUFFIX,twtrland.com
+DOMAIN-SUFFIX,twttr.com
+DOMAIN-SUFFIX,twttr.net
+DOMAIN-SUFFIX,twvid.com
 DOMAIN-SUFFIX,twyac.org
 DOMAIN-SUFFIX,tx.me
 DOMAIN-SUFFIX,tx5254.com
@@ -23952,6 +23971,7 @@ DOMAIN-SUFFIX,x-berry.com
 DOMAIN-SUFFIX,x-caprice.com
 DOMAIN-SUFFIX,x-fetish.org
 DOMAIN-SUFFIX,x-wall.org
+DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,x.company
 DOMAIN-SUFFIX,x.org
 DOMAIN-SUFFIX,x.team
@@ -25147,6 +25167,7 @@ DOMAIN-KEYWORD,telegram
 DOMAIN-KEYWORD,tesla
 DOMAIN-KEYWORD,ttvnw
 DOMAIN-KEYWORD,twimg
+DOMAIN-KEYWORD,twitter
 DOMAIN-KEYWORD,uk-live
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,voddazn
@@ -25161,6 +25182,7 @@ IP-CIDR,103.87.204.0/22,no-resolve
 IP-CIDR,103.87.205.0/24,no-resolve
 IP-CIDR,103.87.206.0/24,no-resolve
 IP-CIDR,103.87.207.0/24,no-resolve
+IP-CIDR,104.244.42.0/21,no-resolve
 IP-CIDR,104.85.165.17/32,no-resolve
 IP-CIDR,107.23.255.0/26,no-resolve
 IP-CIDR,108.128.160.0/23,no-resolve
@@ -25709,6 +25731,7 @@ IP-CIDR,185.2.220.0/22,no-resolve
 IP-CIDR,185.60.216.0/22,no-resolve
 IP-CIDR,185.76.151.0/24,no-resolve
 IP-CIDR,185.9.188.0/22,no-resolve
+IP-CIDR,192.133.76.0/22,no-resolve
 IP-CIDR,192.173.100.0/24,no-resolve
 IP-CIDR,192.173.101.0/24,no-resolve
 IP-CIDR,192.173.102.0/24,no-resolve
@@ -25764,6 +25787,10 @@ IP-CIDR,198.45.48.0/24,no-resolve
 IP-CIDR,198.45.49.0/24,no-resolve
 IP-CIDR,198.45.50.0/24,no-resolve
 IP-CIDR,198.45.56.0/24,no-resolve
+IP-CIDR,199.16.156.0/22,no-resolve
+IP-CIDR,199.59.148.0/22,no-resolve
+IP-CIDR,199.96.56.0/21,no-resolve
+IP-CIDR,202.160.128.0/22,no-resolve
 IP-CIDR,203.104.103.0/24,no-resolve
 IP-CIDR,203.116.0.0/16,no-resolve
 IP-CIDR,203.174.66.64/26,no-resolve
@@ -25787,6 +25814,7 @@ IP-CIDR,205.251.218.0/24,no-resolve
 IP-CIDR,207.45.72.0/22,no-resolve
 IP-CIDR,207.45.73.0/24,no-resolve
 IP-CIDR,208.75.76.0/22,no-resolve
+IP-CIDR,209.237.192.0/19,no-resolve
 IP-CIDR,210.0.153.0/24,no-resolve
 IP-CIDR,210.71.227.202/32,no-resolve
 IP-CIDR,218.102.32.0/19,no-resolve
@@ -26630,6 +26658,7 @@ IP-CIDR,65.1.172.0/22,no-resolve
 IP-CIDR,66.197.128.0/17,no-resolve
 IP-CIDR,66.220.144.0/20,no-resolve
 IP-CIDR,69.171.224.0/19,no-resolve
+IP-CIDR,69.195.160.0/19,no-resolve
 IP-CIDR,69.53.224.0/19,no-resolve
 IP-CIDR,69.53.225.0/24,no-resolve
 IP-CIDR,69.53.226.0/24,no-resolve

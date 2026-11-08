@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""聚合规则生成 Proxy / Direct / Reject / TikTok / YouTube / Twitter 六个 Surge 规则集.
+"""聚合规则生成 Proxy+ / Direct / Reject / TikTok / YouTube 五个 Surge 规则集.
 
 上游（2026-10-31 起）:
 - Proxy / Direct / TikTok / YouTube: MagicRule (https://magicrule.pages.dev)
   抓取方式: /data/index/Surge.json 索引 -> 每集 manifest -> key=rules 的产物文件
-- Twitter: MagicRule 与 blackmatrix7/ios_rule_script 两家合并去重（单拆独立集, 2026-11-05 接入自动构建）
+- Twitter: 2026-11-08 用户拍板并入 Proxy+（MagicRule + blackmatrix7 双源合并），独立 Twitter 集已删
 - Reject: 保留 blackmatrix7/ios_rule_script 的 AdvertisingLite
   （MagicRule 的 AdvertisingLite 有 18 万条，体积与误杀都不适合本仓库，用户拍板保留旧源）
 
 用法: python3 build.py
-输出: ../rules/{Proxy+,Direct,Reject,TikTok,YouTube,Twitter}.list
+输出: ../rules/{Proxy+,Direct,Reject,TikTok,YouTube}.list
 """
 import json
 import os
@@ -29,11 +29,11 @@ MR_UPSTREAM_LABEL = "https://magicrule.pages.dev"
 TW_UPSTREAM_LABEL = "https://magicrule.pages.dev + https://github.com/blackmatrix7/ios_rule_script"  # Twitter 双源合并
 
 # blackmatrix7 时代的服务名 -> MagicRule 的改名/合并
-MR_RENAMES = {"Claude": "Anthropic", "BardAI": "Gemini"}
+MR_RENAMES = {"Claude": "Anthropic", "BardAI": "Gemini", "Suning": "SuNing"}
 MR_SKIP_SERVICES = {"GoogleSearch", "GoogleDrive"}  # MagicRule 已并入 Google 集
 
 # 已从 Proxy 聚合排除的服务：其规则改走专用 RULE-SET，不再混进通用代理集
-PROXY_EXCLUDE_SERVICES = ["Twitter", "OpenAI", "Anthropic", "YouTube", "TikTok"]
+PROXY_EXCLUDE_SERVICES = ["OpenAI", "Anthropic", "YouTube", "TikTok"]
 
 # ---------- blackmatrix7（Reject 保留 + Twitter 合并源） ----------
 BM_BASE = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge"
@@ -279,8 +279,15 @@ def main():
                     if len(_p) == 2:
                         exclude.add((_p[0].strip(), _p[1].strip()))
     proxy_rules.extend(load_custom(os.path.join(ROOT, "custom", "proxy_custom.list")))
+    # Twitter 并入 Proxy+（2026-11-08 用户拍板）：与原独立集同源同法，
+    # MagicRule + blackmatrix7 双源合并后进 Proxy 池
+    tw_rules = mr_rules("Twitter")
+    tw_rules.extend(parse(bm_fetch(f"{BM_BASE}/Twitter/Twitter.list")))
+    proxy_rules.extend(tw_rules)
+    print(f"  并入 Twitter（双源）: {len(tw_rules)} 条")
     proxy_rules = apply_excludes(proxy_rules, exclude, proxy_exclude_domains)
-    n_proxy, proxy_files = write_set("Proxy+", proxy_rules, MR_UPSTREAM_LABEL,
+    n_proxy, proxy_files = write_set("Proxy+", proxy_rules,
+                                     f"{MR_UPSTREAM_LABEL} + {BM_UPSTREAM_LABEL}（仅 Twitter 部分）",
                                      max_bytes=2_000_000)
 
     print("== Direct (MagicRule: China + ChinaMedia + Direct + 国内服务) ==")
@@ -314,11 +321,6 @@ def main():
     print("== TikTok（单拆独立集, MagicRule） ==")
     n_tiktok, tiktok_files = write_set("TikTok", mr_rules("TikTok"), MR_UPSTREAM_LABEL)
 
-    print("== Twitter（单拆独立集, MagicRule + blackmatrix7 合并） ==")
-    tw_rules = mr_rules("Twitter")
-    tw_rules.extend(parse(bm_fetch(f"{BM_BASE}/Twitter/Twitter.list")))
-    n_twitter, twitter_files = write_set("Twitter", tw_rules, TW_UPSTREAM_LABEL)
-
     print("== YouTube（上游原文整表, MagicRule） ==")
     yt_text = mr_artifact_text("YouTube")
     yt_path = os.path.join(ROOT, "rules", "YouTube.list")
@@ -336,8 +338,7 @@ def main():
     n_reject, reject_files = write_set("Reject", reject_rules, BM_UPSTREAM_LABEL)
 
     print(f"\n完成: Proxy={n_proxy} {proxy_files} / Direct={n_direct} {direct_files} / "
-          f"TikTok={n_tiktok} {tiktok_files} / YouTube={n_youtube} / Reject={n_reject} {reject_files} / "
-          f"Twitter={n_twitter} {twitter_files}")
+          f"TikTok={n_tiktok} {tiktok_files} / YouTube={n_youtube} / Reject={n_reject} {reject_files}")
 
 
 if __name__ == "__main__":
