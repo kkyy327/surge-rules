@@ -20,3 +20,5 @@ DOMAIN-SUFFIX,asmrhoney.com
 DOMAIN-SUFFIX,sooplive.com
 # mdcmai4.xyz：用户指定走代理（2026-11-08）
 DOMAIN-SUFFIX,mdcmai4.xyz
+# pimpbunny.com：用户指定走新国时延优选（2026-11-10）
+DOMAIN-SUFFIX,pimpbunny.com，新国时延优选
