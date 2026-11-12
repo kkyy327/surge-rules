@@ -1,7 +1,7 @@
 #!name=阿里 HTTPDNS 用量
 #!desc=在 Surge Panel 中查询多个阿里云账号本月 HTTPDNS 用量、免费额度与剩余量。凭据仅保存在 Surge 本机，由脚本直接签名请求阿里云 OpenAPI。
 #!category=查询
-#!arguments=账号1名称,账号1AccessKey ID,账号1AccessKey Secret,账号2名称:#,账号2AccessKey ID,账号2AccessKey Secret,账号3名称:#,账号3AccessKey ID,账号3AccessKey Secret,账号4名称:#,账号4AccessKey ID,账号4AccessKey Secret,账号5名称:#,账号5AccessKey ID,账号5AccessKey Secret,免费额度:1500000
+#!arguments=账号1名称:,账号1AccessKey ID:,账号1AccessKey Secret:,账号2名称:#,账号2AccessKey ID:,账号2AccessKey Secret:,账号3名称:#,账号3AccessKey ID:,账号3AccessKey Secret:,账号4名称:#,账号4AccessKey ID:,账号4AccessKey Secret:,账号5名称:#,账号5AccessKey ID:,账号5AccessKey Secret:,免费额度:1500000
 #!arguments-desc=填 RAM 只读 AccessKey，凭据仅保存在本机。只用一个账号就只填账号 1，其余留空。免费额度仅在接口未返回账号额度时使用。
 
 [Panel]
