@@ -1,0 +1,11 @@
+#!name=汇率面板
+#!desc=以人民币为基准的汇率面板：外币兑人民币与人民币兑外币分组显示，数据源每日更新，无需 Key。显示币种可在模块参数中修改。
+#!category=查询
+#!arguments=显示币种:USD,HKD,JPY,KRW,TRY,EUR,GBP
+#!arguments-desc=逗号分隔的币种代码，如 USD,HKD,JPY,KRW,TRY,EUR,GBP；支持 SGD、AUD、CAD、CHF、THB、TWD 等常用币种。
+
+[Panel]
+当前汇率 = title="💱 今日汇率",content="加载中…",icon=yensign.circle,icon-color=#D4AF37,script-name=exchange-rate,update-interval=3600
+
+[Script]
+exchange-rate = type=generic,script-path=https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/modules/ExchangeRate/exchange-rate.js,timeout=30,script-update-interval=300,argument="currencies={{{显示币种}}}"
