@@ -1,0 +1,9 @@
+#!name=阿里 HTTPDNS 用量
+#!desc=在 Surge Panel 中查询多个阿里云账号本月 HTTPDNS 用量、免费额度与剩余量。凭据仅保存在 Surge 本机，由脚本直接签名请求阿里云 OpenAPI。
+#!category=查询
+
+[Panel]
+阿里 HTTPDNS 用量 = title="阿里 HTTPDNS 用量",content="请先填写 RAM 只读凭据",icon=cloud.fill,icon-color=#ff6a00,script-name=alidns-usage,update-interval=3600
+
+[Script]
+alidns-usage = type=generic,script-path=https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/modules/AliDNSUsage/alidns-usage.js,timeout=30,script-update-interval=300,argument="name1=&id1=&secret1=&name2=&id2=&secret2=&name3=&id3=&secret3=&name4=&id4=&secret4=&name5=&id5=&secret5=&quota=1500000"
