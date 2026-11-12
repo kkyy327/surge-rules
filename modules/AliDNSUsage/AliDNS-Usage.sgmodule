@@ -1,9 +1,11 @@
 #!name=阿里 HTTPDNS 用量
 #!desc=在 Surge Panel 中查询多个阿里云账号本月 HTTPDNS 用量、免费额度与剩余量。凭据仅保存在 Surge 本机，由脚本直接签名请求阿里云 OpenAPI。
 #!category=查询
+#!arguments=账号1名称,账号1AccessKey ID,账号1AccessKey Secret,账号2名称:#,账号2AccessKey ID,账号2AccessKey Secret,账号3名称:#,账号3AccessKey ID,账号3AccessKey Secret,账号4名称:#,账号4AccessKey ID,账号4AccessKey Secret,账号5名称:#,账号5AccessKey ID,账号5AccessKey Secret,免费额度:1500000
+#!arguments-desc=填 RAM 只读 AccessKey，凭据仅保存在本机。只用一个账号就只填账号 1，其余留空。免费额度仅在接口未返回账号额度时使用。
 
 [Panel]
 阿里 HTTPDNS 用量 = title="阿里 HTTPDNS 用量",content="请先填写 RAM 只读凭据",icon=cloud.fill,icon-color=#ff6a00,script-name=alidns-usage,update-interval=3600
 
 [Script]
-alidns-usage = type=generic,script-path=https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/modules/AliDNSUsage/alidns-usage.js,timeout=30,script-update-interval=300,argument="name1=&id1=&secret1=&name2=&id2=&secret2=&name3=&id3=&secret3=&name4=&id4=&secret4=&name5=&id5=&secret5=&quota=1500000"
+alidns-usage = type=generic,script-path=https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/modules/AliDNSUsage/alidns-usage.js,timeout=30,script-update-interval=300,argument="name1={{{账号1名称}}}&id1={{{账号1AccessKey ID}}}&secret1={{{账号1AccessKey Secret}}}&name2={{{账号2名称}}}&id2={{{账号2AccessKey ID}}}&secret2={{{账号2AccessKey Secret}}}&name3={{{账号3名称}}}&id3={{{账号3AccessKey ID}}}&secret3={{{账号3AccessKey Secret}}}&name4={{{账号4名称}}}&id4={{{账号4AccessKey ID}}}&secret4={{{账号4AccessKey Secret}}}&name5={{{账号5名称}}}&id5={{{账号5AccessKey ID}}}&secret5={{{账号5AccessKey Secret}}}&quota={{{免费额度}}}"
