@@ -22,3 +22,5 @@ DOMAIN-SUFFIX,sooplive.com
 DOMAIN-SUFFIX,mdcmai4.xyz
 # pimpbunny.com：用户指定走代理（2026-11-10）
 DOMAIN-SUFFIX,pimpbunny.com
+# chigua.com：51吃瓜模块卡建议走代理（2026-11-13）
+DOMAIN-SUFFIX,chigua.com
