@@ -35,6 +35,7 @@ function parseArgs(str) {
 
 // 小数位自适应：越大给越少，观感整齐
 function fmtRate(v) {
+  if (!isFinite(v)) return "-";
   if (v >= 100) return v.toFixed(1);
   if (v >= 10) return v.toFixed(2);
   return v.toFixed(3);
@@ -49,8 +50,8 @@ function buildPanel(rates, dateStr, codes) {
   var groupA = []; // 1 外币 = N 人民币
   var groupB = []; // 1 人民币 = N 外币
   codes.forEach(function (code) {
-    var r = rates[code];
-    if (!r || r <= 0) return;
+    var r = Number(rates[code]);
+    if (!isFinite(r) || r <= 0) return;
     var meta = META[code] || ["🏳️", code];
     if (r >= 1) {
       groupB.push(meta[0] + " " + meta[1] + " " + code + " ｜ 1 人民币 ＝ " + fmtRate(r) + " " + meta[1]);
@@ -82,9 +83,17 @@ function main() {
     "https://open.er-api.com/v6/latest/CNY"
   ];
 
+  // 只结束一次：任何异常路径都不让面板挂住或重复 $done
+  var finished = false;
+  function finish(panel) {
+    if (finished) return;
+    finished = true;
+    $done(panel);
+  }
+
   function trySource(idx) {
     if (idx >= sources.length) {
-      $done({ title: "💱 今日汇率", content: "获取汇率失败，稍后再试", icon: "yensign.circle", "icon-color": "#D4AF37" });
+      finish({ title: "💱 今日汇率", content: "获取汇率失败，稍后再试", icon: "yensign.circle", "icon-color": "#D4AF37" });
       return;
     }
     $httpClient.get({ url: sources[idx], timeout: 15 }, function (error, response, data) {
@@ -96,7 +105,11 @@ function main() {
         trySource(idx + 1);
         return;
       }
-      $done(buildPanel(obj.rates, obj.date || "", codes));
+      try {
+        finish(buildPanel(obj.rates, obj.date || "", codes));
+      } catch (e) {
+        trySource(idx + 1);
+      }
     });
   }
 

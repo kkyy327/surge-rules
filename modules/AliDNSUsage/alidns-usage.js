@@ -189,32 +189,51 @@ function buildSignedUrl(accessKeyId, accessKeySecret) {
 // ---------- 主逻辑 ----------
 
 function queryAccount(acc, fallbackQuota, done) {
+  // 每个账号只回报一次：回调里任何异常都转成一行失败信息，
+  // 保证主逻辑的计数能走完、面板不会挂住
+  var called = false;
+  function safeDone(line) {
+    if (called) return;
+    called = true;
+    done(line);
+  }
   var url = buildSignedUrl(acc.id, acc.secret);
   $httpClient.get({ url: url, timeout: 15 }, function (error, response, data) {
-    if (error) {
-      done(acc.label + "：查询失败（网络错误）");
-      return;
+    try {
+      if (error) {
+        safeDone(acc.label + "：查询失败（网络错误）");
+        return;
+      }
+      var obj;
+      try { obj = JSON.parse(data); } catch (e) {
+        safeDone(acc.label + "：查询失败（返回解析错误）");
+        return;
+      }
+      if (!obj || typeof obj !== "object") {
+        safeDone(acc.label + "：查询失败（返回解析错误）");
+        return;
+      }
+      if (obj.Code) {
+        safeDone(acc.label + "：查询失败（" + obj.Code + "）");
+        return;
+      }
+      var info = obj.AccountInfo || {};
+      var used = Number(info.MonthResolveCount || 0);
+      var httpsUsed = Number(info.MonthHttpsResolveCount || 0);
+      var quota = Number(info.MonthFreeCount || 0);
+      if (!isFinite(used)) used = 0;
+      if (!isFinite(httpsUsed)) httpsUsed = 0;
+      if (!isFinite(quota) || quota < 0) quota = 0;
+      if (!quota) quota = fallbackQuota;
+      var remain = quota - used;
+      var pct = quota > 0 ? (used / quota * 100).toFixed(1) : "0.0";
+      var line = acc.label + "：本月 " + fmt(used) + " / " + fmt(quota) +
+        "，剩余 " + fmt(remain) + "（已用 " + pct + "%）";
+      if (httpsUsed > 0) line += "\n　其中 HTTPS " + fmt(httpsUsed) + " 次";
+      safeDone(line);
+    } catch (e) {
+      safeDone(acc.label + "：查询失败（脚本异常）");
     }
-    var obj;
-    try { obj = JSON.parse(data); } catch (e) {
-      done(acc.label + "：查询失败（返回解析错误）");
-      return;
-    }
-    if (obj.Code) {
-      done(acc.label + "：查询失败（" + obj.Code + "）");
-      return;
-    }
-    var info = obj.AccountInfo || {};
-    var used = Number(info.MonthResolveCount || 0);
-    var httpsUsed = Number(info.MonthHttpsResolveCount || 0);
-    var quota = Number(info.MonthFreeCount || 0);
-    if (!quota) quota = fallbackQuota;
-    var remain = quota - used;
-    var pct = quota > 0 ? (used / quota * 100).toFixed(1) : "0.0";
-    var line = acc.label + "：本月 " + fmt(used) + " / " + fmt(quota) +
-      "，剩余 " + fmt(remain) + "（已用 " + pct + "%）";
-    if (httpsUsed > 0) line += "\n　其中 HTTPS " + fmt(httpsUsed) + " 次";
-    done(line);
   });
 }
 
@@ -236,11 +255,13 @@ function main() {
   }
   var lines = new Array(accounts.length);
   var left = accounts.length;
+  var finished = false;
   accounts.forEach(function (acc, idx) {
     queryAccount(acc, fallbackQuota, function (line) {
       lines[idx] = line;
       left -= 1;
-      if (left === 0) {
+      if (left === 0 && !finished) {
+        finished = true;
         var now = new Date();
         var hh = ("0" + now.getHours()).slice(-2);
         var mm = ("0" + now.getMinutes()).slice(-2);
