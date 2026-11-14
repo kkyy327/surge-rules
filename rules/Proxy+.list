@@ -1,13 +1,13 @@
 # NAME: Proxy+
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev + https://github.com/blackmatrix7/ios_rule_script（仅 Twitter 部分）
-# UPDATED: 2026-11-13 05:44:25
-# DOMAIN: 1819
-# DOMAIN-SUFFIX: 26389
+# UPDATED: 2026-11-14 10:30:11
+# DOMAIN: 1820
+# DOMAIN-SUFFIX: 26390
 # DOMAIN-KEYWORD: 81
 # IP-CIDR: 1541
 # IP-CIDR6: 206
-# TOTAL: 30044
+# TOTAL: 30046
 
 DOMAIN,3dna.nationbuilder.com
 DOMAIN,a-tiles.locationiq.com
@@ -1321,6 +1321,7 @@ DOMAIN,public-us-pingsx.api.clonoth.com
 DOMAIN,public.hare200.com
 DOMAIN,public.komiic.com
 DOMAIN,public.mocortech.com
+DOMAIN,public.popclip.app
 DOMAIN,public.zoorix.com
 DOMAIN,q676790b.pmhcjk.com
 DOMAIN,qianfan.baidubce.com
@@ -2242,6 +2243,7 @@ DOMAIN-SUFFIX,51lieqi.com
 DOMAIN-SUFFIX,51luoben.com
 DOMAIN-SUFFIX,51luoli.info
 DOMAIN-SUFFIX,51mh.app
+DOMAIN-SUFFIX,51papaya.com
 DOMAIN-SUFFIX,51pincha.cc
 DOMAIN-SUFFIX,51tuqiang.com
 DOMAIN-SUFFIX,520aa.tv

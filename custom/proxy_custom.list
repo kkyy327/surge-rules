@@ -8,3 +8,7 @@ DOMAIN-SUFFIX,javp.cc.cd
 DOMAIN-SUFFIX,fourhoi.com
 # NodeSeek 备用域（2026-11-05 手工补；本站 nodeseek.com 已在 rules/Rex.list 并被 proxy_exclude_domains 排除在聚合外，不在此重复）
 DOMAIN-SUFFIX,22112211.xyz
+# Apple Push 推送域名走代理（2026-11-14 用户手工加；apple.com 本体仍在 Direct，此三条靠 Proxy+ 在规则顺序上优先命中）
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN-SUFFIX,push-apple.com.akadns.net
+DOMAIN-SUFFIX,courier-push-apple.com.akadns.net
