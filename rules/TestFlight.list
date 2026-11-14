@@ -1,6 +1,7 @@
 # TestFlight.list — TestFlight / Beta 测试相关域名（2026-11-11 从用户 Surge 配置里
 # 的三条散装规则收编成集）
-# App Store 国内直连下 TestFlight 经常抽风，钉 PROXY；策略由配置引用时决定。
+# 策略由配置引用时决定：2026-11-11 曾定钉 PROXY（直连抽风），2026-11-14 用户改定走直连，
+# 配置里以 DIRECT 引用、须排在 Proxy+ 之前（否则被 Proxy+ 的 apple.com 大后缀截走）。
 # 手工维护文件，build.py 不生成。
 DOMAIN,testflight.apple.com
 DOMAIN,beta.apple.com
