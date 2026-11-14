@@ -1,13 +1,13 @@
 # NAME: Streaming
 # REPO: https://github.com/kkyy327/surge-rules
-# UPSTREAM: ConnersHua/RuleGo !CN (base) + MagicRule services (domain supplement) + TikTok/YouTube merged in 2026-11-14
-# UPDATED: 2026-11-14 11:06:49
+# UPSTREAM: ConnersHua/RuleGo !CN (base) + MagicRule services + TikTok/YouTube
+# UPDATED: 2026-11-14 11:15:30
 # DOMAIN: 121
 # DOMAIN-SUFFIX: 828
 # DOMAIN-KEYWORD: 26
 # IP-CIDR: 18
 # IP-CIDR6: 1
-# TOTAL: 997
+# TOTAL: 998
 
 DOMAIN,aod-dash-uk-live.akamaized.net
 DOMAIN,aod-hls-uk-live.akamaized.net
@@ -1005,4 +1005,5 @@ IP-CIDR,23.53.32.88/32,no-resolve
 IP-CIDR6,2620:120:e000::/40,no-resolve
 USER-AGENT,*youtube*
 GEOIP,NETFLIX,no-resolve
+USER-AGENT,TikTok*
 USER-AGENT,YouTube*

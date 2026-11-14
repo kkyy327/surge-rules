@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
-"""聚合规则生成 Proxy+ / Direct / Reject / Game 四个 Surge 规则集.
+"""聚合规则生成 Proxy+ / Direct / Reject / Game / Streaming 五个 Surge 规则集.
 
 上游（2026-10-31 起）:
 - Proxy / Direct / Game: MagicRule (https://magicrule.pages.dev)
 - Game: 2026-11-14 用户要求单拆独立集（MagicRule 的 Game 集 1285 条，已含 GlobalGame 与各游戏平台服务）
-- TikTok / YouTube: 原独立集已于 2026-11-14 并入手工集 Streaming.list，两集删除、不再生成（其上游服务仍在 PROXY_EXCLUDE_SERVICES 中排除，避免回流 Proxy+）
+- Streaming: 2026-11-14 用户要求自建并纳入自动同步。底本 ConnersHua/RuleGo 的 !CN 集，
+  MagicRule 逐服务集只补域名级规则（IP 大包不收，底本的 GEOIP,NETFLIX 已覆盖 Netflix），
+  TikTok / YouTube 用 MagicRule 原文全量并入（原独立集同日删除；其服务仍在
+  PROXY_EXCLUDE_SERVICES 中排除，避免回流 Proxy+）
   抓取方式: /data/index/Surge.json 索引 -> 每集 manifest -> key=rules 的产物文件
 - Twitter: 2026-11-08 用户拍板并入 Proxy+（MagicRule + blackmatrix7 双源合并），独立 Twitter 集已删
 - Reject: 保留 blackmatrix7/ios_rule_script 的 AdvertisingLite
   （MagicRule 的 AdvertisingLite 有 18 万条，体积与误杀都不适合本仓库，用户拍板保留旧源）
 
 用法: python3 build.py
-输出: ../rules/{Proxy+,Direct,Reject,Game}.list
+输出: ../rules/{Proxy+,Direct,Reject,Game,Streaming}.list
 """
 import json
 import os
@@ -36,6 +39,20 @@ MR_SKIP_SERVICES = {"GoogleSearch", "GoogleDrive"}  # MagicRule 已并入 Google
 
 # 已从 Proxy 聚合排除的服务：其规则改走专用 RULE-SET，不再混进通用代理集
 PROXY_EXCLUDE_SERVICES = ["OpenAI", "Anthropic", "YouTube", "TikTok"]
+
+# ---------- Streaming（ConnersHua 底本 + MagicRule 补充） ----------
+CONNERS_STREAMING_URL = "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Streaming/!CN.list"
+STREAMING_UPSTREAM_LABEL = "ConnersHua/RuleGo !CN (base) + MagicRule services + TikTok/YouTube"
+# 逐服务补充只收域名级规则；GlobalMedia 大杂烩不收（混有 AI 等无关域名）
+STREAMING_SERVICES = [
+    "AbemaTV", "AmazonPrimeVideo", "PrimeVideo", "AppleTV", "Bahamut", "BBC", "DAZN",
+    "Deezer", "DiscoveryPlus", "Disney", "DMM", "EncoreTVB", "HamiVideo", "HBO", "HBOHK",
+    "HBOUSA", "Hulu", "HuluJP", "HuluUSA", "ITV", "JOOX", "KKBOX", "KKTV", "LiTV",
+    "LineTV", "My5", "NaverTV", "Netflix", "Niconico", "PBS", "Pandora", "SoundCloud",
+    "Spotify", "TIDAL", "TVer", "Twitch", "Viu", "ViuTV", "WeTV", "YouTubeMusic",
+    "iQIYIIntl", "myTVSUPER",
+]
+STREAMING_DOMAIN_TYPES = {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD"}
 
 # ---------- blackmatrix7（Reject 保留 + Twitter 合并源） ----------
 BM_BASE = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge"
@@ -129,6 +146,23 @@ def parse(text: str):
         if typ in ("DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD"):
             val = val.lower()
         rules.append((typ, val))
+    return rules
+
+
+# parse() 会丢弃、但 Surge 在 RULE-SET 里同样支持的类型（Streaming 的来源原文里有）
+EXTRA_KEEP_TYPES = {"GEOIP", "USER-AGENT"}
+
+
+def parse_with_extras(text: str):
+    """parse() + 保留 GEOIP / USER-AGENT 行（值保持原样，不做小写处理）。"""
+    rules = parse(text)
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "," not in line:
+            continue
+        typ, val = line.split(",", 1)
+        if typ.strip() in EXTRA_KEEP_TYPES:
+            rules.append((typ.strip(), val.strip()))
     return rules
 
 
@@ -323,13 +357,22 @@ def main():
     print("== Game（单拆独立集, MagicRule） ==")
     n_game, game_files = write_set("Game", mr_rules("Game"), MR_UPSTREAM_LABEL)
 
+    print("== Streaming（ConnersHua !CN 底本 + MagicRule 逐服务域名补充 + TikTok/YouTube 全量） ==")
+    streaming_rules = parse_with_extras(fetch(CONNERS_STREAMING_URL))
+    for svc in STREAMING_SERVICES:
+        streaming_rules.extend(r for r in mr_rules(svc) if r[0] in STREAMING_DOMAIN_TYPES)
+    streaming_rules.extend(parse_with_extras(mr_artifact_text("TikTok")))
+    streaming_rules.extend(parse_with_extras(mr_artifact_text("YouTube")))
+    n_streaming, streaming_files = write_set("Streaming", streaming_rules, STREAMING_UPSTREAM_LABEL)
+
     print("== Reject (保留 blackmatrix7: AdvertisingLite) ==")
     reject_rules = parse(bm_fetch(f"{BM_BASE}/AdvertisingLite/AdvertisingLite.list"))
     reject_rules.extend(load_custom(os.path.join(ROOT, "custom", "reject_custom.list")))
     n_reject, reject_files = write_set("Reject", reject_rules, BM_UPSTREAM_LABEL)
 
     print(f"\n完成: Proxy={n_proxy} {proxy_files} / Direct={n_direct} {direct_files} / "
-          f"Reject={n_reject} {reject_files} / Game={n_game} {game_files}")
+          f"Reject={n_reject} {reject_files} / Game={n_game} {game_files} / "
+          f"Streaming={n_streaming} {streaming_files}")
 
 
 if __name__ == "__main__":
