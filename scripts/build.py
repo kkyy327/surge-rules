@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""聚合规则生成 Proxy+ / Direct / Reject / TikTok / YouTube 五个 Surge 规则集.
+"""聚合规则生成 Proxy+ / Direct / Reject / TikTok / YouTube / Game 六个 Surge 规则集.
 
 上游（2026-10-31 起）:
-- Proxy / Direct / TikTok / YouTube: MagicRule (https://magicrule.pages.dev)
+- Proxy / Direct / TikTok / YouTube / Game: MagicRule (https://magicrule.pages.dev)
+- Game: 2026-11-14 用户要求单拆独立集（MagicRule 的 Game 集 1285 条，已含 GlobalGame 与各游戏平台服务）
   抓取方式: /data/index/Surge.json 索引 -> 每集 manifest -> key=rules 的产物文件
 - Twitter: 2026-11-08 用户拍板并入 Proxy+（MagicRule + blackmatrix7 双源合并），独立 Twitter 集已删
 - Reject: 保留 blackmatrix7/ios_rule_script 的 AdvertisingLite
   （MagicRule 的 AdvertisingLite 有 18 万条，体积与误杀都不适合本仓库，用户拍板保留旧源）
 
 用法: python3 build.py
-输出: ../rules/{Proxy+,Direct,Reject,TikTok,YouTube}.list
+输出: ../rules/{Proxy+,Direct,Reject,TikTok,YouTube,Game}.list
 """
 import json
 import os
@@ -42,7 +43,7 @@ BM_UPSTREAM_LABEL = "https://github.com/blackmatrix7/ios_rule_script"
 
 # 单文件体积硬上限（推送已改走 push_files，不再受旧的 128KB 参数限制；
 # 此上限仅作失控保险，超限即报错停手）
-MAX_FILE_BYTES = 400_000
+MAX_FILE_BYTES = 2_000_000
 
 
 def fetch(url: str) -> str:
@@ -321,6 +322,9 @@ def main():
     print("== TikTok（单拆独立集, MagicRule） ==")
     n_tiktok, tiktok_files = write_set("TikTok", mr_rules("TikTok"), MR_UPSTREAM_LABEL)
 
+    print("== Game（单拆独立集, MagicRule） ==")
+    n_game, game_files = write_set("Game", mr_rules("Game"), MR_UPSTREAM_LABEL)
+
     print("== YouTube（上游原文整表, MagicRule） ==")
     yt_text = mr_artifact_text("YouTube")
     yt_path = os.path.join(ROOT, "rules", "YouTube.list")
@@ -338,7 +342,8 @@ def main():
     n_reject, reject_files = write_set("Reject", reject_rules, BM_UPSTREAM_LABEL)
 
     print(f"\n完成: Proxy={n_proxy} {proxy_files} / Direct={n_direct} {direct_files} / "
-          f"TikTok={n_tiktok} {tiktok_files} / YouTube={n_youtube} / Reject={n_reject} {reject_files}")
+          f"TikTok={n_tiktok} {tiktok_files} / YouTube={n_youtube} / Reject={n_reject} {reject_files} / "
+          f"Game={n_game} {game_files}")
 
 
 if __name__ == "__main__":
