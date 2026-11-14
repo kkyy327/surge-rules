@@ -50,7 +50,7 @@ FINAL,DIRECT
 - **同源重叠是正常的**：MagicRule 的统计/分析类域名会同一批灌进 Proxy+ 和 Direct，谁生效由引用配置里的规则顺序决定（DirectPlus → Proxy+ → Direct → GEOIP,CN）。不要为了「去重」跨集删改。
 - **Twitter 已并入 Proxy+**（2026-11-08），不再单独成集；不要再生成或引用 Twitter.list。
 - **Apple 规则已并入 Direct**（2026-11-01），不要再单独引用 Apple 集；AI 集在配置中仍须排在 Direct 之前，Apple 智能才走 AI 策略。
-- **海外流媒体集已含 YouTube 规则**；YouTube.list 只在想给 YouTube 单独指定地区时才需要引用。TikTok 集实际只含 TikTok 本体规则。
+- **海外流媒体集 Streaming.list 已含 YouTube 与 TikTok 规则**；原独立 YouTube.list、TikTok.list 已于 2026-11-14 并入 Streaming 后删除。
 - **禁区域名，永不拦截、永不加入任何集**：`zijieapi.com`（字节核心 API，拦截会导致短剧 App 白屏）、`dig.bdurl.net`（加入规则集曾导致红果短剧直接崩溃，已撤出）。
 - **微信相关域名必须直连且位置靠前**：曾因微信流量走代理被风控冻结（2026-10-17）。
 

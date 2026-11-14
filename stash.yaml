@@ -63,8 +63,6 @@ rule-providers:
   Twitter: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Twitter/Twitter.list", path: ./ruleset/Twitter.list, interval: 86400}
   Instagram: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Instagram/Instagram.list", path: ./ruleset/Instagram.list, interval: 86400}
   Telegram: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Telegram/Telegram.list", path: ./ruleset/Telegram.list, interval: 86400}
-  YouTube: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/YouTube.list", path: ./ruleset/YouTube.list, interval: 86400}
-  TikTok: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/TikTok.list", path: ./ruleset/TikTok.list, interval: 86400}
   Proxy+: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Proxy+.list", path: ./ruleset/Proxy+.list, interval: 86400}
   Apple: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Apple/Apple.list", path: ./ruleset/Apple.list, interval: 86400}
   Direct: {type: http, behavior: classical, url: "https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Direct.list", path: ./ruleset/Direct.list, interval: 86400}
@@ -109,8 +107,6 @@ rules:
 - RULE-SET,Twitter,𝕏
 - RULE-SET,Instagram,Instagram
 - RULE-SET,Telegram,Telegram
-- RULE-SET,YouTube,YouTube
-- RULE-SET,TikTok,TikTok
 - RULE-SET,Proxy+,Proxy
 # ── AI（内联展开: Apple 智能/Siri; 必须放在 Apple 直连规则之前） ──
 - DOMAIN-KEYWORD,siri,AI

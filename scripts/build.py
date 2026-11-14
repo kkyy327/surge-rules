@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-"""聚合规则生成 Proxy+ / Direct / Reject / TikTok / YouTube / Game 六个 Surge 规则集.
+"""聚合规则生成 Proxy+ / Direct / Reject / Game 四个 Surge 规则集.
 
 上游（2026-10-31 起）:
-- Proxy / Direct / TikTok / YouTube / Game: MagicRule (https://magicrule.pages.dev)
+- Proxy / Direct / Game: MagicRule (https://magicrule.pages.dev)
 - Game: 2026-11-14 用户要求单拆独立集（MagicRule 的 Game 集 1285 条，已含 GlobalGame 与各游戏平台服务）
+- TikTok / YouTube: 原独立集已于 2026-11-14 并入手工集 Streaming.list，两集删除、不再生成（其上游服务仍在 PROXY_EXCLUDE_SERVICES 中排除，避免回流 Proxy+）
   抓取方式: /data/index/Surge.json 索引 -> 每集 manifest -> key=rules 的产物文件
 - Twitter: 2026-11-08 用户拍板并入 Proxy+（MagicRule + blackmatrix7 双源合并），独立 Twitter 集已删
 - Reject: 保留 blackmatrix7/ios_rule_script 的 AdvertisingLite
   （MagicRule 的 AdvertisingLite 有 18 万条，体积与误杀都不适合本仓库，用户拍板保留旧源）
 
 用法: python3 build.py
-输出: ../rules/{Proxy+,Direct,Reject,TikTok,YouTube,Game}.list
+输出: ../rules/{Proxy+,Direct,Reject,Game}.list
 """
 import json
 import os
@@ -319,22 +320,8 @@ def main():
     direct_rules.extend(load_custom(os.path.join(ROOT, "custom", "direct_custom.list")))
     n_direct, direct_files = write_set("Direct", direct_rules, MR_UPSTREAM_LABEL)
 
-    print("== TikTok（单拆独立集, MagicRule） ==")
-    n_tiktok, tiktok_files = write_set("TikTok", mr_rules("TikTok"), MR_UPSTREAM_LABEL)
-
     print("== Game（单拆独立集, MagicRule） ==")
     n_game, game_files = write_set("Game", mr_rules("Game"), MR_UPSTREAM_LABEL)
-
-    print("== YouTube（上游原文整表, MagicRule） ==")
-    yt_text = mr_artifact_text("YouTube")
-    yt_path = os.path.join(ROOT, "rules", "YouTube.list")
-    yt_size = len(yt_text.encode("utf-8"))
-    if yt_size > MAX_FILE_BYTES:
-        raise RuntimeError(f"YouTube.list 体积 {yt_size} 超过上限, 停手")
-    with open(yt_path, "w", encoding="utf-8") as f:
-        f.write(yt_text if yt_text.endswith("\n") else yt_text + "\n")
-    n_youtube = len([l for l in yt_text.splitlines() if l.strip() and not l.startswith("#")])
-    print(f"  -> {yt_path}: {n_youtube} 条, {yt_size} 字节")
 
     print("== Reject (保留 blackmatrix7: AdvertisingLite) ==")
     reject_rules = parse(bm_fetch(f"{BM_BASE}/AdvertisingLite/AdvertisingLite.list"))
@@ -342,8 +329,7 @@ def main():
     n_reject, reject_files = write_set("Reject", reject_rules, BM_UPSTREAM_LABEL)
 
     print(f"\n完成: Proxy={n_proxy} {proxy_files} / Direct={n_direct} {direct_files} / "
-          f"TikTok={n_tiktok} {tiktok_files} / YouTube={n_youtube} / Reject={n_reject} {reject_files} / "
-          f"Game={n_game} {game_files}")
+          f"Reject={n_reject} {reject_files} / Game={n_game} {game_files}")
 
 
 if __name__ == "__main__":

@@ -345,14 +345,6 @@ rules:
     policy: Telegram
     disabled: false
 - rule_set:
-    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/YouTube.list
-    policy: YouTube
-    disabled: false
-- rule_set:
-    match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/TikTok.list
-    policy: TikTok
-    disabled: false
-- rule_set:
     match: https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/rules/Proxy+.list
     policy: Proxy
     disabled: false

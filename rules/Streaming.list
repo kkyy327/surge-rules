@@ -1,12 +1,13 @@
 # NAME: Streaming
 # REPO: https://github.com/kkyy327/surge-rules
-# UPSTREAM: ConnersHua/RuleGo !CN (base) + MagicRule services (domain supplement)
-# UPDATED: 2026-11-14 11:03:40
-# DOMAIN: 113
-# DOMAIN-SUFFIX: 787
-# DOMAIN-KEYWORD: 22
-# IP-CIDR: 16
-# TOTAL: 939
+# UPSTREAM: ConnersHua/RuleGo !CN (base) + MagicRule services (domain supplement) + TikTok/YouTube merged in 2026-11-14
+# UPDATED: 2026-11-14 11:06:49
+# DOMAIN: 121
+# DOMAIN-SUFFIX: 828
+# DOMAIN-KEYWORD: 26
+# IP-CIDR: 18
+# IP-CIDR6: 1
+# TOTAL: 997
 
 DOMAIN,aod-dash-uk-live.akamaized.net
 DOMAIN,aod-hls-uk-live.akamaized.net
@@ -74,6 +75,8 @@ DOMAIN,images-eu.ssl-images-amazon.com
 DOMAIN,images-fe.ssl-images-amazon.com
 DOMAIN,images-na.ssl-images-amazon.com
 DOMAIN,itvpnpmobile-a.akamaihd.net
+DOMAIN,lf16-effectcdn.byteeffecttos-g.com
+DOMAIN,lf16-pkgcdn.pitaya-clientai.com
 DOMAIN,lgcscc-hamivideo2.cdn.hinet.net
 DOMAIN,link.theplatform.com
 DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
@@ -91,8 +94,13 @@ DOMAIN,ntdofifreetv-tgc.cdn.hinet.net
 DOMAIN,ntdofifreevcpc-tgc.cdn.hinet.net
 DOMAIN,p-bstarstatic.akamaized.net
 DOMAIN,p.bstarstatic.com
+DOMAIN,p16-tiktokcdn-com.akamaized.net
 DOMAIN,play-edge.itunes.apple.com
 DOMAIN,pvr-hamivideo.cdn.hinet.net
+DOMAIN,roovza-launches.appsflyersdk.com
+DOMAIN,roovza.inapps.appsflyersdk.com
+DOMAIN,roovza.launches.appsflyersdk.com
+DOMAIN,roovza.skadsdk.appsflyersdk.com
 DOMAIN,scc-hamivideo.cdn.hinet.net
 DOMAIN,spotify.map.fastly.net
 DOMAIN,spotify.map.fastlylb.net
@@ -100,6 +108,7 @@ DOMAIN,static.siege-amazon.com
 DOMAIN,t.ssp.hinet.net
 DOMAIN,thumbnail-hamivideo.cdn.hinet.net
 DOMAIN,tlmr-hamivideo2.cdn.hinet.net
+DOMAIN,trae-api-sg.mchost.guru
 DOMAIN,tv.applemusic.com
 DOMAIN,tvcastlive-hamivideo.cdn.hinet.net
 DOMAIN,upos-bstar-mirrorakam.akamaized.net
@@ -191,9 +200,17 @@ DOMAIN-SUFFIX,braze.com
 DOMAIN-SUFFIX,brightline.tv
 DOMAIN-SUFFIX,bucketeer.jp
 DOMAIN-SUFFIX,byspotify.com
+DOMAIN-SUFFIX,bytedapm.com
+DOMAIN-SUFFIX,bytegecko-i18n.com
+DOMAIN-SUFFIX,byteintlapi.com
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,c4assets.com
 DOMAIN-SUFFIX,callhulu.com
+DOMAIN-SUFFIX,capcut.com
+DOMAIN-SUFFIX,capcutapi.com
+DOMAIN-SUFFIX,capcutapi.us
+DOMAIN-SUFFIX,capcutcdn-us.com
+DOMAIN-SUFFIX,capcutstatic.com
 DOMAIN-SUFFIX,cbsaavideo.com
 DOMAIN-SUFFIX,cbsi.com
 DOMAIN-SUFFIX,cbsivideo.com
@@ -504,6 +521,7 @@ DOMAIN-SUFFIX,huluteam.com
 DOMAIN-SUFFIX,hulutv.com
 DOMAIN-SUFFIX,huluusa.com
 DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,ibyteimg.com
 DOMAIN-SUFFIX,iflix-images.akamaized.net
 DOMAIN-SUFFIX,iflix.com
 DOMAIN-SUFFIX,indazn.com
@@ -513,7 +531,9 @@ DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intl-rcd.iqiyi.com
 DOMAIN-SUFFIX,intl-subscription.iqiyi.com
 DOMAIN-SUFFIX,intl.iqiyi.com
+DOMAIN-SUFFIX,ipstatp.com
 DOMAIN-SUFFIX,iq.com
+DOMAIN-SUFFIX,isnssdk.com
 DOMAIN-SUFFIX,itv.com
 DOMAIN-SUFFIX,itvstatic.com
 DOMAIN-SUFFIX,joinmaidez.com
@@ -541,6 +561,7 @@ DOMAIN-SUFFIX,llnwd.net
 DOMAIN-SUFFIX,logx.optimizely.com
 DOMAIN-SUFFIX,lucasfilm.com
 DOMAIN-SUFFIX,manifest.prod.boltdns.net
+DOMAIN-SUFFIX,marscode.com
 DOMAIN-SUFFIX,marvel.com
 DOMAIN-SUFFIX,marvel10thanniversary.com
 DOMAIN-SUFFIX,marveldimensionofheroes.com
@@ -649,6 +670,7 @@ DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,screens-lab.jp
 DOMAIN-SUFFIX,searchlightpictures.com
 DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,sgpstatp.com
 DOMAIN-SUFFIX,shanghaidisneyresort.com
 DOMAIN-SUFFIX,shopdisney.com
 DOMAIN-SUFFIX,shops-disney.com
@@ -656,6 +678,7 @@ DOMAIN-SUFFIX,simg.jp
 DOMAIN-SUFFIX,skyking.com.tw
 DOMAIN-SUFFIX,smartmediarep.com
 DOMAIN-SUFFIX,sndcdn.com
+DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,socdm.com
 DOMAIN-SUFFIX,sorcerersarena.com
 DOMAIN-SUFFIX,soundcloud.cloud
@@ -698,13 +721,40 @@ DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com
 DOMAIN-SUFFIX,tidal.com
 DOMAIN-SUFFIX,tidalhifi.com
 DOMAIN-SUFFIX,tik-tokapi.com
+DOMAIN-SUFFIX,tiktok-minis.com
+DOMAIN-SUFFIX,tiktok-row.net
 DOMAIN-SUFFIX,tiktok.com
 DOMAIN-SUFFIX,tiktokcdn-eu.com
+DOMAIN-SUFFIX,tiktokcdn-us.com
+DOMAIN-SUFFIX,tiktokcdn-us.com.edgesuite.net
 DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokcdn.com.akamaized.net
+DOMAIN-SUFFIX,tiktokcdn.com.edgesuite.net
+DOMAIN-SUFFIX,tiktokd.net
+DOMAIN-SUFFIX,tiktokd.org
+DOMAIN-SUFFIX,tiktokeu-cdn.com
+DOMAIN-SUFFIX,tiktokglobalshopv.com
+DOMAIN-SUFFIX,tiktokminis.us
+DOMAIN-SUFFIX,tiktokmusic.app
+DOMAIN-SUFFIX,tiktokrow-cdn.com
+DOMAIN-SUFFIX,tiktokshop.com
+DOMAIN-SUFFIX,tiktokstaticb.com
 DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokv.com.edgekey.net
+DOMAIN-SUFFIX,tiktokv.com.edgesuite.net
+DOMAIN-SUFFIX,tiktokv.eu
+DOMAIN-SUFFIX,tiktokv.us
+DOMAIN-SUFFIX,tiktokvapp.com
+DOMAIN-SUFFIX,tiktokw.eu
+DOMAIN-SUFFIX,tiktokw.us
 DOMAIN-SUFFIX,tokyodisneyresort.jp
 DOMAIN-SUFFIX,tospotify.com
+DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,ttcdn-us.com
+DOMAIN-SUFFIX,ttlivecdn.com
+DOMAIN-SUFFIX,ttoverseaus.net
 DOMAIN-SUFFIX,ttvnw.net
+DOMAIN-SUFFIX,ttwebview.com
 DOMAIN-SUFFIX,ttwstatic.com
 DOMAIN-SUFFIX,tv.apple.com
 DOMAIN-SUFFIX,tvb.com
@@ -910,6 +960,7 @@ DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-KEYWORD,-spotify-
 DOMAIN-KEYWORD,-spotify-com
+DOMAIN-KEYWORD,-tiktokcdn-com
 DOMAIN-KEYWORD,.hbogoasia.
 DOMAIN-KEYWORD,abematv.akamaized.net
 DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
@@ -920,11 +971,14 @@ DOMAIN-KEYWORD,dualstack.apiproxy-
 DOMAIN-KEYWORD,dualstack.ichnaea-web-
 DOMAIN-KEYWORD,hamivideo.cdn.hinet.net
 DOMAIN-KEYWORD,jooxweb-api
+DOMAIN-KEYWORD,musical.ly
 DOMAIN-KEYWORD,netflixdnstest
 DOMAIN-KEYWORD,nowtv100
 DOMAIN-KEYWORD,rthklive
 DOMAIN-KEYWORD,spotify
 DOMAIN-KEYWORD,spotify.com
+DOMAIN-KEYWORD,tiktok
+DOMAIN-KEYWORD,tiktokcdn
 DOMAIN-KEYWORD,tiktokcdn-
 DOMAIN-KEYWORD,ttvnw
 DOMAIN-KEYWORD,uk-live
@@ -935,6 +989,7 @@ IP-CIDR,104.109.129.153/32,no-resolve
 IP-CIDR,110.238.107.47/32,no-resolve
 IP-CIDR,118.26.32.178/32,no-resolve
 IP-CIDR,150.109.28.51/32,no-resolve
+IP-CIDR,172.110.32.0/21,no-resolve
 IP-CIDR,203.211.4.169/32,no-resolve
 IP-CIDR,203.211.4.193/32,no-resolve
 IP-CIDR,203.74.95.131/32,no-resolve
@@ -944,6 +999,10 @@ IP-CIDR,210.201.32.11/32,no-resolve
 IP-CIDR,210.201.32.8/32,no-resolve
 IP-CIDR,210.71.227.200/32,no-resolve
 IP-CIDR,210.71.227.202/32,no-resolve
+IP-CIDR,216.73.80.0/20,no-resolve
 IP-CIDR,23.211.15.99/32,no-resolve
 IP-CIDR,23.53.32.88/32,no-resolve
+IP-CIDR6,2620:120:e000::/40,no-resolve
+USER-AGENT,*youtube*
 GEOIP,NETFLIX,no-resolve
+USER-AGENT,YouTube*
