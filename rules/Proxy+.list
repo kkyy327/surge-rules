@@ -1,13 +1,13 @@
 # NAME: Proxy+
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev + https://github.com/blackmatrix7/ios_rule_script（仅 Twitter 部分）
-# UPDATED: 2026-11-14 10:30:11
+# UPDATED: 2026-11-14 12:00:10
 # DOMAIN: 1820
-# DOMAIN-SUFFIX: 26390
+# DOMAIN-SUFFIX: 26389
 # DOMAIN-KEYWORD: 81
 # IP-CIDR: 1541
 # IP-CIDR6: 206
-# TOTAL: 30046
+# TOTAL: 30045
 
 DOMAIN,3dna.nationbuilder.com
 DOMAIN,a-tiles.locationiq.com
@@ -3696,7 +3696,6 @@ DOMAIN-SUFFIX,apple.cm
 DOMAIN-SUFFIX,apple.co.hu
 DOMAIN-SUFFIX,apple.co.mz
 DOMAIN-SUFFIX,apple.co.th
-DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,apple.com.af
 DOMAIN-SUFFIX,apple.com.gr
 DOMAIN-SUFFIX,apple.com.gy
