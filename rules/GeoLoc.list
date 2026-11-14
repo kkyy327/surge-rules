@@ -1,0 +1,21 @@
+# NAME: GeoLoc
+# REPO: https://github.com/kkyy327/surge-rules
+# 国内 App 定位判断端点（手工维护，build.py 不生成）：只收定位/登录校验相关的具体主机，裸规则，策略在引用处给
+# 2026-11-14 建：底本为 ConnersHua/RuleGo 的 GeoLoc.list（9 条），补 FakeLocation（rentry00/sing-box-geosite4）中 Surge 可用的域名
+# 取舍：整域后缀（bilibili.com / zhihu.com / douban.com / ixigua.com 等）、共享 HTTPDNS（httpdns.* / dns.alidns.com）与泛关键词（weibo / httpdns）一律不收，避免把这些 App 的主流量带进 GeoLoc 策略
+DOMAIN,api.bilibili.com
+DOMAIN,api.weibo.cn
+DOMAIN,api.zhihu.com
+DOMAIN,edith.xiaohongshu.com
+DOMAIN,ib.snssdk.com
+DOMAIN,ip.i.kuwo.cn
+DOMAIN,s.weibo.com
+DOMAIN,sso.douyin.com
+DOMAIN,tiebac.baidu.com
+DOMAIN,www.douyin.com
+DOMAIN,www.weibo.com
+DOMAIN,www.xiaohongshu.com
+DOMAIN-SUFFIX,api6-core-lf.amemv.com
+DOMAIN-SUFFIX,gifshow.com
+DOMAIN-SUFFIX,ksapisrv.com
+DOMAIN-SUFFIX,tracker.xiaohongshu.com
