@@ -1,0 +1,32 @@
+# NAME: Lan
+# REPO: https://github.com/kkyy327/surge-rules
+# 局域网/本地流量兜底（手工维护，build.py 不生成）：私网与保留 IP 段 + 本地解析域 + 常见路由器管理域名，裸规则，策略在引用处给
+# 2026-11-14 建：替代 MagicRule 的 Lan 产物（3852 条，正经 LAN 仅几十条，其余为来路不明的域名杂烩），本集只留真 LAN 内容
+DOMAIN,aterm.me
+DOMAIN,console.gl-inet.com
+DOMAIN,local.adguard.org
+DOMAIN,localhost
+DOMAIN,localhost.weixin.qq.com
+DOMAIN,localhost.work.weixin.qq.com
+DOMAIN-SUFFIX,asusrouter.com
+DOMAIN-SUFFIX,home.arpa
+DOMAIN-SUFFIX,in-addr.arpa
+DOMAIN-SUFFIX,ip6.arpa
+DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,miwifi.com
+DOMAIN-SUFFIX,routerlogin.com
+DOMAIN-SUFFIX,routerlogin.net
+DOMAIN-SUFFIX,tplinkwifi.net
+IP-CIDR,0.0.0.0/8,no-resolve
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,100.64.0.0/10,no-resolve
+IP-CIDR,127.0.0.0/8,no-resolve
+IP-CIDR,169.254.0.0/16,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
+IP-CIDR,198.18.0.0/15,no-resolve
+IP-CIDR,224.0.0.0/3,no-resolve
+IP-CIDR6,::1/128,no-resolve
+IP-CIDR6,fc00::/7,no-resolve
+IP-CIDR6,fe80::/10,no-resolve
+IP-CIDR6,ff00::/8,no-resolve
