@@ -12,6 +12,8 @@
 - Twitter: 2026-11-08 用户拍板并入 Proxy+（MagicRule + blackmatrix7 双源合并），独立 Twitter 集已删
 - Reject: 保留 blackmatrix7/ios_rule_script 的 AdvertisingLite
   （MagicRule 的 AdvertisingLite 有 18 万条，体积与误杀都不适合本仓库，用户拍板保留旧源）
+  2026-11-15 起改抓 AdvertisingLite_All.list：上游已把普通版 .list 拆得只剩
+  关键词/IP（374 条），DOMAIN/DOMAIN-SUFFIX 本体在 _All 文件（约 3.8 万条）
 
 用法: python3 build.py
 输出: ../rules/{Proxy+,Direct,Reject,Game,Streaming}.list
@@ -366,7 +368,7 @@ def main():
     n_streaming, streaming_files = write_set("Streaming", streaming_rules, STREAMING_UPSTREAM_LABEL)
 
     print("== Reject (保留 blackmatrix7: AdvertisingLite) ==")
-    reject_rules = parse(bm_fetch(f"{BM_BASE}/AdvertisingLite/AdvertisingLite.list"))
+    reject_rules = parse(bm_fetch(f"{BM_BASE}/AdvertisingLite/AdvertisingLite_All.list"))
     reject_rules.extend(load_custom(os.path.join(ROOT, "custom", "reject_custom.list")))
     n_reject, reject_files = write_set("Reject", reject_rules, BM_UPSTREAM_LABEL)
 
