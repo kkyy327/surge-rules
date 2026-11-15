@@ -24,3 +24,9 @@ DOMAIN-SUFFIX,mdcmai4.xyz
 DOMAIN-SUFFIX,pimpbunny.com
 # chigua.com：51吃瓜模块卡建议走代理（2026-11-13）
 DOMAIN-SUFFIX,chigua.com
+# 黄果（聚合短剧成人版）：主站/备用站/封面/串流走 CloudFront，须走代理（2026-11-15 教学说明第六节）
+DOMAIN-SUFFIX,huangguo.video
+DOMAIN-SUFFIX,huangguoai.com
+DOMAIN-SUFFIX,pic.drleao.cn
+DOMAIN-SUFFIX,rlhjeyuvw.cc
+DOMAIN-SUFFIX,hzjvlo.cn
