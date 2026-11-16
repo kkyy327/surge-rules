@@ -1,13 +1,13 @@
 # NAME: Proxy+
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev + https://github.com/blackmatrix7/ios_rule_script（仅 Twitter 部分）
-# UPDATED: 2026-11-15 19:31:28
-# DOMAIN: 1867
-# DOMAIN-SUFFIX: 26974
+# UPDATED: 2026-11-16 12:43:42
+# DOMAIN: 1869
+# DOMAIN-SUFFIX: 26975
 # DOMAIN-KEYWORD: 81
 # IP-CIDR: 1541
 # IP-CIDR6: 206
-# TOTAL: 30677
+# TOTAL: 30680
 
 DOMAIN,3dna.nationbuilder.com
 DOMAIN,a-tiles.locationiq.com
@@ -59,6 +59,7 @@ DOMAIN,appassets.mvtdev.com
 DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net
 DOMAIN,appleworldwidedeveloper.sc.omtrdc.net
 DOMAIN,apps-static.route4me.com
+DOMAIN,apps.apple.com
 DOMAIN,apps.bazaarvoice.com
 DOMAIN,apps.paidy.com
 DOMAIN,apps.profitihub.com
@@ -1115,6 +1116,7 @@ DOMAIN,iprsoftwaremedia.com
 DOMAIN,ipxy.io
 DOMAIN,irp-cdn.multiscreensite.com
 DOMAIN,isitmaintained.com
+DOMAIN,itunes.apple.com
 DOMAIN,jfe-cdn.qualtrics.com
 DOMAIN,jotai.org
 DOMAIN,js-1-cdn.airdroid.com
@@ -24541,6 +24543,7 @@ DOMAIN-SUFFIX,terraform.io
 DOMAIN-SUFFIX,terragraph.com
 DOMAIN-SUFFIX,terrapeak.com
 DOMAIN-SUFFIX,tesco.com
+DOMAIN-SUFFIX,testflight.apple.com
 DOMAIN-SUFFIX,testonfox.com
 DOMAIN-SUFFIX,tew.org
 DOMAIN-SUFFIX,tex-talk.net

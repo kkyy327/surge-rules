@@ -324,6 +324,12 @@ def main():
     proxy_rules.extend(tw_rules)
     print(f"  并入 Twitter（双源）: {len(tw_rules)} 条")
     proxy_rules = apply_excludes(proxy_rules, exclude, proxy_exclude_domains)
+    # 强制保留（2026-11-16 用户拍板）：个别海外苹果子域名全量直连下打开慢，
+    # 在 exclude 之后按 custom/proxy_force.list 塞回 Proxy+；只含精确子域名，
+    # apple.com 大后缀仍走直连
+    force_rules = load_custom(os.path.join(ROOT, "custom", "proxy_force.list"))
+    proxy_rules.extend(force_rules)
+    print(f"  强制保留（exclude 之后）: {len(force_rules)} 条")
     n_proxy, proxy_files = write_set("Proxy+", proxy_rules,
                                      f"{MR_UPSTREAM_LABEL} + {BM_UPSTREAM_LABEL}（仅 Twitter 部分）",
                                      max_bytes=2_000_000)

@@ -1,0 +1,10 @@
+# 强制走代理（在 proxy_exclude_domains 剔除之后塞回 Proxy+，build.py 专用）
+# 背景：apple.com 已全量直连（2026-11-14），但个别子域名服务器在海外、直连
+# 打开慢；2026-11-16 用户拍板只把这几个精确子域名塞回 Proxy+（配置里
+# Proxy+ 排在 Direct 之前，先生效），apple.com 大后缀仍保持直连。
+# 注意：只放精确域名/子域后缀，禁止放 apple.com、itunes.apple.com 大后缀
+# （会连带 App Store 下载域名 iosapps.itunes.apple.com，毁掉 [Host] 的
+# ks-cdn 别名加速）。
+DOMAIN-SUFFIX,testflight.apple.com
+DOMAIN,apps.apple.com
+DOMAIN,itunes.apple.com

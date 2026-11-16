@@ -15,4 +15,6 @@ javdb.com
 # 苹果全量走直连（2026-11-14 用户拍板）：Direct 已全覆盖（apple.com 大后缀 + testflight
 # 关键词等），Proxy+ 里上游 Global 的 apple.com 大后缀排在 Direct 之前会把苹果流量截去
 # 代理（TestFlight 截图坐实），从源头剔除；apple.com.af/.gr 等国别域名不在此列
+# 例外（2026-11-16）：testflight.apple.com、apps.apple.com、itunes.apple.com 三个
+# 精确子域名直连打开慢，经 custom/proxy_force.list 在 exclude 之后塞回 Proxy+
 apple.com
