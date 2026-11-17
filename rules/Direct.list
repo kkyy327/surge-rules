@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-11-13 05:45:42
+# UPDATED: 2026-11-17 09:52:26
 # DOMAIN: 82
-# DOMAIN-SUFFIX: 17866
+# DOMAIN-SUFFIX: 17867
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 284
 # IP-CIDR6: 41
-# TOTAL: 18315
+# TOTAL: 18316
 
 DOMAIN,analytics-fe.digital-cloud.medallia.eu
 DOMAIN,api.blipsandchitz.me
@@ -2312,6 +2312,7 @@ DOMAIN-SUFFIX,attendees.link
 DOMAIN-SUFFIX,atticus.vip
 DOMAIN-SUFFIX,atuudhyvlwexf.site
 DOMAIN-SUFFIX,atwhiqmah.in
+DOMAIN-SUFFIX,au.stluma.com
 DOMAIN-SUFFIX,auahobcnuyvwd.website
 DOMAIN-SUFFIX,aucheapbeats.com
 DOMAIN-SUFFIX,audiobeatsau.com
