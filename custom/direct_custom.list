@@ -1725,3 +1725,26 @@ IP-CIDR6,2a01:b740::/32
 
 # ConnersHua Direct+ 补漏（2026-11-11）
 DOMAIN,app.appsflyer.com
+
+# 聚合短剧平台直连补漏（2026-11-17，用户提供清单；红果/抖音/七猫 wtzw/喜番/好看 qpic·bdstatic 已在上游 Direct 中）
+# 七猫
+DOMAIN-SUFFIX,qmplaylet.com
+# 星芽
+DOMAIN-SUFFIX,whjzjx.cn
+DOMAIN-SUFFIX,shytkjgs.com
+DOMAIN-SUFFIX,xingya.com.cn
+DOMAIN-SUFFIX,rongjuwh.cn
+# 河马
+DOMAIN-SUFFIX,zqqds.cn
+DOMAIN-SUFFIX,kuaikaw.cn
+DOMAIN-SUFFIX,cbread.cn
+# 火龙
+DOMAIN-SUFFIX,kairos.qq.com
+DOMAIN-SUFFIX,video.qq.com
+DOMAIN-SUFFIX,manju.v.qq.com
+DOMAIN-SUFFIX,tc.qq.com
+# 好看、柚漫剧
+DOMAIN,sv.baidu.com
+DOMAIN,yo.baidu.com
+# 围观
+DOMAIN-SUFFIX,9ddm.com

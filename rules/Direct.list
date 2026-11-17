@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-11-17 09:52:26
+# UPDATED: 2026-11-17 11:02:45
 # DOMAIN: 82
-# DOMAIN-SUFFIX: 17867
+# DOMAIN-SUFFIX: 17876
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 284
 # IP-CIDR6: 41
-# TOTAL: 18316
+# TOTAL: 18325
 
 DOMAIN,analytics-fe.digital-cloud.medallia.eu
 DOMAIN,api.blipsandchitz.me
@@ -936,6 +936,7 @@ DOMAIN-SUFFIX,99jiasu.net
 DOMAIN-SUFFIX,99uri.com
 DOMAIN-SUFFIX,9bialak0c.com
 DOMAIN-SUFFIX,9coof.cn
+DOMAIN-SUFFIX,9ddm.com
 DOMAIN-SUFFIX,9f38fe9b98.com
 DOMAIN-SUFFIX,9game.cn
 DOMAIN-SUFFIX,9ht.com
@@ -3513,6 +3514,7 @@ DOMAIN-SUFFIX,cavzgoqiozmyc.space
 DOMAIN-SUFFIX,cbdstest.download.prss.microsoft.com
 DOMAIN-SUFFIX,cbinews.com
 DOMAIN-SUFFIX,cbjq.com
+DOMAIN-SUFFIX,cbread.cn
 DOMAIN-SUFFIX,cbrsgkdqhftjt.website
 DOMAIN-SUFFIX,cbvbujjk.xyz
 DOMAIN-SUFFIX,ccb-life.com.cn
@@ -9127,6 +9129,7 @@ DOMAIN-SUFFIX,kuaiduizuoye.com
 DOMAIN-SUFFIX,kuaihou.com
 DOMAIN-SUFFIX,kuaiji.com
 DOMAIN-SUFFIX,kuaikanmanhua.com
+DOMAIN-SUFFIX,kuaikaw.cn
 DOMAIN-SUFFIX,kuailepipixia.com
 DOMAIN-SUFFIX,kuaipan.cn
 DOMAIN-SUFFIX,kuaishou.cn
@@ -12269,6 +12272,7 @@ DOMAIN-SUFFIX,qmbevqclblwss.space
 DOMAIN-SUFFIX,qmhimalayanpz.com
 DOMAIN-SUFFIX,qmjkpfldtkvny.site
 DOMAIN-SUFFIX,qmniu.com
+DOMAIN-SUFFIX,qmplaylet.com
 DOMAIN-SUFFIX,qmrms.com
 DOMAIN-SUFFIX,qmtdazupilzyt.space
 DOMAIN-SUFFIX,qmtjgame.com
@@ -12663,6 +12667,7 @@ DOMAIN-SUFFIX,rongechain.com
 DOMAIN-SUFFIX,ronghe-edu.org.cn
 DOMAIN-SUFFIX,rongheedu.org.cn
 DOMAIN-SUFFIX,ronghub.com
+DOMAIN-SUFFIX,rongjuwh.cn
 DOMAIN-SUFFIX,rongshuxia.com
 DOMAIN-SUFFIX,roomeet.cn
 DOMAIN-SUFFIX,rootjl.com
@@ -13227,6 +13232,7 @@ DOMAIN-SUFFIX,shwxzfjpyzc-tencentclb.com
 DOMAIN-SUFFIX,shwxzfjpyzc-tencentclb.net
 DOMAIN-SUFFIX,shwxzfjpyzc-tencentclb.work
 DOMAIN-SUFFIX,shyhhema.com
+DOMAIN-SUFFIX,shytkjgs.com
 DOMAIN-SUFFIX,shyxhy.com
 DOMAIN-SUFFIX,shzq.com
 DOMAIN-SUFFIX,sichuanair.com
@@ -16460,6 +16466,7 @@ DOMAIN-SUFFIX,whgezpjzhlfnq.online
 DOMAIN-SUFFIX,whhhealth.com
 DOMAIN-SUFFIX,whimmedamies.cfd
 DOMAIN-SUFFIX,whitecdnx.com
+DOMAIN-SUFFIX,whjzjx.cn
 DOMAIN-SUFFIX,whlovehome.com
 DOMAIN-SUFFIX,wholesale-exporter1.com
 DOMAIN-SUFFIX,wholesalediscountpurses.com
@@ -16951,6 +16958,7 @@ DOMAIN-SUFFIX,xinghua.org.cn
 DOMAIN-SUFFIX,xingjiesj.com
 DOMAIN-SUFFIX,xingtan001.com
 DOMAIN-SUFFIX,xingxuanwaimai.com
+DOMAIN-SUFFIX,xingya.com.cn
 DOMAIN-SUFFIX,xingyeai.com
 DOMAIN-SUFFIX,xinhuanet.com
 DOMAIN-SUFFIX,xinhuashudian.com
@@ -17863,6 +17871,7 @@ DOMAIN-SUFFIX,zpzocdawngoct.website
 DOMAIN-SUFFIX,zqbpgojxnbvzt.space
 DOMAIN-SUFFIX,zqgkiobtofztc.site
 DOMAIN-SUFFIX,zqhutmwasjdxd.website
+DOMAIN-SUFFIX,zqqds.cn
 DOMAIN-SUFFIX,zqqydxzdxvwqs.online
 DOMAIN-SUFFIX,zqtzhsergljag.online
 DOMAIN-SUFFIX,zrbezdaddiahk.space
