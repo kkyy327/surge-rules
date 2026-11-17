@@ -1,0 +1,6 @@
+#!name=阿里 HTTPDNS 接口直连
+#!desc=让 httpdns-api.aliyuncs.com 绕开当前 DNS 解析、直连阿里云接口 IP，修复用量面板「连不上阿里云接口」。只影响这一个域名，可随时停用或删除。
+#!category=查询
+
+[Host]
+httpdns-api.aliyuncs.com = 106.11.232.13
