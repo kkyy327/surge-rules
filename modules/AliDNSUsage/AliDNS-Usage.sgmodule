@@ -1,6 +1,7 @@
 #!name=阿里 HTTPDNS 用量
 #!desc=面板查看本月 HTTPDNS 用量：已用、免费额度、剩余、进度条与月底预测。点模块的「编辑参数」，填账号 1 的 AccessKey ID 与 Secret 即可（用 RAM 只读密钥），凭据只存在 Surge 本机。
 #!category=查询
+#!icon=https://i.988726.xyz/icon/aliyun.png
 #!arguments=备注:阿里云,AccessKey ID:#,AccessKey Secret:#,免费额度:1500000
 #!arguments-desc=备注随便写；ID 和 Secret 填 RAM 只读 AccessKey；免费额度在接口没返回时兜底，官方免费额度为 150 万次/月。
 
