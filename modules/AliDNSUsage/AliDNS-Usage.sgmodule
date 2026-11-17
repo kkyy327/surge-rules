@@ -10,3 +10,6 @@
 
 [Script]
 alidns-usage-v2 = type=generic,script-path=https://cdn.jsdelivr.net/gh/kkyy327/surge-rules@main/modules/AliDNSUsage/alidns-usage-v2.js,timeout=30,script-update-interval=300,argument="label={{{备注}}}&id={{{AccessKey ID}}}&secret={{{AccessKey Secret}}}&quota={{{免费额度}}}"
+
+[Host]
+httpdns-api.aliyuncs.com = 106.11.232.13
