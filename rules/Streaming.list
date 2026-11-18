@@ -1,13 +1,13 @@
 # NAME: Streaming
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: ConnersHua/RuleGo !CN (base) + MagicRule services + TikTok/YouTube
-# UPDATED: 2026-11-14 11:15:30
+# UPDATED: 2026-11-18 18:31:07
 # DOMAIN: 121
-# DOMAIN-SUFFIX: 828
+# DOMAIN-SUFFIX: 826
 # DOMAIN-KEYWORD: 26
 # IP-CIDR: 18
 # IP-CIDR6: 1
-# TOTAL: 998
+# TOTAL: 996
 
 DOMAIN,aod-dash-uk-live.akamaized.net
 DOMAIN,aod-hls-uk-live.akamaized.net
@@ -176,7 +176,6 @@ DOMAIN-SUFFIX,bahamut.com.tw
 DOMAIN-SUFFIX,bam.nr-data.net
 DOMAIN-SUFFIX,bamgrid.com
 DOMAIN-SUFFIX,bamtech.net
-DOMAIN-SUFFIX,bbc
 DOMAIN-SUFFIX,bbc-reporting-api.app
 DOMAIN-SUFFIX,bbc.co
 DOMAIN-SUFFIX,bbc.co.uk
@@ -788,7 +787,6 @@ DOMAIN-SUFFIX,wwwhuluplus.com
 DOMAIN-SUFFIX,yb.uncn.jp
 DOMAIN-SUFFIX,youboranqs01.com
 DOMAIN-SUFFIX,youtu.be
-DOMAIN-SUFFIX,youtube
 DOMAIN-SUFFIX,youtube-nocookie.com
 DOMAIN-SUFFIX,youtube-ui.l.google.com
 DOMAIN-SUFFIX,youtube.ae

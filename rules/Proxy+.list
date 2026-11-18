@@ -1,13 +1,13 @@
 # NAME: Proxy+
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev + https://github.com/blackmatrix7/ios_rule_script（仅 Twitter 部分）
-# UPDATED: 2026-11-16 12:43:42
-# DOMAIN: 1869
-# DOMAIN-SUFFIX: 26975
-# DOMAIN-KEYWORD: 81
+# UPDATED: 2026-11-18 18:29:36
+# DOMAIN: 1871
+# DOMAIN-SUFFIX: 26972
+# DOMAIN-KEYWORD: 80
 # IP-CIDR: 1541
 # IP-CIDR6: 206
-# TOTAL: 30680
+# TOTAL: 30678
 
 DOMAIN,3dna.nationbuilder.com
 DOMAIN,a-tiles.locationiq.com
@@ -1199,6 +1199,7 @@ DOMAIN,media.cleanshot.cloud
 DOMAIN,media.convertkit.com
 DOMAIN,media.currys.biz
 DOMAIN,media.daily.dev
+DOMAIN,media.datacamp.com
 DOMAIN,media.datacenterdynamics.com
 DOMAIN,media.e4le.me
 DOMAIN,media.fidoalliance.org
@@ -1615,6 +1616,7 @@ DOMAIN,static.j51.net
 DOMAIN,static.javhd.com
 DOMAIN,static.jup.ag
 DOMAIN,static.k2s.cc
+DOMAIN,static.karousell.com
 DOMAIN,static.klaviyo.com
 DOMAIN,static.lwn.net
 DOMAIN,static.maphub.net
@@ -4593,7 +4595,6 @@ DOMAIN-SUFFIX,azk8s.cn
 DOMAIN-SUFFIX,aznbcontent.cn
 DOMAIN-SUFFIX,aznude.com
 DOMAIN-SUFFIX,aztask.cn
-DOMAIN-SUFFIX,azure
 DOMAIN-SUFFIX,azure-api.cn
 DOMAIN-SUFFIX,azure-api.net
 DOMAIN-SUFFIX,azure-apihub.cn
@@ -5490,7 +5491,6 @@ DOMAIN-SUFFIX,binancezh.pro
 DOMAIN-SUFFIX,binancezh.top
 DOMAIN-SUFFIX,binb.com
 DOMAIN-SUFFIX,binf.com
-DOMAIN-SUFFIX,bing
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bing.com.cn
 DOMAIN-SUFFIX,bing.net
@@ -7721,6 +7721,7 @@ DOMAIN-SUFFIX,coova.com
 DOMAIN-SUFFIX,coova.net
 DOMAIN-SUFFIX,coova.org
 DOMAIN-SUFFIX,copilot-stg.com
+DOMAIN-SUFFIX,copilot.cloud.microsoft
 DOMAIN-SUFFIX,copilot.com
 DOMAIN-SUFFIX,copro.pw
 DOMAIN-SUFFIX,copy-manga.com
@@ -8033,6 +8034,7 @@ DOMAIN-SUFFIX,cyberx.com
 DOMAIN-SUFFIX,cyclopslicorn.com
 DOMAIN-SUFFIX,cydskqupzdook.online
 DOMAIN-SUFFIX,cygames.co.jp
+DOMAIN-SUFFIX,cygames.com
 DOMAIN-SUFFIX,cygames.jp
 DOMAIN-SUFFIX,cygwin.com
 DOMAIN-SUFFIX,cylink.pro
@@ -13436,7 +13438,6 @@ DOMAIN-SUFFIX,hotindianxxxsex.com
 DOMAIN-SUFFIX,hotjav.tv
 DOMAIN-SUFFIX,hotladsworld.com
 DOMAIN-SUFFIX,hotladyhere.com
-DOMAIN-SUFFIX,hotmail
 DOMAIN-SUFFIX,hotmail.co
 DOMAIN-SUFFIX,hotmail.com
 DOMAIN-SUFFIX,hotmail.eu
@@ -17509,7 +17510,6 @@ DOMAIN-SUFFIX,mickybells.com
 DOMAIN-SUFFIX,micoach.com
 DOMAIN-SUFFIX,micro.blog
 DOMAIN-SUFFIX,microbit.org
-DOMAIN-SUFFIX,microsoft
 DOMAIN-SUFFIX,microsoft-falcon.io
 DOMAIN-SUFFIX,microsoft-give.com
 DOMAIN-SUFFIX,microsoft-int.com
@@ -19675,7 +19675,6 @@ DOMAIN-SUFFIX,oeqaofwnietjp.website
 DOMAIN-SUFFIX,oex.com
 DOMAIN-SUFFIX,offbeatchina.com
 DOMAIN-SUFFIX,offerairjordanlebron.com
-DOMAIN-SUFFIX,office
 DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,office.net
 DOMAIN-SUFFIX,office365-net.cn
@@ -21706,6 +21705,7 @@ DOMAIN-SUFFIX,religionnews.com
 DOMAIN-SUFFIX,religioustolerance.org
 DOMAIN-SUFFIX,remetalthecladayment.cfd
 DOMAIN-SUFFIX,remirepo.net
+DOMAIN-SUFFIX,remna.dev
 DOMAIN-SUFFIX,renchead.com
 DOMAIN-SUFFIX,render.com
 DOMAIN-SUFFIX,renderingtoolkit.org
@@ -23051,7 +23051,6 @@ DOMAIN-SUFFIX,skymansion.net
 DOMAIN-SUFFIX,skymatter.com
 DOMAIN-SUFFIX,skyoceanrescue.com
 DOMAIN-SUFFIX,skypack.dev
-DOMAIN-SUFFIX,skype
 DOMAIN-SUFFIX,skype.com
 DOMAIN-SUFFIX,skype.net
 DOMAIN-SUFFIX,skypeassets.com
@@ -23669,6 +23668,7 @@ DOMAIN-SUFFIX,static.amplience.net
 DOMAIN-SUFFIX,static.chaosgroup.com
 DOMAIN-SUFFIX,static.domains
 DOMAIN-SUFFIX,static.fun
+DOMAIN-SUFFIX,static.microsoft
 DOMAIN-SUFFIX,static.pub
 DOMAIN-SUFFIX,static.skymavis.com
 DOMAIN-SUFFIX,static2cdn.hubspot.com
@@ -27858,7 +27858,6 @@ DOMAIN-SUFFIX,xn--hxtr4rozx.xn--czr694b
 DOMAIN-SUFFIX,xn--i2ru8q2qg.com
 DOMAIN-SUFFIX,xn--kcrv3utim32hx9f6qe.com
 DOMAIN-SUFFIX,xn--kput3imi374g.xn--hxt814e
-DOMAIN-SUFFIX,xn--mts47c3w9b1qr.cn
 DOMAIN-SUFFIX,xn--mts47c3w9b1qr.net
 DOMAIN-SUFFIX,xn--mtswd61ejxq.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
@@ -28881,7 +28880,6 @@ DOMAIN-KEYWORD,blogspot
 DOMAIN-KEYWORD,browserleaks
 DOMAIN-KEYWORD,cdn.adultempire.com
 DOMAIN-KEYWORD,cdn.trustpilot.net
-DOMAIN-KEYWORD,claude
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,discord
