@@ -10,3 +10,13 @@ DOMAIN,update.googleapis.com
 DOMAIN,ci.android.com
 DOMAIN-SUFFIX,blog.google
 DOMAIN-SUFFIX,googletraveladservices-cn.com
+# 2026-11-18 同步 Surge 内联集新增 9 条
+DOMAIN-SUFFIX,au.stluma.com
+DOMAIN,music.163.com
+DOMAIN,c.y.qq.com
+DOMAIN,m.kugou.com
+DOMAIN,m.kuwo.cn
+DOMAIN,paste.c-net.org
+DOMAIN-SUFFIX,uguu.se
+DOMAIN,litterbox.catbox.moe
+DOMAIN,litter.catbox.moe
