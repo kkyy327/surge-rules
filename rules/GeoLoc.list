@@ -15,6 +15,7 @@ DOMAIN,tiebac.baidu.com
 DOMAIN,www.douyin.com
 DOMAIN,www.weibo.com
 DOMAIN,www.xiaohongshu.com
+DOMAIN-SUFFIX,acs.m.goofish.com
 DOMAIN-SUFFIX,api6-core-lf.amemv.com
 DOMAIN-SUFFIX,gifshow.com
 DOMAIN-SUFFIX,ksapisrv.com
