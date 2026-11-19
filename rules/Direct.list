@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-11-18 18:30:34
+# UPDATED: 2026-11-19 09:41:26
 # DOMAIN: 57
-# DOMAIN-SUFFIX: 14022
+# DOMAIN-SUFFIX: 14024
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 279
 # IP-CIDR6: 41
-# TOTAL: 14441
+# TOTAL: 14443
 
 DOMAIN,api.blipsandchitz.me
 DOMAIN,app.adjust.com
@@ -299,6 +299,8 @@ DOMAIN-SUFFIX,1ting.com
 DOMAIN-SUFFIX,1to1computing.com.au
 DOMAIN-SUFFIX,1to1conference.com.au
 DOMAIN-SUFFIX,1w1w314c71.com
+DOMAIN-SUFFIX,1y.com
+DOMAIN-SUFFIX,1ycdn.com
 DOMAIN-SUFFIX,1zhe.com
 DOMAIN-SUFFIX,2-class.com
 DOMAIN-SUFFIX,20.172.in-addr.arpa
