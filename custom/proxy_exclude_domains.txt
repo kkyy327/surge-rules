@@ -18,3 +18,5 @@ javdb.com
 # 例外（2026-11-16）：testflight.apple.com、apps.apple.com、itunes.apple.com 三个
 # 精确子域名直连打开慢，经 custom/proxy_force.list 在 exclude 之后塞回 Proxy+
 apple.com
+# 豆包（2026-11-20）：doubao.com 本就在 Direct 里，但 Proxy+ 排在 Direct 之前把流量截去代理，慢到连不上；从 Proxy+ 源头剔除
+doubao.com

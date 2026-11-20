@@ -1,12 +1,12 @@
 # NAME: Game
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-11-18 18:30:35
+# UPDATED: 2026-11-20 23:06:54
 # DOMAIN: 60
-# DOMAIN-SUFFIX: 1135
+# DOMAIN-SUFFIX: 1137
 # DOMAIN-KEYWORD: 4
 # IP-CIDR: 12
-# TOTAL: 1211
+# TOTAL: 1213
 
 DOMAIN,a.ppy.sh
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -72,6 +72,8 @@ DOMAIN-SUFFIX,100classicbooks.com
 DOMAIN-SUFFIX,17173.com
 DOMAIN-SUFFIX,17173cdn.com
 DOMAIN-SUFFIX,17roco.com
+DOMAIN-SUFFIX,1y.com
+DOMAIN-SUFFIX,1ycdn.com
 DOMAIN-SUFFIX,2k.com
 DOMAIN-SUFFIX,2kcoretech.online
 DOMAIN-SUFFIX,2kct.onl
