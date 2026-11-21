@@ -1,7 +1,7 @@
 # NAME: Global
 # AUTHOR: MagicRule
 # REPO: https://magicrule.pages.dev
-# UPDATED: 2026-11-17 20:13:49
+# UPDATED: 2026-11-21 00:06:56
 no_resolve: true
 domain_set:
   - 3dna.nationbuilder.com
@@ -128,6 +128,7 @@ domain_set:
   - assets.mcp.corespeed.io
   - assets.media-platform.com
   - assets.monei.com
+  - assets.monetizationos.com
   - assets.msn.com
   - assets.nationbuilder.com
   - assets.northflank.com
@@ -5790,6 +5791,7 @@ domain_suffix_set:
   - busu.org
   - busybox.net
   - busytrade.com
+  - butterfly-effect-cdn.dev
   - buugaa.com
   - buy-from-shanghai.com
   - buyaapl.com
@@ -8548,6 +8550,7 @@ domain_suffix_set:
   - elephanttubenew.com
   - elevenlabs.com
   - elevenlabs.io
+  - elevenlabsusercontent.com
   - elgaronline.com
   - elgoog.im
   - elifesciences.org
@@ -23873,7 +23876,6 @@ domain_suffix_set:
   - yandexdataschool.com
   - yandexgo.com
   - yandexwebcache.net
-  - yandexwebcache.org
   - yanghengjun.com
   - yangjianli.com
   - yango-b2b.com
