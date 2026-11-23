@@ -48,3 +48,6 @@ IP-CIDR6,2a0a:f280::/32,no-resolve
 
 # weserv 图片代理（2026-11-23 用户指定走代理）
 DOMAIN-SUFFIX,images.weserv.nl
+
+# 听书电台包：Radio Browser 国际电台目录（2026-11-23）
+DOMAIN-SUFFIX,radio-browser.info

@@ -23,3 +23,6 @@ doubao.com
 
 # catbox 图床（2026-11-23）：litterbox/litter 两子域已进 Direct，但 Proxy+ 的 catbox.moe 大后缀排在前面会截走，从源头剔除
 catbox.moe
+
+# placehold.co 占位图（2026-11-23）：听书电台包规则标直连，已进 Direct，从 Proxy+ 剔除
+placehold.co

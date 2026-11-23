@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-11-23 12:57:45
+# UPDATED: 2026-11-23 13:26:52
 # DOMAIN: 60
-# DOMAIN-SUFFIX: 14036
+# DOMAIN-SUFFIX: 14046
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 279
 # IP-CIDR6: 41
-# TOTAL: 14458
+# TOTAL: 14468
 
 DOMAIN,api.blipsandchitz.me
 DOMAIN,app.adjust.com
@@ -1011,6 +1011,7 @@ DOMAIN-SUFFIX,aigodlike.com
 DOMAIN-SUFFIX,aihst8.com
 DOMAIN-SUFFIX,aihuishou.com
 DOMAIN-SUFFIX,aiketour.com
+DOMAIN-SUFFIX,aikeu.com
 DOMAIN-SUFFIX,aikgmgre.com
 DOMAIN-SUFFIX,aiops.com
 DOMAIN-SUFFIX,aipage.com
@@ -2617,6 +2618,7 @@ DOMAIN-SUFFIX,bokecc.com
 DOMAIN-SUFFIX,boodo.com
 DOMAIN-SUFFIX,boohee.com
 DOMAIN-SUFFIX,book118.com
+DOMAIN-SUFFIX,bookan.com.cn
 DOMAIN-SUFFIX,bookonsky.net
 DOMAIN-SUFFIX,boombeach.cn
 DOMAIN-SUFFIX,boosj.com
@@ -8303,6 +8305,7 @@ DOMAIN-SUFFIX,meiwulist.com
 DOMAIN-SUFFIX,meixincdn.com
 DOMAIN-SUFFIX,meiyan.com
 DOMAIN-SUFFIX,meizu.com
+DOMAIN-SUFFIX,mekui.com
 DOMAIN-SUFFIX,meloong.com
 DOMAIN-SUFFIX,mengtuoshi.wang
 DOMAIN-SUFFIX,merach.com
@@ -9255,6 +9258,8 @@ DOMAIN-SUFFIX,pfif.cn
 DOMAIN-SUFFIX,pfif.com.cn
 DOMAIN-SUFFIX,pfif.net.cn
 DOMAIN-SUFFIX,pftianshanno.com
+DOMAIN-SUFFIX,pgdjz.com
+DOMAIN-SUFFIX,pgdjz.fun
 DOMAIN-SUFFIX,pglstatp-sdk-toutiao.com
 DOMAIN-SUFFIX,pglstatp-snssdk-toutiao.com
 DOMAIN-SUFFIX,pglstatp-toutiao-b.com
@@ -9308,6 +9313,7 @@ DOMAIN-SUFFIX,pixeldance.com
 DOMAIN-SUFFIX,piyipiba.com
 DOMAIN-SUFFIX,pkoplink.com
 DOMAIN-SUFFIX,pkulaw.com
+DOMAIN-SUFFIX,placehold.co
 DOMAIN-SUFFIX,play.cn
 DOMAIN-SUFFIX,playbattleaces.com
 DOMAIN-SUFFIX,playcool.com
@@ -9768,6 +9774,7 @@ DOMAIN-SUFFIX,qss-lb.com
 DOMAIN-SUFFIX,qstatic.com
 DOMAIN-SUFFIX,qstkizve.com
 DOMAIN-SUFFIX,qsxezgai.com
+DOMAIN-SUFFIX,qtfm.cn
 DOMAIN-SUFFIX,qtlcdn.cn
 DOMAIN-SUFFIX,qtlcdn.com
 DOMAIN-SUFFIX,qtlcdn.net
@@ -9868,6 +9875,7 @@ DOMAIN-SUFFIX,r6d7345371.com
 DOMAIN-SUFFIX,r75y8c2628.com
 DOMAIN-SUFFIX,r79xqa8r7e93.com
 DOMAIN-SUFFIX,r8zc9.cn
+DOMAIN-SUFFIX,radio.cn
 DOMAIN-SUFFIX,rails.cn
 DOMAIN-SUFFIX,rainclassroom.com
 DOMAIN-SUFFIX,rainyun.com
@@ -11650,6 +11658,7 @@ DOMAIN-SUFFIX,timipc.com
 DOMAIN-SUFFIX,timmerse.com
 DOMAIN-SUFFIX,tingbook.com
 DOMAIN-SUFFIX,tingmall.com
+DOMAIN-SUFFIX,tingtingfm.com
 DOMAIN-SUFFIX,tingyun.com
 DOMAIN-SUFFIX,tipdm.org
 DOMAIN-SUFFIX,tiqakcrxmyca6i.com
@@ -13780,6 +13789,7 @@ DOMAIN-SUFFIX,yuntus.cn
 DOMAIN-SUFFIX,yuntus.com
 DOMAIN-SUFFIX,yuntus.com.cn
 DOMAIN-SUFFIX,yuntus.net
+DOMAIN-SUFFIX,yuntuys.com
 DOMAIN-SUFFIX,yunxi.tv
 DOMAIN-SUFFIX,yunxiao.com
 DOMAIN-SUFFIX,yunxin163.com
