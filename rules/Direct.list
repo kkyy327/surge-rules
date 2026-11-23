@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-11-20 23:06:52
-# DOMAIN: 57
-# DOMAIN-SUFFIX: 14034
+# UPDATED: 2026-11-23 12:40:52
+# DOMAIN: 60
+# DOMAIN-SUFFIX: 14035
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 279
 # IP-CIDR6: 41
-# TOTAL: 14453
+# TOTAL: 14457
 
 DOMAIN,api.blipsandchitz.me
 DOMAIN,app.adjust.com
@@ -38,6 +38,8 @@ DOMAIN,instant.arubanetworks.com
 DOMAIN,ip.bjango.com
 DOMAIN,izattime.qcomgeo2.com
 DOMAIN,kms.03k.org
+DOMAIN,litter.catbox.moe
+DOMAIN,litterbox.catbox.moe
 DOMAIN,local.adguard.org
 DOMAIN,lookup-api.apple.com.edgekey.net
 DOMAIN,media.cdn.queniuqe.com
@@ -45,6 +47,7 @@ DOMAIN,ocsp.globalsign.com
 DOMAIN,ocsp2.globalsign.com
 DOMAIN,origin-a.akamaihd.net
 DOMAIN,p-events-delivery.akamaized.net
+DOMAIN,paste.c-net.org
 DOMAIN,public.localsend.org
 DOMAIN,repeater.asus.com
 DOMAIN,rewards.hypixel.net
@@ -12166,6 +12169,7 @@ DOMAIN-SUFFIX,ugslb.net
 DOMAIN-SUFFIX,ugslb.top
 DOMAIN-SUFFIX,ugslb2.net
 DOMAIN-SUFFIX,ugtemfeu.com
+DOMAIN-SUFFIX,uguu.se
 DOMAIN-SUFFIX,uhasadmin.com
 DOMAIN-SUFFIX,uhbthn.com
 DOMAIN-SUFFIX,uhdbits.org

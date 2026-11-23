@@ -20,3 +20,6 @@ javdb.com
 apple.com
 # 豆包（2026-11-20）：doubao.com 本就在 Direct 里，但 Proxy+ 排在 Direct 之前把流量截去代理，慢到连不上；从 Proxy+ 源头剔除
 doubao.com
+
+# catbox 图床（2026-11-23）：litterbox/litter 两子域已进 Direct，但 Proxy+ 的 catbox.moe 大后缀排在前面会截走，从源头剔除
+catbox.moe

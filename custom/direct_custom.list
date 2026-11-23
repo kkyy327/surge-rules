@@ -1748,3 +1748,13 @@ DOMAIN,sv.baidu.com
 DOMAIN,yo.baidu.com
 # 围观
 DOMAIN-SUFFIX,9ddm.com
+
+# 音乐/文件站直连（2026-11-23 用户补：原本只在 DirectPlus，Egern 无内联规则集用不上，故并入 Direct 聚合；音乐 4 条与 Direct 大后缀重叠属保险）
+DOMAIN,music.163.com
+DOMAIN,c.y.qq.com
+DOMAIN,m.kugou.com
+DOMAIN,m.kuwo.cn
+DOMAIN,paste.c-net.org
+DOMAIN-SUFFIX,uguu.se
+DOMAIN,litterbox.catbox.moe
+DOMAIN,litter.catbox.moe
