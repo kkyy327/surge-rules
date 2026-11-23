@@ -1758,3 +1758,6 @@ DOMAIN,paste.c-net.org
 DOMAIN-SUFFIX,uguu.se
 DOMAIN,litterbox.catbox.moe
 DOMAIN,litter.catbox.moe
+
+# 阅听吧（2026-11-23 用户指定直连）
+DOMAIN-SUFFIX,yuetingba.cn
