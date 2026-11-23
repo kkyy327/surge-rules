@@ -40,3 +40,8 @@ DOMAIN-KEYWORD,reelsmunkey
 DOMAIN-KEYWORD,shortsxxx
 DOMAIN-KEYWORD,xxtok
 DOMAIN-KEYWORD,xxxfollow
+
+# 第三方 Emby 服（2026-11-23 用户拍板：独立 Emby 集并入 Rex，原集删除）
+DOMAIN-SUFFIX,emby.sadchicktv.com
+DOMAIN-SUFFIX,emby101.origamiart.uk
+DOMAIN-SUFFIX,mi.miraiemby.com
