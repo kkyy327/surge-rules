@@ -16,10 +16,6 @@ DOMAIN-SUFFIX,apple-relay.apple.com,AI
 DOMAIN-SUFFIX,apple-relay.cloudflare.com,AI
 DOMAIN-SUFFIX,apple-relay.fastly-edge.com,AI
 DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net,AI
-DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,AI
-DOMAIN-SUFFIX,bag.itunes.apple.com,AI
-DOMAIN-SUFFIX,configuration.apple.com,AI
-DOMAIN-SUFFIX,ipcdn.apple.com,AI
 DOMAIN-SUFFIX,mask.icloud.com,AI
 DOMAIN-SUFFIX,mask-h2.icloud.com,AI
 DOMAIN-SUFFIX,apps.mzstatic.com,AI
