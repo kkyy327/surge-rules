@@ -1,7 +1,7 @@
 # NAME: Google
 # AUTHOR: MagicRule
 # REPO: https://magicrule.pages.dev
-# UPDATED: 2026-11-17 19:37:48
+# UPDATED: 2026-11-27 09:54:41
 no_resolve: true
 domain_set:
   - 2mdn-cn.net
@@ -521,6 +521,7 @@ domain_suffix_set:
   - gemini.google
   - gemini.google.com
   - gemini.gstatic.com
+  - gemma.ai
   - generativeai.google
   - generativelanguage.googleapis.com
   - gerritcodereview.com
