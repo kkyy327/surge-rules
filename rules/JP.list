@@ -1,7 +1,0 @@
-# NAME: JP
-# REPO: https://github.com/kkyy327/surge-rules
-# 日本限定域名（手工维护，build.py 不生成）：裸规则，策略在引用处给
-# DMM 封面拼接 / mgstage 图片仅日本 IP 可取，引用时给日本节点；须放在通用 Proxy 规则集之前引用
-DOMAIN-SUFFIX,pics.dmm.co.jp
-DOMAIN-SUFFIX,awsimgsrc.dmm.co.jp
-DOMAIN-SUFFIX,image.mgstage.com
