@@ -1,7 +1,7 @@
 # 手动补充的代理规则（上游缺失或个人需求），每次自动更新都会保留
 # Google Voice 网页版：上游 GoogleVoice.list 里没有 voice.google.com，手动补上
 DOMAIN,voice.google.com
-# 播放源/预告片（2026-10-28 手工补；jable.tv、missav.ai 上游已有，不重复加）
+# 播放源/预告片（2026-10-28 手工补；jable.tv 上游已有，不重复加；missav.ai 被 Proxy+ 的 .ai 全后缀罩住，不用单加）
 DOMAIN-SUFFIX,memojav.com
 DOMAIN-SUFFIX,javp.cc
 DOMAIN-SUFFIX,javp.cc.cd
@@ -51,3 +51,10 @@ DOMAIN-SUFFIX,images.weserv.nl
 
 # 听书电台包：Radio Browser 国际电台目录（2026-11-23）
 DOMAIN-SUFFIX,radio-browser.info
+
+# TGX 模块媒体段补入（2026-11-27 用户拍板：TGX 23 条 IP 段只补 Proxy+ 缺的；
+# 其余 19 条 Proxy+ 已有或被大段罩住，不重复加）
+IP-CIDR,5.28.192.0/18,no-resolve
+IP-CIDR6,2a0a:f280::/29,no-resolve
+IP-CIDR,104.244.42.0/24,no-resolve
+IP-CIDR,104.244.43.0/24,no-resolve

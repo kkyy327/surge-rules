@@ -1,13 +1,13 @@
 # NAME: Proxy+
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev + https://github.com/blackmatrix7/ios_rule_script（仅 Twitter 部分）
-# UPDATED: 2026-11-23 13:25:24
+# UPDATED: 2026-11-27 11:03:14
 # DOMAIN: 1855
 # DOMAIN-SUFFIX: 23573
 # DOMAIN-KEYWORD: 80
-# IP-CIDR: 1537
-# IP-CIDR6: 206
-# TOTAL: 27258
+# IP-CIDR: 1540
+# IP-CIDR6: 207
+# TOTAL: 27262
 
 DOMAIN,3dna.nationbuilder.com
 DOMAIN,a-tiles.locationiq.com
@@ -27267,3 +27267,7 @@ IP-ASN,44907,no-resolve
 IP-ASN,59930,no-resolve
 IP-ASN,62014,no-resolve
 IP-ASN,62041,no-resolve
+IP-CIDR,5.28.192.0/18,no-resolve
+IP-CIDR6,2a0a:f280::/29,no-resolve
+IP-CIDR,104.244.42.0/24,no-resolve
+IP-CIDR,104.244.43.0/24,no-resolve
