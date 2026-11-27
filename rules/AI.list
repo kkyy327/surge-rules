@@ -5,6 +5,7 @@
 # 注意: 必须放在 Apple 直连规则之前
 DOMAIN-KEYWORD,siri,AI
 DOMAIN,guzzoni.apple.com,AI
+DOMAIN,gspe1-ssl.ls.apple.com,AI
 DOMAIN,mask.apple-dns.net,AI
 DOMAIN,mask-t.apple-dns.net,AI
 DOMAIN,mask-api.icloud.com,AI
