@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-11-23 13:26:52
+# UPDATED: 2026-11-27 11:11:27
 # DOMAIN: 60
-# DOMAIN-SUFFIX: 14046
+# DOMAIN-SUFFIX: 14058
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 279
 # IP-CIDR6: 41
-# TOTAL: 14468
+# TOTAL: 14480
 
 DOMAIN,api.blipsandchitz.me
 DOMAIN,app.adjust.com
@@ -3382,6 +3382,7 @@ DOMAIN-SUFFIX,chuimg.com
 DOMAIN-SUFFIX,chujingapp.com
 DOMAIN-SUFFIX,chunbo.com
 DOMAIN-SUFFIX,chunboimg.com
+DOMAIN-SUFFIX,chunithm.wahlap.com
 DOMAIN-SUFFIX,chunyu.mobi
 DOMAIN-SUFFIX,chunyuyisheng.com
 DOMAIN-SUFFIX,chushi.cool
@@ -4604,6 +4605,7 @@ DOMAIN-SUFFIX,eceshi.com
 DOMAIN-SUFFIX,ecgapp.com.cn
 DOMAIN-SUFFIX,ecgapp.net
 DOMAIN-SUFFIX,echargenet.com
+DOMAIN-SUFFIX,echooai.com
 DOMAIN-SUFFIX,ecitic.com
 DOMAIN-SUFFIX,ecitic.net
 DOMAIN-SUFFIX,ecjobhome.com
@@ -4872,7 +4874,9 @@ DOMAIN-SUFFIX,fatfreader.com
 DOMAIN-SUFFIX,favonis.cloud
 DOMAIN-SUFFIX,favonis.com
 DOMAIN-SUFFIX,favonis.space
+DOMAIN-SUFFIX,faw-vw.com
 DOMAIN-SUFFIX,faxingbao.com
+DOMAIN-SUFFIX,fazhipro.com
 DOMAIN-SUFFIX,fbank.com
 DOMAIN-SUFFIX,fc7eh.cn
 DOMAIN-SUFFIX,fcapp.run
@@ -6540,6 +6544,7 @@ DOMAIN-SUFFIX,icbcswiss.com
 DOMAIN-SUFFIX,icbcthai.com
 DOMAIN-SUFFIX,icbkfs.com
 DOMAIN-SUFFIX,icbkus.com
+DOMAIN-SUFFIX,icc.link
 DOMAIN-SUFFIX,iccvlog.com
 DOMAIN-SUFFIX,icedropper.com
 DOMAIN-SUFFIX,icetorrent.org
@@ -8195,6 +8200,7 @@ DOMAIN-SUFFIX,mai.tn
 DOMAIN-SUFFIX,maiche.com
 DOMAIN-SUFFIX,mail4399.com
 DOMAIN-SUFFIX,maileds.com
+DOMAIN-SUFFIX,maimai.wahlap.com
 DOMAIN-SUFFIX,maimemo.com
 DOMAIN-SUFFIX,maimemostatus.com
 DOMAIN-SUFFIX,maindown4399.com
@@ -9190,6 +9196,7 @@ DOMAIN-SUFFIX,p5w.net
 DOMAIN-SUFFIX,pacfc.com
 DOMAIN-SUFFIX,pacmantwo.com
 DOMAIN-SUFFIX,paddlepaddle.org.cn
+DOMAIN-SUFFIX,pafoundation.org.cn
 DOMAIN-SUFFIX,pag.art
 DOMAIN-SUFFIX,pagedoo.cn
 DOMAIN-SUFFIX,pagedoo.com
@@ -9267,6 +9274,7 @@ DOMAIN-SUFFIX,pglstatp-toutiao.com
 DOMAIN-SUFFIX,pgosglobal.com
 DOMAIN-SUFFIX,pgyer.com
 DOMAIN-SUFFIX,pgzs.com
+DOMAIN-SUFFIX,ph.com.cn
 DOMAIN-SUFFIX,pharmacodia.com
 DOMAIN-SUFFIX,philanthropy.xin
 DOMAIN-SUFFIX,phirda.com
@@ -9290,6 +9298,7 @@ DOMAIN-SUFFIX,pilidns.com
 DOMAIN-SUFFIX,pillbeatsblackfridaysale.com
 DOMAIN-SUFFIX,pinduoduo.com
 DOMAIN-SUFFIX,pinduoduo.net
+DOMAIN-SUFFIX,pingan.cn
 DOMAIN-SUFFIX,pingan.com
 DOMAIN-SUFFIX,pingan.com.cn
 DOMAIN-SUFFIX,pingan.com.hk
@@ -10035,6 +10044,7 @@ DOMAIN-SUFFIX,sa-tencentclb.cloud
 DOMAIN-SUFFIX,sa-tencentclb.com
 DOMAIN-SUFFIX,sa-tencentclb.net
 DOMAIN-SUFFIX,sa-tencentclb.work
+DOMAIN-SUFFIX,saasfz.com
 DOMAIN-SUFFIX,saasops.tech
 DOMAIN-SUFFIX,saayaa.com
 DOMAIN-SUFFIX,saduck.top
@@ -11573,6 +11583,7 @@ DOMAIN-SUFFIX,tgametalent.com
 DOMAIN-SUFFIX,tgbus.com
 DOMAIN-SUFFIX,tggfl.com
 DOMAIN-SUFFIX,tggypn.com
+DOMAIN-SUFFIX,tgk-wcaime.wahlap.com
 DOMAIN-SUFFIX,tgovcloud.com
 DOMAIN-SUFFIX,tgpro.top
 DOMAIN-SUFFIX,tgprocs.net
@@ -12640,6 +12651,7 @@ DOMAIN-SUFFIX,vzuu.com
 DOMAIN-SUFFIX,w03voavpa5.com
 DOMAIN-SUFFIX,w0x9r0k2l1.com
 DOMAIN-SUFFIX,w2n5cu58rn.com
+DOMAIN-SUFFIX,wahlap.net
 DOMAIN-SUFFIX,waifushangcheng.com
 DOMAIN-SUFFIX,wali.com
 DOMAIN-SUFFIX,wallstcn.com
