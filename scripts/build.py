@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""聚合规则生成 Proxy+ / Direct / Reject / Game / Streaming 五个 Surge 规则集.
+"""聚合规则生成 Proxy+ / Direct / Reject / Game / Streaming / TikTok 六个 Surge 规则集.
 
 上游（2026-10-31 起）:
 - Proxy / Direct / Game: MagicRule (https://magicrule.pages.dev)
 - Game: 2026-11-14 用户要求单拆独立集（MagicRule 的 Game 集 1285 条，已含 GlobalGame 与各游戏平台服务）
 - Streaming: 2026-11-14 用户要求自建并纳入自动同步。底本 ConnersHua/RuleGo 的 !CN 集，
   MagicRule 逐服务集只补域名级规则（IP 大包不收，底本的 GEOIP,NETFLIX 已覆盖 Netflix），
-  TikTok / YouTube 用 MagicRule 原文全量并入（原独立集同日删除；其服务仍在
+  YouTube 用 MagicRule 原文全量并入；TikTok 2026-11-28 用户要求再次单拆独立集
+  （MagicRule 原文全量，Streaming 内含 tiktok 字样的规则一并剔除；其服务仍在
   PROXY_EXCLUDE_SERVICES 中排除，避免回流 Proxy+）
   抓取方式: /data/index/Surge.json 索引 -> 每集 manifest -> key=rules 的产物文件
 - Twitter: 2026-11-08 用户拍板并入 Proxy+（MagicRule + blackmatrix7 双源合并），独立 Twitter 集已删
@@ -16,7 +17,7 @@
   关键词/IP（374 条），DOMAIN/DOMAIN-SUFFIX 本体在 _All 文件（约 3.8 万条）
 
 用法: python3 build.py
-输出: ../rules/{Proxy+,Direct,Reject,Game,Streaming}.list
+输出: ../rules/{Proxy+,Direct,Reject,Game,Streaming,TikTok}.list
 """
 import json
 import os
@@ -44,7 +45,7 @@ PROXY_EXCLUDE_SERVICES = ["OpenAI", "Anthropic", "YouTube", "TikTok"]
 
 # ---------- Streaming（ConnersHua 底本 + MagicRule 补充） ----------
 CONNERS_STREAMING_URL = "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Streaming/!CN.list"
-STREAMING_UPSTREAM_LABEL = "ConnersHua/RuleGo !CN (base) + MagicRule services + TikTok/YouTube"
+STREAMING_UPSTREAM_LABEL = "ConnersHua/RuleGo !CN (base) + MagicRule services + YouTube"
 # 逐服务补充只收域名级规则；GlobalMedia 大杂烩不收（混有 AI 等无关域名）
 STREAMING_SERVICES = [
     "AbemaTV", "AmazonPrimeVideo", "PrimeVideo", "AppleTV", "Bahamut", "BBC", "DAZN",
@@ -365,13 +366,16 @@ def main():
     print("== Game（单拆独立集, MagicRule） ==")
     n_game, game_files = write_set("Game", mr_rules("Game"), MR_UPSTREAM_LABEL)
 
-    print("== Streaming（ConnersHua !CN 底本 + MagicRule 逐服务域名补充 + TikTok/YouTube 全量） ==")
+    print("== Streaming（ConnersHua !CN 底本 + MagicRule 逐服务域名补充 + YouTube 全量；TikTok 已单拆） ==")
     streaming_rules = parse_with_extras(fetch(CONNERS_STREAMING_URL))
     for svc in STREAMING_SERVICES:
         streaming_rules.extend(r for r in mr_rules(svc) if r[0] in STREAMING_DOMAIN_TYPES)
-    streaming_rules.extend(parse_with_extras(mr_artifact_text("TikTok")))
     streaming_rules.extend(parse_with_extras(mr_artifact_text("YouTube")))
+    streaming_rules = [r for r in streaming_rules if "tiktok" not in r[1].lower()]
     n_streaming, streaming_files = write_set("Streaming", streaming_rules, STREAMING_UPSTREAM_LABEL)
+
+    print("== TikTok（2026-11-28 单拆独立集, MagicRule 原文全量） ==")
+    n_tiktok, tiktok_files = write_set("TikTok", parse_with_extras(mr_artifact_text("TikTok")), MR_UPSTREAM_LABEL)
 
     print("== Reject (保留 blackmatrix7: AdvertisingLite) ==")
     reject_rules = parse(bm_fetch(f"{BM_BASE}/AdvertisingLite/AdvertisingLite_All.list"))
@@ -380,7 +384,7 @@ def main():
 
     print(f"\n完成: Proxy={n_proxy} {proxy_files} / Direct={n_direct} {direct_files} / "
           f"Reject={n_reject} {reject_files} / Game={n_game} {game_files} / "
-          f"Streaming={n_streaming} {streaming_files}")
+          f"Streaming={n_streaming} {streaming_files} / TikTok={n_tiktok} {tiktok_files}")
 
 
 if __name__ == "__main__":
