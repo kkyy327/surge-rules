@@ -1,12 +1,12 @@
 # NAME: Game
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-11-27 11:11:28
+# UPDATED: 2026-11-28 10:13:41
 # DOMAIN: 60
-# DOMAIN-SUFFIX: 1141
+# DOMAIN-SUFFIX: 1142
 # DOMAIN-KEYWORD: 4
 # IP-CIDR: 12
-# TOTAL: 1217
+# TOTAL: 1218
 
 DOMAIN,a.ppy.sh
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -364,6 +364,7 @@ DOMAIN-SUFFIX,fabricmc.net
 DOMAIN-SUFFIX,faceit-cdn.net
 DOMAIN-SUFFIX,faceit.com
 DOMAIN-SUFFIX,fanatical.com
+DOMAIN-SUFFIX,fce.gg
 DOMAIN-SUFFIX,feihuo.com
 DOMAIN-SUFFIX,ffbuddy.com
 DOMAIN-SUFFIX,ficgs.com
