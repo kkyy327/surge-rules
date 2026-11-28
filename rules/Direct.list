@@ -1,13 +1,13 @@
 # NAME: Direct
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev
-# UPDATED: 2026-11-27 11:11:27
+# UPDATED: 2026-11-28 10:08:33
 # DOMAIN: 60
-# DOMAIN-SUFFIX: 14058
+# DOMAIN-SUFFIX: 14072
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 279
 # IP-CIDR6: 41
-# TOTAL: 14480
+# TOTAL: 14494
 
 DOMAIN,api.blipsandchitz.me
 DOMAIN,app.adjust.com
@@ -1068,6 +1068,7 @@ DOMAIN-SUFFIX,airport.brussels
 DOMAIN-SUFFIX,airport.com
 DOMAIN-SUFFIX,airport.eu
 DOMAIN-SUFFIX,airstar.com
+DOMAIN-SUFFIX,airstar.com.hk
 DOMAIN-SUFFIX,airstarfinance.net
 DOMAIN-SUFFIX,airsupportapp.com
 DOMAIN-SUFFIX,airtunes.com
@@ -1417,6 +1418,7 @@ DOMAIN-SUFFIX,anquanke.com
 DOMAIN-SUFFIX,anruan.com
 DOMAIN-SUFFIX,antafu.com
 DOMAIN-SUFFIX,antaq.com
+DOMAIN-SUFFIX,antbank.com.hk
 DOMAIN-SUFFIX,antfin.com
 DOMAIN-SUFFIX,antfortune.com
 DOMAIN-SUFFIX,antgroup-inc.cn
@@ -3355,6 +3357,7 @@ DOMAIN-SUFFIX,chinaz.net
 DOMAIN-SUFFIX,chinazns.com
 DOMAIN-SUFFIX,chinesemooc.org
 DOMAIN-SUFFIX,chiphell.com
+DOMAIN-SUFFIX,chiyubank.com
 DOMAIN-SUFFIX,chndoi.cn
 DOMAIN-SUFFIX,chndoi.com
 DOMAIN-SUFFIX,chndoi.com.cn
@@ -3948,6 +3951,7 @@ DOMAIN-SUFFIX,dafenghk.hk.cn
 DOMAIN-SUFFIX,dafenghk.net
 DOMAIN-SUFFIX,daguzhe.com
 DOMAIN-SUFFIX,daheapp.com
+DOMAIN-SUFFIX,dahsing.com
 DOMAIN-SUFFIX,daikuan.com
 DOMAIN-SUFFIX,dailygn.com
 DOMAIN-SUFFIX,dajiabao.com
@@ -4015,6 +4019,7 @@ DOMAIN-SUFFIX,dbankedge.cn
 DOMAIN-SUFFIX,dbankedge.net
 DOMAIN-SUFFIX,dbbuilding.fun
 DOMAIN-SUFFIX,dbmeta.net
+DOMAIN-SUFFIX,dbs.com.hk
 DOMAIN-SUFFIX,dc-work.cn
 DOMAIN-SUFFIX,dcarapi.com
 DOMAIN-SUFFIX,dcarimg.com
@@ -5119,6 +5124,7 @@ DOMAIN-SUFFIX,funshion.com
 DOMAIN-SUFFIX,funshion.net
 DOMAIN-SUFFIX,fusion.design
 DOMAIN-SUFFIX,fusionappl.com
+DOMAIN-SUFFIX,fusionbank.com
 DOMAIN-SUFFIX,fusure.com
 DOMAIN-SUFFIX,fusureum.com
 DOMAIN-SUFFIX,futurenetlab.com
@@ -5988,6 +5994,7 @@ DOMAIN-SUFFIX,halvie.com
 DOMAIN-SUFFIX,hanboshi.com
 DOMAIN-SUFFIX,handanjob.com
 DOMAIN-SUFFIX,hangjiayun.com
+DOMAIN-SUFFIX,hangseng.com
 DOMAIN-SUFFIX,hangzhouyq.com
 DOMAIN-SUFFIX,hanqiuming888.com
 DOMAIN-SUFFIX,hanyi.com
@@ -8003,6 +8010,7 @@ DOMAIN-SUFFIX,livephotos.com.cn
 DOMAIN-SUFFIX,livephotos.tv
 DOMAIN-SUFFIX,livesaascdn.com
 DOMAIN-SUFFIX,livesaasvolccdn.com
+DOMAIN-SUFFIX,livibank.com
 DOMAIN-SUFFIX,liweijia.com
 DOMAIN-SUFFIX,lixiang.com
 DOMAIN-SUFFIX,lixinger.com
@@ -8615,6 +8623,7 @@ DOMAIN-SUFFIX,moseeker.com
 DOMAIN-SUFFIX,motie.com
 DOMAIN-SUFFIX,motieimg.com
 DOMAIN-SUFFIX,moulem.com
+DOMAIN-SUFFIX,mox.com
 DOMAIN-SUFFIX,moyubuluo.com
 DOMAIN-SUFFIX,mpcloudapp.com
 DOMAIN-SUFFIX,mpnbenefits.download.prss.microsoft.com
@@ -8800,6 +8809,7 @@ DOMAIN-SUFFIX,nbhuke.com
 DOMAIN-SUFFIX,nbmzyl.com
 DOMAIN-SUFFIX,nbmzyy.com
 DOMAIN-SUFFIX,nbyzfeyy.com
+DOMAIN-SUFFIX,ncb.com.hk
 DOMAIN-SUFFIX,ncfimg.com
 DOMAIN-SUFFIX,ncore.cc
 DOMAIN-SUFFIX,ncyrqs.com
@@ -8966,6 +8976,7 @@ DOMAIN-SUFFIX,obricclouddw.com
 DOMAIN-SUFFIX,oceancloudapi.com
 DOMAIN-SUFFIX,oceanengine.com
 DOMAIN-SUFFIX,octavedge.com
+DOMAIN-SUFFIX,octopus.com.hk
 DOMAIN-SUFFIX,ocwms.com
 DOMAIN-SUFFIX,ocwuaibq.com
 DOMAIN-SUFFIX,oedcdn.cn
@@ -9218,6 +9229,7 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
 DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
 DOMAIN-SUFFIX,panplayable-toutiao-b.com
 DOMAIN-SUFFIX,panplayable-toutiao.com
+DOMAIN-SUFFIX,paobank.com
 DOMAIN-SUFFIX,paogame.cn
 DOMAIN-SUFFIX,paopaoche.net
 DOMAIN-SUFFIX,papegames.com
@@ -10085,6 +10097,7 @@ DOMAIN-SUFFIX,saxyit.com
 DOMAIN-SUFFIX,saxysec.com
 DOMAIN-SUFFIX,sbhimalayanml.com
 DOMAIN-SUFFIX,sbsjk.com
+DOMAIN-SUFFIX,sc.com
 DOMAIN-SUFFIX,sc2yun.com
 DOMAIN-SUFFIX,sc96655.com
 DOMAIN-SUFFIX,scbaijia.com
@@ -12797,6 +12810,7 @@ DOMAIN-SUFFIX,weiyang.cn
 DOMAIN-SUFFIX,weiyangx.com
 DOMAIN-SUFFIX,weiyun.com
 DOMAIN-SUFFIX,weknow.io
+DOMAIN-SUFFIX,welab.com
 DOMAIN-SUFFIX,welltrend-edu.com
 DOMAIN-SUFFIX,wemagfmp.com
 DOMAIN-SUFFIX,wenjuan.com

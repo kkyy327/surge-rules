@@ -1774,3 +1774,22 @@ DOMAIN-SUFFIX,mekui.com
 DOMAIN-SUFFIX,aikeu.com
 DOMAIN-SUFFIX,cntv.cdn20.com
 DOMAIN-SUFFIX,placehold.co
+
+# 八达通（2026-11-28 用户拍板补直连：原不在任何集、靠兜底走代理）
+DOMAIN-SUFFIX,octopus.com.hk
+
+# 香港银行补全（2026-11-28 用户拍板「所有银行类都搞好」：以下原不在任何集、靠兜底走代理）
+DOMAIN-SUFFIX,hangseng.com
+DOMAIN-SUFFIX,dahsing.com
+DOMAIN-SUFFIX,chiyubank.com
+DOMAIN-SUFFIX,ncb.com.hk
+DOMAIN-SUFFIX,dbs.com.hk
+DOMAIN-SUFFIX,sc.com
+# 香港虚拟银行
+DOMAIN-SUFFIX,mox.com
+DOMAIN-SUFFIX,livibank.com
+DOMAIN-SUFFIX,welab.com
+DOMAIN-SUFFIX,airstar.com.hk
+DOMAIN-SUFFIX,antbank.com.hk
+DOMAIN-SUFFIX,fusionbank.com
+DOMAIN-SUFFIX,paobank.com

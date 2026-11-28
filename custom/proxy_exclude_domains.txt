@@ -26,3 +26,9 @@ catbox.moe
 
 # placehold.co 占位图（2026-11-23）：听书电台包规则标直连，已进 Direct，从 Proxy+ 剔除
 placehold.co
+
+# 汇丰（2026-11-28 用户拍板：从 Proxy 池剔除，归 Direct 的 hsbc.com/hsbc.com.hk 罩，避免两集重叠时 Proxy+ 抢先命中）
+hsbc.com
+
+# 渣打（2026-11-28：sc.com 同时是香港渣打的域名，从 Proxy 池剔除归 Direct）
+sc.com

@@ -1,13 +1,13 @@
 # NAME: Proxy+
 # REPO: https://github.com/kkyy327/surge-rules
 # UPSTREAM: https://magicrule.pages.dev + https://github.com/blackmatrix7/ios_rule_script（仅 Twitter 部分）
-# UPDATED: 2026-11-27 11:10:30
-# DOMAIN: 1856
-# DOMAIN-SUFFIX: 23461
+# UPDATED: 2026-11-28 10:07:36
+# DOMAIN: 1851
+# DOMAIN-SUFFIX: 23459
 # DOMAIN-KEYWORD: 82
 # IP-CIDR: 1540
 # IP-CIDR6: 207
-# TOTAL: 27153
+# TOTAL: 27146
 
 DOMAIN,3dna.nationbuilder.com
 DOMAIN,a-tiles.locationiq.com
@@ -128,7 +128,6 @@ DOMAIN,assets.khoros.com
 DOMAIN,assets.lemonsqueezy.com
 DOMAIN,assets.mailgun.com
 DOMAIN,assets.maxon.net
-DOMAIN,assets.mcp.corespeed.io
 DOMAIN,assets.media-platform.com
 DOMAIN,assets.monei.com
 DOMAIN,assets.monetizationos.com
@@ -289,6 +288,7 @@ DOMAIN,cdn-main.plus500.com
 DOMAIN,cdn-node.diskpart.com
 DOMAIN,cdn-public-apis.moonlock.com
 DOMAIN,cdn-public.sociabble.com
+DOMAIN,cdn-resize-prod-com.500px.cloud
 DOMAIN,cdn-seo.airdroid.com
 DOMAIN,cdn-service.jp.sumologic.com
 DOMAIN,cdn-share-sprites.flaticon.com
@@ -515,6 +515,7 @@ DOMAIN,cdn.privacy-mgmt.com
 DOMAIN,cdn.privacy.com
 DOMAIN,cdn.promo.capcomusa.com
 DOMAIN,cdn.promotekit.com
+DOMAIN,cdn.protect.clerk.com
 DOMAIN,cdn.quadpay.com
 DOMAIN,cdn.quickemailverification.com
 DOMAIN,cdn.rauno.me
@@ -1362,8 +1363,6 @@ DOMAIN,quriobot.com
 DOMAIN,r2.1hanime.com
 DOMAIN,r2.dejavu.moe
 DOMAIN,r2.gear4music.com
-DOMAIN,r2cdn.c7d.dev
-DOMAIN,r2cdn.corespeed.io
 DOMAIN,r2cdn.myshopline.com
 DOMAIN,rapid-cdn.yottaa.com
 DOMAIN,rawmarkdown.cloudflareaccess.org
@@ -1442,7 +1441,6 @@ DOMAIN,s4.itho.me
 DOMAIN,s8.maxstream.org
 DOMAIN,sandpack-cdn-staging.blazingly.io
 DOMAIN,sbl.onfastspring.com
-DOMAIN,scdn.clerk.com
 DOMAIN,schema-cf.bc0a.com
 DOMAIN,screenshot.domains
 DOMAIN,screenshots.debian.net
@@ -1470,7 +1468,6 @@ DOMAIN,searchserverapi.com
 DOMAIN,seccdn.libravatar.org
 DOMAIN,secure-res.craft.do
 DOMAIN,secure.beer7live.com
-DOMAIN,segapi.clerk.com
 DOMAIN,sentry.ainopara.com
 DOMAIN,seo-wp.airdroid.com
 DOMAIN,service-icons.zeabur.com
@@ -1482,7 +1479,6 @@ DOMAIN,sfiles.cnyes.cool
 DOMAIN,share-assets.fe.garmin.com
 DOMAIN,share.chessbase.com
 DOMAIN,shields.rbtlog.dev
-DOMAIN,showcase.abovemarket.com
 DOMAIN,sig.grumpybumpers.com
 DOMAIN,sigma9.scpwikicn.com
 DOMAIN,signal.cdnbye.com
@@ -1503,7 +1499,6 @@ DOMAIN,sourcemaps.squarespace.net
 DOMAIN,sp.nba.com
 DOMAIN,sp.streamlabs.com
 DOMAIN,spcdn.incartupsell.com
-DOMAIN,spotlightimage.biggo.com
 DOMAIN,st-eu.dynamicyield.com
 DOMAIN,st.dynamicyield.com
 DOMAIN,st.prntscr.com
@@ -12415,7 +12410,6 @@ DOMAIN-SUFFIX,hsbc.am
 DOMAIN-SUFFIX,hsbc.bm
 DOMAIN-SUFFIX,hsbc.co.mu
 DOMAIN-SUFFIX,hsbc.co.th
-DOMAIN-SUFFIX,hsbc.com
 DOMAIN-SUFFIX,hsbc.com.ar
 DOMAIN-SUFFIX,hsbc.com.bd
 DOMAIN-SUFFIX,hsbc.com.bh
@@ -19774,7 +19768,6 @@ DOMAIN-SUFFIX,sbuxcard.com
 DOMAIN-SUFFIX,sc-cdn.com
 DOMAIN-SUFFIX,sc-cdn.net
 DOMAIN-SUFFIX,sc-gw.com
-DOMAIN-SUFFIX,sc.com
 DOMAIN-SUFFIX,sca-tolo.info
 DOMAIN-SUFFIX,scala-lang.org
 DOMAIN-SUFFIX,scala-sbt.org
