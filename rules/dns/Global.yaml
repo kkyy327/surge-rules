@@ -1,7 +1,7 @@
 # NAME: Global
 # AUTHOR: MagicRule
 # REPO: https://magicrule.pages.dev
-# UPDATED: 2026-11-27 09:54:26
+# UPDATED: 2026-11-28 04:49:26
 no_resolve: true
 domain_set:
   - 3dna.nationbuilder.com
@@ -126,7 +126,6 @@ domain_set:
   - assets.lemonsqueezy.com
   - assets.mailgun.com
   - assets.maxon.net
-  - assets.mcp.corespeed.io
   - assets.media-platform.com
   - assets.monei.com
   - assets.monetizationos.com
@@ -296,6 +295,7 @@ domain_set:
   - cdn-node.diskpart.com
   - cdn-public-apis.moonlock.com
   - cdn-public.sociabble.com
+  - cdn-resize-prod-com.500px.cloud
   - cdn-seo.airdroid.com
   - cdn-service.jp.sumologic.com
   - cdn-share-sprites.flaticon.com
@@ -525,6 +525,7 @@ domain_set:
   - cdn.privacy.com
   - cdn.promo.capcomusa.com
   - cdn.promotekit.com
+  - cdn.protect.clerk.com
   - cdn.quadpay.com
   - cdn.quickemailverification.com
   - cdn.rauno.me
@@ -1402,8 +1403,6 @@ domain_set:
   - r2.1hanime.com
   - r2.dejavu.moe
   - r2.gear4music.com
-  - r2cdn.c7d.dev
-  - r2cdn.corespeed.io
   - r2cdn.myshopline.com
   - rapid-cdn.yottaa.com
   - rawmarkdown.cloudflareaccess.org
@@ -1484,7 +1483,6 @@ domain_set:
   - s8.maxstream.org
   - sandpack-cdn-staging.blazingly.io
   - sbl.onfastspring.com
-  - scdn.clerk.com
   - schema-cf.bc0a.com
   - screenshot.domains
   - screenshots.debian.net
@@ -1512,7 +1510,6 @@ domain_set:
   - seccdn.libravatar.org
   - secure-res.craft.do
   - secure.beer7live.com
-  - segapi.clerk.com
   - self.events.data.microsoft.com
   - sentry.ainopara.com
   - seo-wp.airdroid.com
@@ -1526,7 +1523,6 @@ domain_set:
   - share.chessbase.com
   - shell.cdn.office.net
   - shields.rbtlog.dev
-  - showcase.abovemarket.com
   - sig.grumpybumpers.com
   - sigma9.scpwikicn.com
   - signal.cdnbye.com
@@ -1547,7 +1543,6 @@ domain_set:
   - sp.nba.com
   - sp.streamlabs.com
   - spcdn.incartupsell.com
-  - spotlightimage.biggo.com
   - st-eu.dynamicyield.com
   - st.dynamicyield.com
   - st.prntscr.com
